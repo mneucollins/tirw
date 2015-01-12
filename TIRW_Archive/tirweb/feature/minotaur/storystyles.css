@@ -1,0 +1,10 @@
+
+body {  font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 9pt; line-height: 14pt; color: #003366}
+td {  font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 9pt; line-height: 14pt; color: #003366}
+a:link { color: #336699; font: 9pt/14pt verdana, arial, helvetica, "san serif"; text-decoration: underline }
+a:hover { color: #6699CC; font: 9pt/14pt verdana, arial, helvetica, san serif; text-decoration: underline }
+a:visited { color: #003366; font: 9pt/14pt verdana, arial, helvetica, "san serif"; text-decoration: underline }
+a:hover { color: #6699CC; font: 9pt/14pt verdana, arial, helvetica, "san serif"; text-decoration: underline }
+.iareview {  color: #990000; line-height: 14px}
+p {  line-height: 14px}
+

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<songs>
+   <song path="4player.mp3" bild="oak.jpg" artist="The Oak Tree" title="Losing Limbs and Leaves"/>
+   <song path="1player.mp3" bild="spruce.jpg" artist="A Spruce" title="How to Grow Soil-less"/>
+   <song path="2playerfiltered.mp3" bild="orange.jpg" artist="Orange Grove" title="Making Frost Work"/>
+<song path="3player.mp3" bild="redwood.jpg" artist="Redwoods" title="What Happened over Thousand Years"/>   
+<song path="2playerraw.mp3" bild="apple1.jpg" artist="Apple Tree" title="How to Attack Workers"/>
+<song path="5player.mp3" bild="evergreen.jpg" artist="Evergreen" title="Understanding Air Pressure"/>
+</songs>

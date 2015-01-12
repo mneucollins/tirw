@@ -1,0 +1,155 @@
+<html>
+<head>
+<title>||||||||||  ||||||||||</title>
+
+
+
+<script language="JavaScript" >
+
+
+
+<!--
+
+var ver = 3
+
+bVer = parseInt(navigator.appVersion);
+
+if(bVer >= 4)  ver = 4
+
+
+
+var ns = navigator.appName == "Netscape";
+
+var ie = navigator.appName == "MSIE";
+
+
+
+//////////// ticker variables ////////////////////////////////////////
+
+
+
+var pix = 1;           // number of pixels to move per frame
+
+var rate = 50;         // frames per second
+
+var ImgHeight = 300;   // height of ticker image
+
+
+
+/////////////////////////////////////////////////////////////////////
+
+
+
+var time = 1000/rate;
+
+var again = - ImgHeight
+
+
+
+
+
+function tick() {
+
+
+
+if (ver ==3) return
+
+
+
+if (ns){
+
+        document.Layer1.offset(0,-pix);
+
+
+
+        document.Layer2.offset(0,-pix);
+
+
+
+        if (document.Layer1.top <= again) document.Layer1.top = ImgHeight;
+
+
+
+        if (document.Layer2.top <= again) document.Layer2.top = ImgHeight;
+
+        }
+
+else {
+
+        newpix = document.all["Layer1"].style.pixelTop - pix;
+
+        newpix2 = document.all["Layer2"].style.pixelTop - pix;
+
+
+
+        document.all["Layer1"].style.pixelTop = newpix;
+
+
+
+        document.all["Layer2"].style.pixelTop = newpix2;
+
+
+
+        if (document.all["Layer1"].style.pixelTop <= again) document.all["Layer1"].style.pixelTop = ImgHeight;
+
+
+
+        if (document.all["Layer2"].style.pixelTop <= again) document.all["Layer2"].style.pixelTop = ImgHeight;
+
+        }       
+
+
+
+        setTimeout('tick()', time);
+
+}
+
+
+
+//-->
+
+
+
+</script>
+
+
+</HEAD>
+<BODY BACKGROUND="" BGCOLOR=000000 text="cccccc" link="cccccc" vlink=cccccc alink=cccccc marginwidth=0 marginheight=0 topmargin=0 leftmargin=0 onLoad="tick()">
+
+
+
+<div align="left">
+
+<table border="0" cellpadding="0" cellspacing="0" columns="0">
+
+   <tr>
+
+   <td>
+
+    <span id="Layer1" style="position:absolute; width:205px; height:300px; z-index:2; left: 0px; top: 0px"> 
+
+  <img src="images/grave.jpg" width="205" height="300" border="0">
+
+    </span>
+
+
+
+    <span id="Layer2" style="position:absolute; width:205px; height:300px; z-index:1; left: 0px; top: 300px"> 
+
+    <img src="images/grave2.jpg" width="205" height="300" border="0">
+
+    </span>      
+
+   </td>
+
+   </tr>
+
+</table>
+
+</div>
+
+
+
+</body> 
+
+</html> 

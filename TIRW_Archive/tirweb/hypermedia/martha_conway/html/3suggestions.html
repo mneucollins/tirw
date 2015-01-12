@@ -1,0 +1,161 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+
+<HTML>
+<HEAD>
+<TITLE>3suggestions</TITLE>
+<META NAME="Generator" " CONTENT="Built using NetObjects Fusion 2.0.1 for Macintosh">
+
+<style>
+.spanstyle {
+	position:absolute;
+	visibility:visible;
+	top:-50px;
+	font-size:9pt;
+	font-family:verdana;
+
+
+	color:blue;
+}
+</style>
+<script>
+
+/*
+Cursor Trailor Text- By Peter Gehrig (http://www.24fun.ch/)
+Permission given to Dynamicdrive.com to feature script in it's archive.
+For full source code, installation instructions, and 1000's more DHTML scripts,
+visit http://dynamicdrive.com
+*/
+
+var x,y
+var step=20
+var flag=0
+
+// Your snappy message. Important: the space at the end of the sentence!!!
+var message="the 5 hindrances: "
+message=message.split("")
+
+var xpos=new Array()
+for (i=0;i<=message.length-1;i++) {
+	xpos[i]=-50
+}
+
+var ypos=new Array()
+for (i=0;i<=message.length-1;i++) {
+	ypos[i]=-50
+}
+
+function handlerMM(e){
+	x = (document.layers) ? e.pageX : document.body.scrollLeft+event.clientX
+	y = (document.layers) ? e.pageY : document.body.scrollTop+event.clientY
+	flag=1
+}
+
+function makesnake() {
+	if (flag==1 && document.all) {
+    	for (i=message.length-1; i>=1; i--) {
+   			xpos[i]=xpos[i-1]+step
+			ypos[i]=ypos[i-1]
+    	}
+		xpos[0]=x+step
+		ypos[0]=y
+	
+		for (i=0; i<message.length-1; i++) {
+    		var thisspan = eval("span"+(i)+".style")
+    		thisspan.posLeft=xpos[i]
+			thisspan.posTop=ypos[i]
+    	}
+	}
+	
+	else if (flag==1 && document.layers) {
+    	for (i=message.length-1; i>=1; i--) {
+   			xpos[i]=xpos[i-1]+step
+			ypos[i]=ypos[i-1]
+    	}
+		xpos[0]=x+step
+		ypos[0]=y
+	
+		for (i=0; i<message.length-1; i++) {
+    		var thisspan = eval("document.span"+i)
+    		thisspan.left=xpos[i]
+			thisspan.top=ypos[i]
+    	}
+	}
+		var timer=setTimeout("makesnake()",30)
+}
+
+</script>
+
+
+
+
+</HEAD>
+
+<body onLoad="makesnake()"
+                          style="width:100%;overflow-x:hidden;overflow-y:scroll"
+BACKGROUND="../assets/images/baybridg.jpg" LINK="#0000FF" VLINK="#800080" TEXT="#000000"  >
+<script>
+<!-- Beginning of JavaScript -
+
+for (i=0;i<=message.length-1;i++) {
+    document.write("<span id='span"+i+"' class='spanstyle'>")
+	document.write(message[i])
+    document.write("</span>")
+}
+
+if (document.layers){
+	document.captureEvents(Event.MOUSEMOVE);
+}
+document.onmousemove = handlerMM;
+
+// - End of JavaScript - -->
+</script>
+
+<TABLE CELLPADDING=0 CELLSPACING=0 BORDER=0 WIDTH=638>
+<TR VALIGN="top" ALIGN="left">
+<TD>
+
+  <TABLE BORDER=0 CELLSPACING=0 CELLPADDING=0 WIDTH=374>
+   <TR VALIGN="top" ALIGN="left">
+	
+<TD WIDTH=8 HEIGHT =95><IMG SRC="../assets/images/dot_clear.gif" WIDTH =8 HEIGHT =1 BORDER=0></TD>
+	
+<TD WIDTH=366><IMG SRC="../assets/images/dot_clear.gif" WIDTH =366 HEIGHT =1 BORDER=0></TD>
+   </TR>
+   <TR VALIGN="top" ALIGN="left">
+	<TD></TD>
+	<TD WIDTH=366><P><B><FONT SIZE="+1" FACE="Arial,Helvetica">I was told to distance myself from my old friends.&nbsp; I was told I should leave parties early and arrive late.&nbsp; I liked to hear the stories of people who slept in cars; in addition any theft, injury, or jail stories interested me since I myself had never broken the law outside of driving.&nbsp; Betsey had a wonderful story about stealing money from a john.&nbsp; Another man whom I'll never forget told a story about fucking an Indian when he was a merchant marine then killing him and throwing the body overboard.&nbsp; There was absolute silence in the room after he told us this, we were in a high school gymnasium.&nbsp; He said, I guess the statute of limitations ran out on that.</FONT></B></P><P>&nbsp;</P><P>&nbsp;</P>
+<P><A HREF="3chevron.html"><B><FONT COLOR="#996600" SIZE="+1" FACE="Arial,Helvetica">october</FONT></B></A><B><FONT COLOR="#996600" SIZE="+1" FACE="Arial,Helvetica">&nbsp; </FONT></B><A HREF="3ring.html"><B><FONT COLOR="#996600" SIZE="+1" FACE="Arial,Helvetica">november</FONT></B></A><B><FONT COLOR="#996600" SIZE="+1" FACE="Arial,Helvetica"></FONT></B>
+</TD>
+
+   </TR>
+   <TR VALIGN="top" ALIGN="left">
+	<TD COLSPAN=2 HEIGHT =14></TD>
+   </TR>
+  </TABLE>
+</TD>
+<TD>
+
+  <TABLE BORDER=0 CELLSPACING=0 CELLPADDING=0 WIDTH=264>
+   <TR VALIGN="top" ALIGN="left">
+	
+<TD WIDTH=32 HEIGHT =95><IMG SRC="../assets/images/dot_clear.gif" WIDTH =32 HEIGHT =1 BORDER=0></TD>
+	
+<TD WIDTH=97><IMG SRC="../assets/images/dot_clear.gif" WIDTH =97 HEIGHT =1 BORDER=0></TD>
+	
+<TD WIDTH=135><IMG SRC="../assets/images/dot_clear.gif" WIDTH =135 HEIGHT =1 BORDER=0></TD>
+   </TR>
+   <TR VALIGN="top" ALIGN="left">
+	<TD></TD>
+	<TD WIDTH=97><P><FONT SIZE="-2" FACE="Arial,Helvetica">There were two shows I liked to watch on television, both on Thursday night, and I taped one and watched the other until the first one got cancelled.&nbsp; She didn't watch either show, she only pretended to read.&nbsp; Let's say our novena, she said.&nbsp; I loved her low growly voice and then I got tired of it and then I didn't notice it until someone new commented about it.&nbsp; It was something people commented about.&nbsp; </FONT></TD>
+
+	<TD></TD>
+   </TR>
+   <TR VALIGN="top" ALIGN="left">
+	<TD COLSPAN=3 HEIGHT =120></TD>
+   </TR>
+  </TABLE>
+</TD>
+</TR>
+</TABLE>
+</BODY>
+</HTML>

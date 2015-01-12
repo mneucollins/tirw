@@ -1,0 +1,40 @@
+body {
+  font-family: "Palatino", "Palatino Linotype", "Book Antiqua", serif;
+  margin: 60px 4em 60px 4em;
+  line-height: 1.5em;
+  background: #001;
+  color: #ff1;
+}
+
+h1, h2 {
+  text-align: right;
+}
+
+h1 {
+  margin-bottom: 0;
+}
+
+h2 {
+  font-size: 100%;
+  margin-bottom: 2em;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:link {
+  color: #777;
+}
+
+a:visited {
+  color: #a8e;
+}
+
+a:hover, active {
+  color: #24f;
+}
+
+p {
+  font-size: 120%;
+}

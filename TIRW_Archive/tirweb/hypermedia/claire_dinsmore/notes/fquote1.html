@@ -1,0 +1,164 @@
+<html>
+<head>
+<title>foot quotes</title>
+<style>
+body{background-color:#000000}
+A{color:Navy; text-decoration:none}
+A:hover{color:red}
+A:visited:{color:#808080}
+TD{font-family:arial,helvetica; font-size:10pt}
+</style>
+<script language="JavaScript1.2">
+/********************************************************************************
+This script is made by and copyrighted to Thomas Brattli at www.bratta.com
+Visit for more great scripts. 
+********************************************************************************
+Browsercheck:*/
+ie=document.all?1:0
+n=document.layers?1:0
+
+/********************************************************************************
+Here are the variables you must set: (this is the only part you have to change)
+
+Remember tho, if you wan't different size for the layers, different clip or anything
+change that in the stylesheet.
+*/
+
+// ===================== Section changed by -mcr 990908 ===========================
+//The delay between the fades (in milliseconds) smaller value gives less time:
+//betweendelay=5000
+
+// -------- Added by -mcr 990908 -----------------------
+// inTime = time (in ms) item will be visible (1000 ms = 1 second)
+// outTime = time (in ms) item will be INvisible
+
+inTime = 5000
+outTime = 100
+
+// ------------------------------------------------------
+//=================================================================================
+
+//
+//Do you wan't it to start over on the first one when it's gone trought all the news?
+//(set to 0 if not)
+var loop=0
+
+//What font do you wan't it use?
+FontFace='arial,helvetiva'
+
+//What font-size (in pixel)?
+FontSize=12
+
+//Do you wan't it to fade out aswell? 1 for on, 0 for off
+fadeback=1
+
+//Set the colors, first color is same as background, last color is the color it stops at:
+//You can have upto 7 colors, set the ones you wan't use to 0
+colors=new Array()
+colors[0]='#000000'
+//colors[1]='#27211B'
+colors[1]='#3C3021'
+colors[2]='#4C3F31'
+colors[3]='#715D47'
+colors[4]='#967B5D'
+colors[5]='#BB9973'
+colors[6]='#E0B789'
+
+//This is the news you wanna have, set the link and the text. If you don't wan't it to link anywhere
+//use a # as the link
+news=new Array()
+//Copy there three lines and change the info and numbers to get more news.
+news[0]=new Array()
+news[0]["text"]="It is not necessary that you leave the house. Remain at your table and listen. Do not even listen, only wait. Do not even wait, be wholly still and alone. The world will present itself to you for its unmasking&nbsp;&nbsp;.&nbsp; .&nbsp; .&nbsp;&nbsp; in ecstasy it will writhe at your feet." +
+	"<br>" + "<p align='right'>&#151; Franz Kafka"
+news[0]["link"]="#"
+news[1]=new Array()
+news[1]["text"]="The accent of a coming Foot &#151;" +
+		"<br>" + "the opening of a door&nbsp;&nbsp;.&nbsp; .&nbsp; ." +
+               "<br>" + "<p align='right'>&#151; Emily Dickinson"
+news[1]["link"]="#"
+news[2]=new Array()
+news[2]["text"]="I have no desire to prove anything by dancing.&nbsp; I have never used it as an outlet or a means of expressing myself.&nbsp; I just dance.&nbsp; I just put my feet in the air and move them around." +
+                 "<br>" + "<p align='right'>&#151; Fred Astaire"
+news[2]["link"]="#"
+news[3]=new Array()
+news[3]["text"]="There's man all over for you,&nbsp; blaming on his boots the fault of his feet." +
+               	"<br>" + "<p align='right'>&#151; Samuel Beckett"
+news[3]["link"]="#"
+
+news[4]=new Array()
+news[4]["text"]="A journey of a thousand miles starts in front of your feet.&nbsp;/&nbsp; A tower nine stories high is built from a small heap of earth.&nbsp;/&nbsp; A journey of a thousand miles starts in front of your feet." +
+       		"<br>" + "<p align='right'>&#151; Loa Tzu"
+news[4]["link"]="#"
+
+news[5]=new Array()
+news[5]["text"]="No one who accepts the sovereignty of truth can be a foot soldier in a party or movement.&nbsp; He will always find himself out of step." +
+           	"<br>" + "<p align='right'>&#151; Sidney Hook"
+news[5]["link"]="#"
+
+news[6]=new Array()
+news[6]["text"]="Let no one be deluded that a knowledge of the path can substitute for putting one foot in front of the other." +
+              	"<p align='right'>&#151; Caroline Richards"
+news[6]["link"]="#"
+
+news[7]=new Array()
+news[7]["text"]="If the shoe doesn't fit,&nbsp; must we change the foot?" +
+              	"<br>" + "<p align='right'>&#151; Gloria Steinem"
+news[7]["link"]="#"
+
+/*********************************************************************************/
+fadeInit=new Function("oNews=new makeObj('divNews','divCont'); fadeNews(0)")
+function makeObj(obj,nest){
+    nest=(!nest) ? '':'document.'+nest+'.'
+    this.css=(n) ? eval(nest+'document.'+obj):eval(obj+'.style')
+    this.writeref=(n) ? eval(nest+'document.'+obj+'.document'):eval(obj);		
+	this.fadeIt=b_fadeIt
+    this.obj = obj + "Object"; 	eval(this.obj + "=this")	
+}
+function b_fadeIt(text,link,font,size,speed,fn,num,c0,c1,c2,c3,c4,c5,c6){
+	if(num<arguments.length && arguments[num]!=0){
+		writetext='<a href="'+link+'" style="text-decoration:none; font-size:'+size+'px">'
+		+'<font face="'+font+'" color="'+arguments[num]+'">'+text+'</font></a>'
+		if(n){this.writeref.write(writetext); this.writeref.close()}
+		if(ie) this.writeref.innerHTML=writetext		
+		num++
+		setTimeout(this.obj+'.fadeIt("'+text+'","'+link+'","'+font+'",'+size+','+speed+',"'
+		+fn+'",'+num+',"'+c0+'","'+c1+'","'+c2+'","'+c3+'","'+c4+'","'+c5+'","'+c6+'")',speed)
+	}else setTimeout('eval('+fn+')',betweendelay)
+}
+function fadeNews(num){
+	if(num<news.length){
+		fn=fadeback?'fadeBack('+num+')':'fadeNews('+(num+1)+')';
+		oNews.fadeIt(news[num]["text"],news[num]["link"],FontFace,FontSize,100,fn,7,
+		colors[0],colors[1],colors[2],colors[3],colors[4],colors[5],colors[6]);
+		//Added by -mcr 990908
+		betweendelay = inTime
+	}else if(loop)fadeNews(0)
+}
+function fadeBack(num){
+	if(num>=0){
+		oNews.fadeIt(news[num]["text"],news[num]["link"],FontFace,FontSize,100,'fadeNews('+(num+1)
+		+')',7,colors[6],colors[5],colors[4],colors[3],colors[2],colors[1],colors[0]);
+		//Added by -mcr 990908
+		betweendelay = outTime
+	}
+}
+onload=fadeInit;
+/*End of fadescript
+*********************************************************************************/
+</script>
+</HEAD>
+<BODY bgcolor="#000000" text="#4C3F31">
+<div id="divCont" style="position:absolute; width:250px; height:200px; left:179px; top:186px"> 
+  <div id="divNews" style="position:absolute">
+		<script>//We gotta write something here so netscape will make it
+		//be the correct size, but we will only write if it's a 4.x browser
+		if(document.all || document.layers) document.write("necessary dummy text,"
+		+"please ignore.--------------------------------------------------------------------" 
+		+"If you place these layers inside a table or something you can also"
+		+"use this as the msg that browsers that doesn't suport dhtml will see.")
+		</script>
+	</div>
+</div>
+</body>
+</html>

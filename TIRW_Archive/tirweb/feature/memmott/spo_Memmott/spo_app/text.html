@@ -1,0 +1,99 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<HTML>
+<HEAD>
+	<TITLE></TITLE>
+
+
+<STYLE type="text/css">
+body{background-color:#ffffff;}
+A{color:#00ff00; text-decoration:none;}
+A:hover{color:#00ff00}
+A:visited:{color:#00ff00;}
+
+TD {
+          color: #efefef;
+          font-size: 14px;
+		  font-family: verdana,arial; }	
+.pio {
+          color: #cccccc;
+          font-size: 14px;
+		  font-family: serif;
+		  font-style: italic;
+		  font-weight: bold; }		  	  
+.artistName {
+          color: #eeeeee;
+          font-size: 24px;
+		  font-family: serif;
+		  font-weight:bold; }	
+.artistInfo {
+          color: #eeeeee;
+          font-size: 14px;
+		  font-family: serif;}			  
+
+#VertAction{position:absolute; left:680; top:90; visibility:hidden}
+#inVertAction{position:absolute; left:0; top:0; visibility:hidden}
+#txtArea{position:absolute; width:300; height:330; overflow:hidden; top:65; left:5; clip:rect(0,300,330,0); visibility:visible}
+#txtActual{position:absolute; top:0; left:0; visibility:visible}
+</style>	
+				
+<SCRIPT language="JavaScr
+ipt" src="opera/simu_play.js" type="text/javascript"></SCRIPT>
+<SCRIPT LANGUAGE="JavaScript1.1" SRC="opera/location99.js"></SCRIPT>
+<SCRIPT LANGUAGE="JavaScript1.1" SRC="opera/names.js"></SCRIPT>
+<SCRIPT LANGUAGE="JavaScript1.1" SRC="opera/ismist.js"></SCRIPT>
+<SCRIPT LANGUAGE="JavaScript1.1" SRC="opera/titles99.js"></SCRIPT>
+<SCRIPT LANGUAGE="JavaScript1.1" SRC="opera/specifics.js"></SCRIPT>
+<SCRIPT LANGUAGE="JavaScript1.1" SRC="opera/multi99.js"></SCRIPT>
+<SCRIPT LANGUAGE="JavaScript1.1" SRC="opera/basics.js"></SCRIPT>
+<script language="JavaScript">
+<!--
+function loaded() {
+ if (parent.location.href.indexOf("FRAME.html") != -1)
+  parent.update(); // only called when inside preloader frameset
+}
+// -->
+</script>
+</HEAD>
+
+<BODY BACKGROUND="base/bg01.gif" LEFTMARGIN=0 TOPMARGIN=0 MarginHeight=0 MarginWidth=0 BGCOLOR="Black" onLoad="loaded();ActivateMech();">
+
+<TABLE WIDTH="330" BORDER="0" CELLSPACING="0" CELLPADDING="0" ALIGN="center">
+<TR><TD HEIGHT="78" COLSPAN="2" ALIGN="left" VALIGN="top"><FONT CLASS="artistName"><SCRIPT language="Javascript1.1">document.write(""+fnamex+""+lnamex+"");</SCRIPT></FONT><BR>
+<FONT CLASS="artistInfo"><SCRIPT language="Javascript1.1">document.write(""+dobx+" -- "+dodx+"");</SCRIPT></FONT>
+</TD></TR>
+	<TR><TD WIDTH="310" ROWSPAN="3">&nbsp;&nbsp;</TD>
+		<TD>
+			<a href="#" onmouseover="letItGo(-4)" onmouseout="slipLess()"><IMG SRC="base/button-up.gif" WIDTH="20" HEIGHT="29" ALT="" BORDER="0"></A></TD>
+	</TR>
+		<TD ALIGN="center"><IMG SRC="base/dotwhite.gif" WIDTH="3" HEIGHT="250" ALT="" BORDER="0"></TD>	
+	<TR>
+		<TD>
+			<a href="#" onmouseover="letItGo(4)" onmouseout="slipLess()"><IMG SRC="base/button-down.gif" WIDTH="20" HEIGHT="29" ALT="" BORDER="0"></A></TD>
+	</TR>
+		<TR><TD WIDTH="310" HEIGHT="28" COLSPAN="2">&nbsp;&nbsp;</TD></TR>
+		<TR><TD WIDTH="310" COLSPAN="2" ALIGN="right"><A HREF="split.html" TARGET="pane"><IMG SRC="base/next.gif" WIDTH="120" HEIGHT="24" ALT="" BORDER="0"></A></TD></TR>
+</TABLE>
+
+<div id="txtArea">
+        <div id="txtActual">
+<TABLE WIDTH="300" BORDER="0" CELLSPACING="0" CELLPADDING="4">
+<TR><TD ALIGN="Left" VALIGN="TOP">
+<SCRIPT language="Javascript1.1">document.write(""+multi01x+"");</SCRIPT> 
+<SCRIPT language="Javascript1.1">document.write(""+multi02x+"");</SCRIPT> 
+<SCRIPT language="Javascript1.1">document.write(""+multi03x+"");</SCRIPT><BR><BR> 
+<SCRIPT language="Javascript1.1">document.write(""+multi04x+"");</SCRIPT> 
+<SCRIPT language="Javascript1.1">document.write(""+multi05x+"");</SCRIPT> 
+<SCRIPT language="Javascript1.1">document.write(""+multi06x+"");</SCRIPT><BR><BR>
+<SCRIPT language="Javascript1.1">document.write(""+multi07x+"");</SCRIPT>
+<SCRIPT language="Javascript1.1">document.write(""+multi08x+"");</SCRIPT><BR><BR></TD></TR></TABLE>
+</div>
+</div>
+<div id="VertAction"></div>
+<div id="inVertAction"></div>
+
+
+<BR><BR>
+
+</BODY>
+</HTML>

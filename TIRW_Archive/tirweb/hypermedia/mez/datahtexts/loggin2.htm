@@ -1,0 +1,224 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <meta name="GENERATOR" content="Mozilla/4.51 [en] (Win98; I) [Netscape]">
+   <meta name="Author" content="Mez">
+   <title>:::LOG][adapted from N IRC record][GIN:::</title>
+<style type="text/css">
+<!--
+.text {  font-family: "Verdana", "Arial", "Helvetica", "sans-serif"; font-size: 10pt; font-weight: bold}
+-->
+  
+
+
+  
+#divUpControl{position:absolute; width:250; left:10; top:10; z-index:1; text-align: right} 
+#divDownControl{position:absolute; width:250; left:10; top:260; z-index:1; text-align: right} 
+#divContainer{position:absolute; width:250; height:230; overflow:hidden; top:30; left:10; clip:rect(0,250,230,0); visibility:hidden} 
+#divContent{position:absolute; top:0; left:0} 
+
+</style>
+<script language="JavaScript">// begin absolutely positioned scrollable area object scripts 
+// Extension developed by David G. Miles 
+// Original Scrollable Area code developed by Thomas Brattli 
+function verifyCompatibleBrowser(){ 
+    this.ver=navigator.appVersion 
+    this.dom=document.getElementById?1:0 
+    this.ie5=(this.ver.indexOf("MSIE 5")>-1 && this.dom)?1:0; 
+    this.ie4=(document.all && !this.dom)?1:0; 
+    this.ns5=(this.dom && parseInt(this.ver) >= 5) ?1:0; 
+ 
+    this.ns4=(document.layers && !this.dom)?1:0; 
+    this.bw=(this.ie5 || this.ie4 || this.ns4 || this.ns5) 
+    return this 
+} 
+bw=new verifyCompatibleBrowser() 
+ 
+ 
+var speed=50 
+ 
+var loop, timer 
+ 
+function ConstructObject(obj,nest){ 
+    nest=(!nest) ? '':'document.'+nest+'.' 
+    this.el=bw.dom?document.getElementById(obj):bw.ie4?document.all[obj]:bw.ns4?eval(nest+'document.'+obj):0; 
+    this.css=bw.dom?document.getElementById(obj).style:bw.ie4?document.all[obj].style:bw.ns4?eval(nest+'document.'+obj):0; 
+    this.scrollHeight=bw.ns4?this.css.document.height:this.el.offsetHeight 
+    this.clipHeight=bw.ns4?this.css.clip.height:this.el.offsetHeight 
+    this.up=MoveAreaUp;this.down=MoveAreaDown; 
+    this.MoveArea=MoveArea; this.x; this.y; 
+    this.obj = obj + "Object" 
+    eval(this.obj + "=this") 
+    return this 
+} 
+function MoveArea(x,y){ 
+    this.x=x;this.y=y 
+    this.css.left=this.x 
+    this.css.top=this.y 
+} 
+ 
+function MoveAreaDown(move){ 
+	if(this.y>-this.scrollHeight+objContainer.clipHeight){ 
+    this.MoveArea(0,this.y-move) 
+    if(loop) setTimeout(this.obj+".down("+move+")",speed) 
+	} 
+} 
+function MoveAreaUp(move){ 
+	if(this.y<0){ 
+    this.MoveArea(0,this.y-move) 
+    if(loop) setTimeout(this.obj+".up("+move+")",speed) 
+	} 
+} 
+ 
+function PerformScroll(speed){ 
+	if(initialised){ 
+		loop=true; 
+		if(speed>0) objScroller.down(speed) 
+		else objScroller.up(speed) 
+	} 
+} 
+ 
+function CeaseScroll(){ 
+    loop=false 
+    if(timer) clearTimeout(timer) 
+} 
+var initialised; 
+function InitialiseScrollableArea(){ 
+    objContainer=new ConstructObject('divContainer') 
+    objScroller=new ConstructObject('divContent','divContainer') 
+    objScroller.MoveArea(0,0) 
+    objContainer.css.visibility='visible' 
+    initialised=true; 
+} 
+// end absolutely positioned scrollable area object scripts 
+
+</script>
+</head>
+<body text="#000000" bgcolor="#666666" link="#FFFFFF" vlink="#FFFFFF" alink="#FFFFFF" onLoad="InitialiseScrollableArea()">
+&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<p><span class="text"></span>
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<p><!-- begin absolutely positioned scrollable area object-->
+<div id="divUpControl"><font face="Courier New,Courier"><font color="#FFFFCC"><a href="javascript:;" onMouseOver="PerformScroll(-7)" onMouseOut="CeaseScroll()">up+][</a></font></font></div>
+
+<div id="divDownControl"><font face="Courier New,Courier"><font color="#FFFFCC"><a href="javascript:;" onMouseOver="PerformScroll(7)" onMouseOut="CeaseScroll()">][>on</a></font></font></div>
+
+<div id="divContainer">
+<div id="divContent">
+<h5>
+<span class="text"><font face="Arial Narrow"><font size=+0><font color="#FFFF00">::::</font><font color="#CCCCCC">:</font><font color="#FFFF99">LOGG</font><font color="#FFFFCC">IN
+</font><font color="#FFFFFF">ON2 NET</font><font color="#FFFFCC">.WU</font><font color="#FFFF99">RK</font><font color="#FFFF00">::::</font></font></font></span></h5>
+<img SRC="greybit1.JPG" height=57 width=85>
+<br>
+<font face="Arial Narrow"><font color="#CCCCCC">[the meld ov wurd &amp;
+m-mage, teXt &amp; </font><font color="#FFFF00">diz</font><font color="#CCCCCC">[zy].</font><font color="#FFFF00">course</font><font color="#CCCCCC">,
+the hypahjumping</font></font>
+<br><font face="Arial Narrow"><font color="#CCCCCC">B-tween </font><font color="#FFFF00">medi</font><font color="#CCCCCC">[amatic]</font><font color="#FFFF00">umz</font><font color="#CCCCCC">]</font></font>
+<br>&nbsp;
+<br>&nbsp;
+<p><font face="Arial Narrow"><font color="#CCCCCC">[[[</font><font color="#FFFF00">mus</font><font color="#CCCCCC">[lin]</font><font color="#FFFF00">e.ums</font><font color="#CCCCCC">......architect-tockonic
+archit.ravez, <sup>a</sup> place of new deceit N</font></font>
+<br><font face="Arial Narrow"><font color="#CCCCCC">old </font><font color="#FFFF00">mus</font><font color="#CCCCCC">[t]</font><font color="#FFFF00">ik</font><font color="#CCCCCC">
+[seez N [wanna]bees]...</font></font>
+<br>&nbsp;
+<br>&nbsp;
+<p><font face="Arial Narrow"><font color="#CCCCCC"><sup>i</sup> vizi.</font><font color="#FFFF00">ON</font><font color="#CCCCCC"><sup>a</sup>
+place...white wallz re:placed by fluiditee, <sup>a</sup> notion of the</font></font>
+<br><font face="Arial Narrow"><font color="#CCCCCC">compact wr.ought in
+pulse <sup>N</sup> nuance....</font></font>
+<p><img SRC="greybit2.JPG" height=57 width=85>
+<p><font face="Courier New,Courier"><font color="#CCCCCC">[my eyez hurt,
+my head
+</font><font color="#FFFF00">real</font><font color="#CCCCCC">[itee]</font><font color="#FFFF00">z</font><font color="#CCCCCC">
+az <sup>i</sup> </font><font color="#FFFF00">con</font><font color="#CCCCCC">[ned]</font><font color="#FFFF00">tem.plate</font><font color="#CCCCCC">
+[gold &amp; ionz,</font></font>
+<br><font face="Courier New,Courier"><font color="#CCCCCC">science B-cumz
+and B-gatz theze arch.hives [N bites and rashed out</font></font>
+<br><font face="Courier New,Courier"><font color="#CCCCCC">fleshtronics,
+architravic]...</font></font>
+<p><img SRC="greybit3.JPG" height=57 width=85>
+<p><font face="Arial Narrow"><font color="#CCCCCC"><sup>a</sup> bird, singin
+in the daze heat, cann.knot <sup>B</sup> cap.toured bi brick walls,</font></font>
+<p><font face="Arial Narrow"><font color="#FFFF00">ob</font><font color="#CCCCCC">[pro]</font><font color="#FFFF00">jeckt.ee.fied</font><font color="#CCCCCC"><sup>N
+</sup>made
+static, sew <sup>Y</sup> shood </font><font color="#FFFF00">The Net.Wurk</font><font color="#CCCCCC">[</font><font color="#FFFF00">ed</font><font color="#CCCCCC">]?]]]</font></font>
+<br>&nbsp;
+<p><img SRC="greybit4.JPG" height=57 width=85>
+<br>
+<font face="Courier New,Courier"><font color="#CCCCCC">[the ideer of
+space as free fall, free float, <sup>a</sup> nuanced absolute that flitz
+and fallz pre.cise.lee in2 [z]</font><font color="#FFFF00">p</font><font color="#CCCCCC">.[l].</font><font color="#FFFF00">ace</font><font color="#CCCCCC">
+when kneeded, &amp; [sir thomas] moore m-portantlee, want.ed....]</font></font>
+<p><img SRC="logginback.gif" height=57 width=85>
+<p><font face="Courier New,Courier"><font color="#FFFF00">[[[mez draws
+herself in2 a wurdskin for the disc</font><font color="#C0C0C0">[ourse]</font><font color="#FFFF00">ussion…</font></font>
+<br>
+<img SRC="logginback.gif" height=57 width=85>
+<br>
+<sup><font face="Arial Narrow"><font color="#FFFFCC">/me[z]</font></font></sup><font face="Courier New,Courier"><font color="#CCCCCC">revelz
+in her skin and textual touch…</font></font>
+<p><sup><font face="Arial Narrow"><font color="#FFFFCC">/me[z]</font></font></sup><font face="Courier New,Courier"><font color="#CCCCCC">reaches
+a staticwurd outwards, spiraling…</font></font>
+<p><sup><font face="Arial Narrow"><font color="#FFFFCC">/me[z]</font></font></sup><font face="Courier New,Courier"><font color="#CCCCCC">watches
+her wurd releazed, bounch forth from mouth to lover'z mouth…</font></font>
+<br>&nbsp;
+<p><sup><font face="Arial Narrow"><font color="#FFFFCC">/me[z] </font></font></sup><font face="Courier New,Courier"><font color="#CCCCCC">watches
+the lectrolight play, sur.face [N body] tensions, cave.ities</font></font>
+<p><sup><font face="Arial Narrow"><font color="#FFFFCC">/me[z]</font></font></sup><font face="Courier New,Courier"><font color="#CCCCCC">spivaks,
+rolls, twists and genderloopz..n loopz..and loveloopz...</font></font>
+<p><sup><font face="Arial Narrow"><font color="#FFFFCC">/me[z]</font></font></sup><font color="#CCCCCC"><font face="Courier New,Courier">feelz
+her wurdskin shimmah, gossmer textthreads spinning, spivaking in2 dust..</font><font face="Arial Narrow">.</font></font>
+<p><sup><font face="Arial Narrow"><font color="#FFFFCC">/me[z]</font></font></sup><font face="Courier New,Courier"><font color="#CCCCCC">teztflippes
+and frizzonflies…</font></font>
+<p><sup><font face="Arial Narrow"><font color="#FFFFCC">/me[z]</font></font></sup><font face="Courier New,Courier"><font color="#CCCCCC">kneelz
+b4 the Fleshtronic and hands them a textbannah, re.plete with golden wurds
+of mezangellednezz and new blank wurd spacez....</font></font>
+<p><sup><font face="Arial Narrow"><font color="#FFFFCC">/me[</font><font color="#FFFF99">z]</font></font></sup><font face="Courier New,Courier"><font color="#CCCCCC">getz
+n m-mage of her.s[h]elf fragmented, nodic in thread based seg.ments, hair
+N eyes and nose mixed in2 a cybercubist ren.durr.ing...</font></font>
+<p><sup><font face="Arial Narrow"><font color="#FFFFCC">/me</font><font color="#FFFF00">[z]</font></font></sup><font face="Courier New,Courier"><font color="#CCCCCC">
+wants the Fleshtronic 2 play azz well as listen, takes her by her textsenze
+and tickelles her wurdfiltahz...</font></font>
+<p><sup><font face="Arial Narrow"><font color="#FFFFCC">/me</font><font color="#FFFF99">[z</font><font color="#FFFFCC">]</font></font></sup><font face="Courier New,Courier"><font color="#CCCCCC">hugs
+her Fleshtronic and produces stringz of silver polysemics, running them
+thru her wordfingers and passing them ah!long...</font></font>
+<p><sup><font face="Arial Narrow"><font color="#FFFFCC">/me</font><font color="#FFCC00">[z]</font></font></sup><font face="Courier New,Courier"><font color="#CCCCCC">handz
+the Fleshtronic a neuromancer gunn and shotz them full of gibsonite bitz</font></font>
+<p><sup><font face="Arial Narrow"><font color="#FFFFCC">/me</font><font color="#FFFF00">[z]</font></font></sup><font face="Courier New,Courier"><font color="#CCCCCC">givez
+your Fleshtronic a vezzel, firez it up within her multiVerse then whistlezz
+2 it to go 2 your packettepatch...</font></font>
+<p><sup><font face="Arial Narrow"><font color="#FFFFCC">/me</font><font color="#FFFF99">[z</font><font color="#FFFF00">]</font></font></sup><font face="Courier New,Courier"><font color="#CCCCCC">grabs
+your Flestronic'z klappz and holds em tight, treasurin...</font></font>
+<p><sup><font face="Arial Narrow"><font color="#FFFFCC">/me</font><font color="#FFFF99">[z</font><font color="#FFFFCC">]</font></font></sup><font face="Courier New,Courier"><font color="#CCCCCC">
+brethez in her Fleshtronic's klappz 2, melding and shaping and moldin...</font></font>
+<p><sup><font face="Arial Narrow"><font color="#FFFFCC">/me</font><font color="#FFFF00">[z]</font></font></sup><font face="Courier New,Courier"><font color="#CCCCCC">starts
+wrapping it up, grabbin the words, the snippettes azz they tri 2 esc-ape
+into the tronictextualnezz....</font></font>
+<p><sup><font face="Arial Narrow"><font color="#FFFFCC">/me</font><font color="#FFCC00">[z</font><font color="#FFFFCC">]</font></font></sup><font face="Courier New,Courier"><font color="#CCCCCC">remindz
+all Fleshtronics ov their wurdsmithian n-tention and blows kiltakizzes</font></font>
+<p><sup><font face="Arial Narrow"><font color="#FFFFCC">/me</font><font color="#FFFF00">[z]</font></font></sup><font face="Courier New,Courier"><font color="#CCCCCC">floats
+in2 a smooth shinee ball of wurdz, spinning slowlee then frant.tick-tocklee,
+then bam! Gone.]]]</font></font>
+<p><img SRC="logginback.gif" height=57 width=85>
+<p><b><font face="Arial Narrow"><font color="#CCCCCC">::::::::::::::::::::::::::</font></font></b>
+<br><b><font face="Arial Narrow"><font color="#CCCCCC">:::::::::::::::::::::::::</font></font></b>
+<br><b><font face="Arial Narrow"><font color="#CCCCCC">:::::</font></font></b>
+<br>
+<b><font face="Arial Narrow"><font color="#FFFF00">::::</font><a href="loggin3.htm"><font color="#FFFF99">LOG</font><sup><font color="#FFFF00">2</font></sup></a><font color="#FFFF99">:</font><font color="#CCCCCC">:</font><font color="#FFFF00">:::</font></font></b>
+<br>
+&nbsp;
+<br>&nbsp;</div>
+</div>
+<!-- end absolutely positioned scrollable area object -->
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+</body>
+</html>

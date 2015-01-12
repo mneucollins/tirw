@@ -1,0 +1,174 @@
+<HTML>
+<Title>The Birth of Detachment</Title>
+<body bgcolor="#FFFFFF" text=black font="Arial, Verdana">
+<!-- This script came from the public archives of JavaScript Planet at http://www.js-planet.com --> 
+<!-- For more scripts, tutorials, links, discussion forums, help, or anything else JavaScript, --> 
+<!-- Please visit JavaScript Planet at http://www.js-planet.com. Please keep this header intact. --> 
+
+<style type="text/css">
+body
+        {
+        background-color:#FFFFFF; 
+        font-family: Arial, Verdana; 
+        font-size:15pt; color:#CE5CFF
+        }
+A       
+        {
+        color:#7D326D; 
+        text-decoration:none
+        }
+A:hover
+        {
+        color:blue
+        }
+
+A:visited:
+        {
+        color:#808080
+        }
+#startingMsg 
+        {
+        position:absolute;
+        background: #FFFFFF;
+        HEIGHT:10;
+        TOP:30;
+        text-align: middle;
+        font-family:Arial, Verdana; 
+        color:#000000; 
+        left:370
+        }
+</STYLE>
+
+<SCRIPT LANGUAGE="JAVASCRIPT">
+
+
+messages=new Array(4)
+
+messages[0]="Painted in 1891"
+
+messages[1]="Painted in 1512-14"
+
+messages[2]="Surely not Raphael?"
+
+messages[3]="Ability to detach from the concept of the mother."
+
+messages[4]=""
+
+
+
+
+var browser;
+
+//if explorer (4.x)
+
+if (document.all) {
+
+                layerRef='document.all.'
+
+                styleRef='.style.'
+
+                changeMessages=".innerHTML=messages[num]"
+
+                closeit=""
+
+                browser=true
+
+}
+
+//else if netscape (4.x)
+
+else if (document.layers) {
+
+                layerRef='document.layers.'
+
+                styleRef='.'
+
+                changeMessages='.document.write(" <font face=VERDANA color=#CCCCCC size=5 style=text-align:middle;background:#FFFFFF;><BR><BR><BR><BR><B>-- "+messages[num]+"</B></font><BR>")'
+
+                closeit=".document.close()"
+
+                browser=true
+
+        } 
+
+
+
+function mover(num){
+
+        if(browser){
+
+                eval(layerRef+'startingMsg'+changeMessages)
+
+                eval(layerRef+'startingMsg'+closeit);
+
+        }
+
+}
+
+function mout(num){
+
+        if(browser){
+
+                eval(layerRef+'startingMsg'+changeMessages);
+
+                eval(layerRef+'startingMsg'+closeit);
+
+        }
+
+}
+
+
+</SCRIPT>
+<font face="Arial, Verdana" size=6 color="#DEDC50">
+<p align=right>
+
+The Birth of Detachment<BR>
+</font>
+<p align=left>
+<BR><BR><BR><BR>
+<a href="marie.html" onmouseover="mover(0)" onMouseout="mout(4,0)">We Hail Thee Mary, by Paul Gauguin</a>
+<P>
+
+<a href="madonna.html" onmouseover="mover(1)" onmouseout="mout(4,1)">The Sistine Madonna, by Raphael</a>
+<P>
+
+<a href="wild4.html" onmouseover="mover(2)" onmouseout="mout(4,2)">Who was the wildman?</a>
+<P>
+
+<a href="abducted4.html" onmouseover="mover(3)" onmouseout="mout(4,3)">What was abducted?</a>
+<P>
+
+
+
+
+<div id="startingMsg">
+
+<BR><BR>
+"In this striving for fullness, Cezanne is an heir <BR>
+of the Renaissance and Baroque masters.
+<BR><BR>
+
+
+<img src="madonnaanim.gif">  
+
+<BR>
+<BR>
+I do not doubt that the personal content <BR>
+of this classic art will in time become<BR>
+ as evident as the aesthetic <A HREF="flowers.html">result."</A><BR>
+</div>
+
+<div>
+<font face="Arial, Verdana" size=6 color="#DEDC50">
+
+<B>______________________________________________________</B>
+
+<BR><BR>
+
+<A HREF="heroism.html"><img border=0 src="recherche.jpg"></A> <BR>
+
+<p align=left><A HREF="flowers.html"><img border=0 src="arrow.jpg"> </A>
+</FONT></div>
+
+</Body>
+</Html>

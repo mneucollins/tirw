@@ -1,0 +1,867 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<HTML>
+<HEAD>
+	<TITLE>(s)T(ex)T(s) and Intertimacy</TITLE>
+		<script language="JavaScript">
+<!--
+function loaded() {
+ if (parent.location.href.indexOf("FRAME.html") != -1)
+  parent.update(); // only called when inside preloader frameset
+}
+// -->
+</script>	
+<style>
+body{background-color:#000000;font-family:courier,arial,helvetica; font-size:10pt}
+A{color:#cceecc; text-decoration:none;}
+A:hover{color:#ffffff}
+A:visited:{color:#c0c0c0;}
+TD{font-family:arial,helvetica; font-size:12px;color:#eeeeee; font-weight:bold;}
+DIV{font-family:verdana, arial,helvetica; font-size:14px;color:#006333; font-weight:bold;}
+FONT{font-family:verdana,arial,helvetica; font-size:14px;color:#336666}
+
+I{font-family:times, times new roman; font-size:20px;color:#336666}
+.LRGreen{font-family:verdana,arial,helvetica; font-size:160px;color:#00cc00}
+.lightT{font-family:verdana,arial,helvetica; font-size:10px;color:#c0c0c0}
+.megaT{font-family:verdana,arial,helvetica; font-size:40px;color:#336666}
+.megaTpnk{font-family:verdana,arial,helvetica; font-size:40px;color:#FEBA8D}
+.megaTR{font-family:verdana,arial,helvetica; font-size:60px;color:#660000}
+.obvioT{font-family:arial,helvetica; font-size:20px;color:#cccccc;}
+.accent-miniT{font-family:verdana,arial,helvetica; font-size:11px;color:#336666;}
+.accentT{font-family:verdana,arial,helvetica; font-size:14px;color:#ccffcc;}
+.absentT{font-family:verdana,arial,helvetica; font-size:30px;color:#333333; font-weight:bold;}
+.absent10{font-family:verdana,arial,helvetica; font-size:10px;color:#444444;}
+#ttl0 {position:absolute; top:440; left:0; width:800}
+.parenAS{
+	font-family:Verdana, Arial, Helvetica; font-size:11px;color:#eeeeee; font-weight:bold;
+}
+.parenAFT{
+	font-family:verdana,arial,helvetica; font-size:18px;color:#dddddd; font-weight:bold;
+}
+</style>
+<script language="JavaScript">
+function hide(id,nest){
+if(document.layers){
+if(nest) document.layers[nest].document.layers[id].visibility="hidden"
+else document.layers[id].visibility="hidden"
+}
+else if(document.all) document.all[id].style.visibility="hidden"
+}
+function show(id,nest){
+if(document.layers){
+if(nest) document.layers[nest].document.layers[id].visibility="visible"
+else document.layers[id].visibility="visible"
+}
+else if(document.all) document.all[id].style.visibility="visible"
+}
+
+
+function funnels1a()
+	{
+	var timer=setTimeout("show('APara-funnel1'); show('APara-funnel2'); show('APara-funnel3'); show('APara-funnel4'); hide('BPara-funnel1'); hide('BPara-funnel2'); hide('BPara-funnel3'); hide('BPara-funnel4');hide('APara2-funnel1'); hide('APara2-funnel2'); hide('APara2-funnel3'); hide('APara2-funnel4'); hide('BPara2-funnel1'); hide('BPara2-funnel2'); hide('BPara2-funnel3'); hide('BPara2-funnel4');", 0)
+	}	
+
+
+
+	
+function funnels1()
+	{
+	var timer=setTimeout("show('APara-funnel1'); show('APara-funnel2'); show('APara-funnel3'); show('APara-funnel4'); show('BPara-funnel1'); show('BPara-funnel2'); show('BPara-funnel3'); show('BPara-funnel4');hide('APara2-funnel1'); hide('APara2-funnel2'); hide('APara2-funnel3'); hide('APara2-funnel4'); hide('BPara2-funnel1'); hide('BPara2-funnel2'); hide('BPara2-funnel3'); hide('BPara2-funnel4');funnels2();", 500)
+	}	
+
+function funnels2()
+	{
+	var timer=setTimeout("show('APara2-funnel1'); show('APara2-funnel2'); show('APara2-funnel3'); show('APara2-funnel4'); show('BPara2-funnel1'); show('BPara2-funnel2'); show('BPara2-funnel3'); show('BPara2-funnel4'); hide('APara-funnel1'); hide('APara-funnel2'); hide('APara-funnel3'); hide('APara-funnel4'); hide('BPara-funnel1'); hide('BPara-funnel2'); hide('BPara-funnel3'); hide('BPara-funnel4'); funnels1();", 500)
+	}	
+
+function setLocal()
+	{
+	var timer=setTimeout("show('local0');setLocalb()", 500)
+	}	
+function setLocalb()
+	{
+	var timer=setTimeout("show('self-local');setLocalc()", 500)
+	}	
+function setLocalc()
+	{
+	var timer=setTimeout("show('cellf-local1');setLocald()", 500)
+	}		
+function setLocald()
+	{
+	var timer=setTimeout("show('cellf-local2');", 500)
+	}
+function setRemote()
+	{
+	var timer=setTimeout("show('remote0');setRemoteb()", 500)
+	}	
+function setRemoteb()
+	{
+	var timer=setTimeout("show('other');setRemotec()", 500)
+	}	
+function setRemotec()
+	{
+	var timer=setTimeout("show('cellf-remote');setRemoted()", 500)
+	}		
+function setRemoted()
+	{
+	var timer=setTimeout("show('cellf-remote2');", 500)
+	}	
+
+</script>
+	
+	
+	
+<script type="text/javascript" language="javascript">	
+	
+	
+        /*
+         * Copyright(c) 1998-99. Teg Workz. All Rights Reserved.
+         
+         */
+
+        var layers = document.layers, style = document.all, both = layers || style, idme=908601;
+        if (layers) { layerRef = 'document.layers'; styleRef = ''; } if (style) { layerRef = 'document.all'; styleRef = '.style'; }
+
+        function writeOnText(obj, str) {
+          if (layers) with (document[obj]) { document.open();  document.write(str); document.close(); }
+          if (style) eval(obj+'.innerHTML= str');
+        }
+
+        var dispStr = new Array(
+"<center>[local.{[*...(*] | )}(...^...){( | [*)...*]}.remote]</center>"
+        );
+
+        var overMe=0;
+
+        function txtTyper(str, idx, idObj, spObj, clr1, clr2, delay, plysnd) {
+          var tmp0 = tmp1 = '', skip = 0;
+            if (both &&
+            idx <= str.length) {
+                if (str.charAt(idx) == '<') { while (str.charAt(idx) != '>') idx++; idx++; }
+                if (str.charAt(idx) == '&' && str.charAt(idx+1) != ' ') { while (str.charAt(idx) != ';') idx++; idx++; }
+                tmp0 = str.slice(0,idx);
+                tmp1 = str.charAt(idx++);
+
+                if (overMe==0 && plysnd==1) {
+                  if (navigator.plugins[0]) {
+                    if (navigator.plugins["LiveAudio"][0].type=="audio/basic" && navigator.javaEnabled()) {
+                        document.embeds[0].stop();
+                        setTimeout("document.embeds[0].play(false)",100); }
+                  } else if (document.all) {
+                        ding.Stop();
+                        setTimeout("ding.Run()",100);
+                  }
+                  overMe=1;
+                } else overMe=0;
+
+                writeOnText(idObj, "<span class=parenAFT><font class='parenAFT'>"+tmp0+"</font><font class='parenAS'>"+tmp1+"</font></span>");
+                setTimeout("txtTyper('"+str+"', "+idx+", '"+idObj+"', '"+spObj+"', '"+clr1+"', '"+clr2+"', "+delay+" ,"+plysnd+")",delay);
+          }
+        }
+
+
+        function init() {
+                txtTyper(dispStr[0], 0, 'ttl0', 'ttl1', '#339933', '#99FF33', 50, 0);
+        }
+
+
+	
+</script>
+	
+	
+	
+	
+	
+</HEAD>
+
+<BODY BGCOLOR="#000000" BACKGROUND="greenGrid2.gif" >
+
+
+<!-- X-PARA |modulation -->
+
+
+<DIV ID="BLACKBOARD2" STYLE="position:absolute; top:0; left:0; width:900; height:500;visibility:hidden">
+	<TABLE WIDTH="900" BORDER="0" CELLSPACING="0" CELLPADDING="0">
+		<TR>
+	
+<TD WIDTH="900" HEIGHT="550" ALIGN="LEFT" VALIGN="TOP" BGCOLOR="Black" CLASS="megaT"><IMG SRC="nothing.gif" WIDTH=899 HEIGHT=1 ALT="" BORDER="0">
+<BR>
+
+<CENTER>____MOUTH____<BR>in.
+<BR>&nbsp;<BR><BR>&nbsp;<BR><BR>
+____sp[out]____<BR>ex.</CENTER>
+
+</TD>
+	</TR>
+	</TABLE>
+</DIV>
+
+
+
+
+
+
+<DIV ID="midLine" STYLE="position:absolute; top:138; left:0; width:900; height:500;visibility:hidden">
+	<TABLE WIDTH="900" BORDER="0" CELLSPACING="0" CELLPADDING="0">
+		<TR>
+	
+<TD WIDTH="900" HEIGHT="275" CLASS="LRG"><IMG SRC="box/LacLinesClr.gif" WIDTH=899 HEIGHT=275 ALT="" BORDER="0"></TD>
+	</TR>
+	</TABLE>
+</DIV>
+
+
+
+
+
+<DIV ID="interb" STYLE="position:absolute; top:40; left:0; width:900;visibility:hidden">
+<CENTER>
+
+<TABLE WIDTH="800" BORDER="0" CELLSPACING="0" CELLPADDING="4">
+<TR>
+    <TD WIDTH="800" HEIGHT="550" ALIGN="CENTER" VALIGN="MIDDLE" CLASS="accentT">
+
+From here, the analog and slippery digits of the real are poured into the mouth of the funnel. Though we enter the funnel, we have not yet entered the other, the distant and remote. Flowing further, the variable body, the abstracted and released continuum of the body is com|pressed, reduced and encoded, codified -- made elemental... Now we are small enough, we hope -- it is the hope of communification that we minimize the space of flesh -- to continue on/in/out/off and away. The exit is an entrance to an open space as wide as the real, though narrow, flat at either extreme. We penetrate the impenetrable and defy time, perhaps even matter. I and nanots, nano-nauts, knots... The reverse of delta// 
+
+	</TD>
+</TR>
+</TABLE></CENTER>
+</DIV>
+
+
+
+
+
+
+<DIV ID="tlocalb" STYLE="position:absolute; top:20; left:225; width:225;visibility:hidden">
+
+
+<TABLE WIDTH="225" BORDER="0" CELLSPACING="0" CELLPADDING="4">
+<TR>
+    <TD WIDTH="225" HEIGHT="550" ALIGN="LEFT" VALIGN="TOP" CLASS="lightT">
+
+With the permission of 0, 0 becomes 1 -- more than 1, the trans|missive agent of I. The Cell.f, a secondary layer of translucent pigment colorizes the original, inVents the self as immaterial and imaginary. As the trans|missive agent of I, the original Cell.f de.parts from the body to produces feeling there, at the body. This first iteration of Cell.f remains true to the original; yet, in the name of exe.tension, it repeats, doubles the original inTent, making a dual appearance in its own right -- at the points i(g)nitiation and the extinguishment. Cell.f 1.0 is involved in the local mediation of 'court' matter, participating face-to-face with the original. 
+
+
+	</TD>
+</TR>
+</TABLE>
+</DIV>
+
+
+
+<DIV ID="slocalb" STYLE="position:absolute; top:20; left:0; width:225;visibility:hidden">
+
+<TABLE WIDTH="225" BORDER="0" CELLSPACING="0" CELLPADDING="4">
+<TR>
+    <TD WIDTH="225" ALIGN="LEFT" VALIGN="TOP" class=lightT>
+The self, already outside of the self, a first lacquer of identity -- a screen or shell, a construct of how I imagine the body from the way I feel it -- locates (s)T(ex)T(s) a.part from it.self. As such, the self is already text -- showing ignitiative by appointing a(field) (in)Lieu.(of orgininal in)ten(t).ant  to act on its behalf as the bracketed constructor of the original bi.narrative program.
+	</TD>
+</TR>
+</TABLE>
+</DIV>
+<DIV ID="tremoteb" STYLE="position:absolute; top:20; left:450; width:225;visibility:hidden">
+
+
+<TABLE WIDTH="225" BORDER="0" CELLSPACING="0" CELLPADDING="4">
+<TR>
+    <TD WIDTH="225" HEIGHT="550" ALIGN="LEFT" VALIGN="TOP" class=lightT>
+The syntax of exe.change is based in the connection and collapse of announced and reserved constructs, and the conduction of [sub|ob]ject matter through these hybrids and mergers. Between the local and the remote, the success and failure of communification in the middle, the mess in the middle is prone to various mechanoid intensities borne from the simultaneous passage of others through the general conduit. There is a dual evisceration and flood to remote poles, toward the embrace of doubled other. 
+	</TD>
+</TR>
+</TABLE>
+</DIV>
+<DIV ID="sremoteb" STYLE="position:absolute; top:20; left:675; width:225;visibility:hidden">
+
+
+<TABLE WIDTH="225" BORDER="0" CELLSPACING="0" CELLPADDING="4">
+<TR>
+    <TD WIDTH="225" HEIGHT="550" ALIGN="LEFT" VALIGN="TOP" class=lightT>
+exe.change demands that there be an other located elsewhere, that the local.I possess a remote associate. A Double.  As well, the medium, the delivery machine requires its own  Double, a receiving mechanism for its own transmissions -- which are in fact reflections and echoes of the operator of the machine and its trans|missive agents, the fragments of any/evey originating self.  The double-funnel machine is not constructed without this equivocation, the object of exe.change.  There is never a concrete location because space is spaceless between the local and the remote, and it is an illusion or mis-take to measure re:motion from the body of self, the I itself because in the most remote regions there is locality, an other that is the self the other of self.  [customs and protocol]
+	</TD>
+</TR>
+</TABLE>
+</DIV>
+
+
+
+
+
+<DIV ID="BLACKBOARD-f" STYLE="position:absolute; top:0; left:0; width:900; height:500;visibility:hidden">
+	<TABLE WIDTH="900" BORDER="0" CELLSPACING="0" CELLPADDING="0">
+		<TR>
+	
+<TD WIDTH="900" HEIGHT="550" ALIGN="LEFT" VALIGN="TOP" BGCOLOR="Black" CLASS="megaT"><IMG SRC="nothing.gif" WIDTH=899 HEIGHT=1 ALT="" BORDER="0">
+
+
+</TD>
+	</TR>
+	</TABLE>
+</DIV>
+<DIV ID="tlocal" STYLE="position:absolute; top:0; left:225; width:225;visibility:hidden">
+
+<TABLE WIDTH="225" BORDER="0" CELLSPACING="0" CELLPADDING="4" BGCOLOR="Black">
+<TR>
+    <TD WIDTH="225" HEIGHT="550">
+
+
+<CENTER>TERMINAL:LOCAL</CENTER>
+	</TD>
+</TR>
+</TABLE>
+</DIV>
+
+<DIV ID="slocal" STYLE="position:absolute; top:0; left:0; width:225;visibility:hidden">
+
+<TABLE WIDTH="225" BORDER="0" CELLSPACING="0" CELLPADDING="4" BGCOLOR="Black">
+<TR>
+    <TD WIDTH="225" HEIGHT="550">
+
+
+<CENTER>BODY:SELF</CENTER>
+	</TD>
+</TR>
+</TABLE>
+</DIV>
+
+
+<DIV ID="tremote" STYLE="position:absolute; top:0; left:450; width:225;visibility:hidden">
+
+<TABLE WIDTH="225" BORDER="0" CELLSPACING="0" CELLPADDING="4" BGCOLOR="Black">
+<TR>
+    <TD WIDTH="225" HEIGHT="550">
+
+
+<CENTER>TERMINAL:ELSEWHERE</CENTER>
+	</TD>
+</TR>
+</TABLE>
+</DIV>
+
+
+
+
+<DIV ID="sremote" STYLE="position:absolute; top:0; left:675; width:225;visibility:hidden">
+
+<TABLE WIDTH="225" BORDER="0" CELLSPACING="0" CELLPADDING="4" BGCOLOR="Black">
+<TR>
+    <TD WIDTH="225" HEIGHT="550">
+
+
+<CENTER>BODY:REMOTE</CENTER>
+	</TD>
+</TR>
+</TABLE>
+</DIV>
+
+
+<DIV ID="funnel1" STYLE="position:absolute; top:100; left:340; width:230; visibility:hidden">
+<TABLE WIDTH="400" BORDER="0" CELLSPACING="0" CELLPADDING="0">
+<TR>
+<TD>
+<IMG SRC="box/funnelDN.gif" WIDTH=229 HEIGHT=150 ALT="" BORDER="0">
+</TD>
+</TR>
+</TABLE>
+</DIV>
+
+<DIV ID="funnel2" STYLE="position:absolute; top:302; left:340; width:230; visibility:hidden">
+<TABLE WIDTH="400" BORDER="0" CELLSPACING="0" CELLPADDING="0">
+<TR>
+<TD>
+<IMG SRC="box/funnelUP.gif" WIDTH=229 HEIGHT=150 ALT="" BORDER="0">
+</TD>
+</TR>
+</TABLE>
+</DIV>
+
+<DIV ID="funnel3" STYLE="position:absolute; top:162; left:218; width:230; visibility:hidden">
+<TABLE WIDTH="400" BORDER="0" CELLSPACING="0" CELLPADDING="0">
+<TR>
+<TD>
+<IMG SRC="box/funnelRT.gif" WIDTH=150 HEIGHT=229 ALT="" BORDER=0>
+</TD>
+</TR>
+</TABLE>
+</DIV>
+
+<DIV ID="funnel4" STYLE="position:absolute; top:162; left:540; width:230; visibility:hidden">
+<TABLE WIDTH="400" BORDER="0" CELLSPACING="0" CELLPADDING="0">
+<TR>
+<TD>
+<IMG SRC="box/funnelLT.gif" WIDTH=150 HEIGHT=229 ALT="" BORDER=0>
+</TD>
+</TR>
+</TABLE>
+</DIV>
+
+
+
+
+
+
+
+
+
+
+
+<DIV ID="funnel1b" STYLE="position:absolute; top:140; left:340; width:230; visibility:hidden">
+<TABLE WIDTH="400" BORDER="0" CELLSPACING="0" CELLPADDING="0">
+<TR>
+<TD>
+<IMG SRC="box/funnelDN.gif" WIDTH=229 HEIGHT=150 ALT="" BORDER="0">
+</TD>
+</TR>
+</TABLE>
+</DIV>
+
+<DIV ID="funnel2b" STYLE="position:absolute; top:262; left:340; width:230; visibility:hidden">
+<TABLE WIDTH="400" BORDER="0" CELLSPACING="0" CELLPADDING="0">
+<TR>
+<TD>
+<IMG SRC="box/funnelUP.gif" WIDTH=229 HEIGHT=150 ALT="" BORDER="0">
+</TD>
+</TR>
+</TABLE>
+</DIV>
+
+<DIV ID="funnel3b" STYLE="position:absolute; top:162; left:318; width:230; visibility:hidden">
+<TABLE WIDTH="400" BORDER="0" CELLSPACING="0" CELLPADDING="0">
+<TR>
+<TD>
+<IMG SRC="box/funnelRT.gif" WIDTH=150 HEIGHT=229 ALT="" BORDER=0>
+</TD>
+</TR>
+</TABLE>
+</DIV>
+
+<DIV ID="funnel4b" STYLE="position:absolute; top:162; left:440; width:230; visibility:hidden">
+<TABLE WIDTH="400" BORDER="0" CELLSPACING="0" CELLPADDING="0">
+<TR>
+<TD>
+<IMG SRC="box/funnelLT.gif" WIDTH=150 HEIGHT=229 ALT="" BORDER=0>
+</TD>
+</TR>
+</TABLE>
+</DIV>
+
+
+
+
+
+<DIV ID="exit" STYLE="position:absolute; top:0; left:0; width:900; height:550;visibility:hidden">
+	<TABLE WIDTH="900" BORDER="0" CELLSPACING="0" CELLPADDING="0">
+		<TR>
+	<TD WIDTH="900" HEIGHT="550" ALIGN="CENTER" VALIGN="MIDDLE" BGCOLOR="Black" CLASS="LRGreen">
+
+<CENTER>EXIT</CENTER>
+
+
+
+</TD>
+	</TR>
+	</TABLE>
+</DIV>
+
+
+
+<!-- FUNNELSET: 00 -->
+<DIV ID="Para-funnelX" STYLE="position:absolute; top:162; left:308; width:230; visibility:hidden">
+<TABLE WIDTH="400" BORDER="0" CELLSPACING="0" CELLPADDING="0">
+<TR>
+<TD>
+<IMG SRC="box/funnelRT.gif" WIDTH=150 HEIGHT=229 ALT="" BORDER=0>
+</TD>
+</TR>
+</TABLE>
+</DIV>
+
+<DIV ID="Para-funnelY" STYLE="position:absolute; top:162; left:452; width:230; visibility:hidden">
+<TABLE WIDTH="400" BORDER="0" CELLSPACING="0" CELLPADDING="0">
+<TR>
+<TD>
+<IMG SRC="box/funnelLT.gif" WIDTH=150 HEIGHT=229 ALT="" BORDER=0>
+</TD>
+</TR>
+</TABLE>
+</DIV>
+
+
+
+
+<!-- FUNNELSET: A -->
+<DIV ID="APara-funnel1" STYLE="position:absolute; top:140; left:340; width:230; visibility:hidden">
+<TABLE WIDTH="400" BORDER="0" CELLSPACING="0" CELLPADDING="0">
+<TR>
+<TD>
+<IMG SRC="box/funnelDN.gif" WIDTH=229 HEIGHT=150 ALT="" BORDER="0">
+</TD>
+</TR>
+</TABLE>
+</DIV>
+
+<DIV ID="APara-funnel2" STYLE="position:absolute; top:262; left:340; width:230; visibility:hidden">
+<TABLE WIDTH="400" BORDER="0" CELLSPACING="0" CELLPADDING="0">
+<TR>
+<TD>
+<IMG SRC="box/funnelUP.gif" WIDTH=229 HEIGHT=150 ALT="" BORDER="0">
+</TD>
+</TR>
+</TABLE>
+</DIV>
+
+<DIV ID="APara-funnel3" STYLE="position:absolute; top:162; left:318; width:230; visibility:hidden">
+<TABLE WIDTH="400" BORDER="0" CELLSPACING="0" CELLPADDING="0">
+<TR>
+<TD>
+<IMG SRC="box/funnelRT.gif" WIDTH=150 HEIGHT=229 ALT="" BORDER=0>
+</TD>
+</TR>
+</TABLE>
+</DIV>
+
+<DIV ID="APara-funnel4" STYLE="position:absolute; top:162; left:440; width:230; visibility:hidden">
+<TABLE WIDTH="400" BORDER="0" CELLSPACING="0" CELLPADDING="0">
+<TR>
+<TD>
+<IMG SRC="box/funnelLT.gif" WIDTH=150 HEIGHT=229 ALT="" BORDER=0>
+</TD>
+</TR>
+</TABLE>
+</DIV>
+
+
+<DIV ID="BPara-funnel1" STYLE="position:absolute; top:190; left:340; width:230; visibility:hidden">
+<TABLE WIDTH="400" BORDER="0" CELLSPACING="0" CELLPADDING="0">
+<TR>
+<TD>
+<IMG SRC="box/funnelDN.gif" WIDTH=229 HEIGHT=150 ALT="" BORDER="0">
+</TD>
+</TR>
+</TABLE>
+</DIV>
+
+<DIV ID="BPara-funnel2" STYLE="position:absolute; top:212; left:340; width:230; visibility:hidden">
+<TABLE WIDTH="400" BORDER="0" CELLSPACING="0" CELLPADDING="0">
+<TR>
+<TD>
+<IMG SRC="box/funnelUP.gif" WIDTH=229 HEIGHT=150 ALT="" BORDER="0">
+</TD>
+</TR>
+</TABLE>
+</DIV>
+
+<DIV ID="BPara-funnel3" STYLE="position:absolute; top:162; left:368; width:230; visibility:hidden">
+<TABLE WIDTH="400" BORDER="0" CELLSPACING="0" CELLPADDING="0">
+<TR>
+<TD>
+<IMG SRC="box/funnelRT.gif" WIDTH=150 HEIGHT=229 ALT="" BORDER=0>
+</TD>
+</TR>
+</TABLE>
+</DIV>
+
+<DIV ID="BPara-funnel4" STYLE="position:absolute; top:162; left:390; width:230; visibility:hidden">
+<TABLE WIDTH="400" BORDER="0" CELLSPACING="0" CELLPADDING="0">
+<TR>
+<TD>
+<IMG SRC="box/funnelLT.gif" WIDTH=150 HEIGHT=229 ALT="" BORDER=0>
+</TD>
+</TR>
+</TABLE>
+</DIV>
+
+
+<!-- FUNNELSET: B -->
+
+
+
+<DIV ID="APara2-funnel1" STYLE="position:absolute; top:140; left:340; width:230; visibility:hidden">
+<TABLE WIDTH="230" BORDER="0" CELLSPACING="0" CELLPADDING="0">
+<TR>
+<TD>
+<IMG SRC="box/funnelUP.gif" WIDTH=229 HEIGHT=150 ALT="" BORDER="0">
+</TD>
+</TR>
+</TABLE>
+</DIV>
+
+<DIV ID="APara2-funnel2" STYLE="position:absolute; top:162; left:340; width:230; visibility:hidden">
+<TABLE WIDTH="230" BORDER="0" CELLSPACING="0" CELLPADDING="0">
+<TR>
+<TD>
+<IMG SRC="box/funnelDN.gif" WIDTH=229 HEIGHT=150 ALT="" BORDER="0">
+</TD>
+</TR>
+</TABLE>
+</DIV>
+
+<DIV ID="APara2-funnel3" STYLE="position:absolute; top:162; left:318; width:230; visibility:hidden">
+<TABLE WIDTH="230" BORDER="0" CELLSPACING="0" CELLPADDING="0">
+<TR>
+<TD>
+<IMG SRC="box/funnelLT.gif" WIDTH=150 HEIGHT=229 ALT="" BORDER=0>
+</TD>
+</TR>
+</TABLE>
+</DIV>
+
+<DIV ID="APara2-funnel4" STYLE="position:absolute; top:162; left:440; width:230; visibility:hidden">
+<TABLE WIDTH="230" BORDER="0" CELLSPACING="0" CELLPADDING="0">
+<TR>
+<TD>
+<IMG SRC="box/funnelRT.gif" WIDTH=150 HEIGHT=229 ALT="" BORDER=0>
+</TD>
+</TR>
+</TABLE>
+</DIV>
+
+
+
+<DIV ID="BPara2-funnel1" STYLE="position:absolute; top:190; left:340; width:230; visibility:hidden">
+<TABLE WIDTH="230" BORDER="0" CELLSPACING="0" CELLPADDING="0">
+<TR>
+<TD>
+<IMG SRC="box/funnelUP.gif" WIDTH=229 HEIGHT=150 ALT="" BORDER="0">
+</TD>
+</TR>
+</TABLE>
+</DIV>
+
+<DIV ID="BPara2-funnel2" STYLE="position:absolute; top:212; left:340; width:230; visibility:hidden">
+<TABLE WIDTH="230" BORDER="0" CELLSPACING="0" CELLPADDING="0">
+<TR>
+<TD>
+<IMG SRC="box/funnelDN.gif" WIDTH=229 HEIGHT=150 ALT="" BORDER="0">
+</TD>
+</TR>
+</TABLE>
+</DIV>
+
+<DIV ID="BPara2-funnel3" STYLE="position:absolute; top:162; left:368; width:230; visibility:hidden">
+<TABLE WIDTH="230" BORDER="0" CELLSPACING="0" CELLPADDING="0">
+<TR>
+<TD>
+<IMG SRC="box/funnelLT.gif" WIDTH=150 HEIGHT=229 ALT="" BORDER=0>
+</TD>
+</TR>
+</TABLE>
+</DIV>
+
+<DIV ID="BPara2-funnel4" STYLE="position:absolute; top:162; left:390; width:230; visibility:hidden">
+<TABLE WIDTH="230" BORDER="0" CELLSPACING="0" CELLPADDING="0">
+<TR>
+<TD>
+<IMG SRC="box/funnelRT.gif" WIDTH=150 HEIGHT=229 ALT="" BORDER=0>
+</TD>
+</TR>
+</TABLE>
+</DIV>
+
+
+
+
+
+
+
+
+
+
+<DIV ID="local0" STYLE="position:absolute; top:235; left:-30; width:80;visibility:hidden">
+<CENTER>
+<IMG SRC="box/theraRING.gif" WIDTH=80 HEIGHT=80 ALT="" BORDER=0 ALIGN="MIDDLE">
+<FONT>0.</FONT>
+</CENTER>
+</DIV>
+
+<DIV ID="self-local" STYLE="position:absolute; top:230; left:20; width:100;visibility:hidden">
+<CENTER>
+<IMG SRC="box/theraRING.gif" WIDTH=90 HEIGHT=90 ALT="" BORDER="0">
+<BR>
+<FONT>self</FONT></CENTER>
+</DIV>
+
+
+<DIV ID="cellf-local1" STYLE="position:absolute; top:225; left:70; width:100;visibility:hidden">
+<CENTER>
+<IMG SRC="box/theraRING.gif" WIDTH=100 HEIGHT=100 ALT="" BORDER="0">
+<BR>
+<FONT>Cell.<I>f</I></FONT></CENTER>
+</DIV>
+
+
+<DIV ID="cellf-local2" STYLE="position:absolute; top:225; left:110; width:200;visibility:hidden">
+<CENTER>
+<IMG SRC="box/theraRING.gif" WIDTH=200 HEIGHT=100 ALT="" BORDER="0">
+<BR>
+<FONT><I>Cell.f</I></FONT></CENTER>
+</DIV>
+
+
+
+
+<DIV ID="cellf-remote2" STYLE="position:absolute; top:225; left:590; width:200;visibility:hidden">
+<CENTER>
+<IMG SRC="box/theraRING.gif" WIDTH=200 HEIGHT=100 ALT="" BORDER="0">
+<BR>
+<FONT><I>Cell.f</I></FONT></CENTER>
+</DIV>
+
+
+
+<DIV ID="cellf-remote" STYLE="position:absolute; top:225; left:730; width:100;visibility:hidden">
+<CENTER>
+<IMG SRC="box/theraRING.gif" WIDTH=100 HEIGHT=100 ALT="" BORDER="0">
+<BR>
+<FONT>Cell.<I>f</I></FONT></CENTER>
+</DIV>
+
+<DIV ID="other" STYLE="position:absolute; top:230; left:780; width:100;visibility:hidden">
+<CENTER>
+<IMG SRC="box/theraRING.gif" WIDTH=90 HEIGHT=90 ALT="" BORDER="0">
+<BR>
+<FONT>other</FONT></CENTER>
+</DIV>
+
+
+<DIV ID="remote0" STYLE="position:absolute; top:235; left:850; width:80;visibility:hidden">
+<CENTER>
+<IMG SRC="box/theraRING.gif" WIDTH=80 HEIGHT=80 ALT="" BORDER=0 ALIGN="MIDDLE">
+<FONT>0.</FONT>
+</CENTER>
+</DIV>
+
+<DIV ID="BLACKBOARD" STYLE="position:absolute; top:0; left:0; width:900; height:500;visibility:hidden">
+	<TABLE WIDTH="900" BORDER="0" CELLSPACING="0" CELLPADDING="0">
+	<TR>
+	
+<TD WIDTH="900" HEIGHT="275"  CLASS="LRG"><IMG SRC="box/LacLinesBlck.gif" WIDTH=899 	ALT="" BORDER=0 HEIGHT=275></TD>
+	</TR>
+		<TR>
+	
+<TD WIDTH="900" HEIGHT="275" CLASS="LRG"><IMG SRC="box/LacLinesBlck.gif" WIDTH=899 HEIGHT=275 ALT="" BORDER="0"></TD>
+	</TR>
+	</TABLE>
+</DIV>
+
+
+
+
+<DIV ID="xPara1" STYLE="position:absolute; top:256; left:2; width:900">
+<TABLE WIDTH="894" BORDER="0" CELLSPACING="0" CELLPADDING="0" ALIGN="CENTER" VALIGN="TOP">
+<TR>
+<TD ROWSPAN="3"><A HREF="#" onmouseover="hide('BLACKBOARD-f');show('BLACKBOARD');hide('BLACKBOARD2');" onmouseout="hide('BLACKBOARD');"><IMG SRC="box/neg-eyeSML.gif" WIDTH=38 HEIGHT=38 ALT="" BORDER="0"></A></TD>
+<TD>&nbsp;</TD>
+<TD ROWSPAN="3"><A HREF="#" onmouseover="hide('BLACKBOARD-f');show('BLACKBOARD');" onmouseout="hide('BLACKBOARD');"><IMG SRC="box/neg-eyeSML.gif" WIDTH=38 HEIGHT=38 ALT="" BORDER="0"></A></TD>
+</TR>
+<TR>
+
+<TD WIDTH="818" ALIGN="CENTER"><A HREF="02x-ka.html"><IMG SRC="box/ribbonANIM.gif" WIDTH=818 HEIGHT=12 ALT="" BORDER=0></A></TD>
+</TR>
+<TR>
+<TD>&nbsp;</TD>
+</TR>
+</TABLE>
+</DIV>
+
+
+
+
+
+<DIV ID="xPara2" STYLE="position:absolute; top:340; left:2; width:888;visibility:hidden">
+<CENTER><FONT class=megaTpnk>
+<A class=megaTpnk HREF="javascript:setLocal();" onmouseover="show('slocal');" onmouseout="hide('slocal');show('slocalb');">(s)</A> <A class=megaTpnk HREF="#" onmouseover="show('tlocal');" onmouseout="hide('tlocal');show('tlocalb');show('Para-funnelX')">T</A> <A class=megaTpnk HREF="javascript:funnels1(); show('BLACKBOARD-f');" onmouseover="show('exit');" onmouseout="hide('exit');show('interb');">(ex)</A> <A class=megaTpnk HREF="#" onmouseover="show('tremote');" onmouseout="hide('tremote');show('Para-funnelY');show('tremoteb');">T</A> <A class=megaTpnk HREF="javascript:setRemote();" onmouseover="show('sremote');" onmouseout="hide('sremote');show('sremoteb');">(s)</A></FONT></CENTER>
+</DIV>
+
+
+
+
+
+
+
+<DIV ID="goFunnel" STYLE="position:absolute; top:234; left:50; width:800">
+<CENTER><A HREF="javascript:show('xPara2');show('goFunnel2');hide('goFunnel');init();"><FONT class=megaTR>&#187;&#171;</FONT></A></CENTER>
+</DIV>
+<DIV ID="goFunnel2" STYLE="position:absolute; top:250; left:50; width:800;visibility:hidden">
+<CENTER><A HREF="javascript:show('BLACKBOARD2');show('goFunnel3');hide('goFunnel2');"><FONT class=megaTR>*</FONT></A></CENTER>
+</DIV>
+
+<DIV ID="goFunnel3" STYLE="position:absolute; top:250; left:50; width:800;visibility:hidden">
+<CENTER>
+<A HREF="03metastrophe.html"><FONT class=megaTR>*</FONT></A>
+</CENTER>
+</DIV>
+
+
+<DIV id=ttl1></DIV>
+
+<DIV id=ttl0></DIV>
+
+
+
+
+<!-- ||MENU|| -->
+<DIV ID="menuOff" STYLE="position:absolute; top:0; left:0; width:900; visibility:visible">
+<TABLE WIDTH="137" BORDER="0" CELLSPACING="0" CELLPADDING="0">
+<TR>
+    <TD ALIGN="CENTER" VALIGN="TOP" BGCOLOR="#333333">
+
+<TABLE WIDTH="137" BORDER="0" CELLSPACING="1" CELLPADDING="1">
+<TR>
+    
+<TD BGCOLOR="Black"><A HREF="javascript:show('menu'); show('activeArea');"><IMG SRC="box/menuLEX.gif" WIDTH=137 HEIGHT=10 ALT="" BORDER="0"  VSPACE=2></A></TD>
+</TR>
+</TABLE></TD>
+</TR>
+</TABLE>
+</DIV>
+<DIV ID="activeArea" STYLE="position:absolute; top:0; left:0; width:900; height:500;visibility:hidden">
+
+<TABLE WIDTH="137" BORDER="0" CELLSPACING="0" CELLPADDING="0">
+<TR>
+    
+<TD ALIGN="CENTER" VALIGN="TOP">
+<A HREF="#" onmouseover="hide('menu');hide('activeArea');" onmouseout="hide('menu');hide('activeArea');"><IMG SRC="nothing.gif" WIDTH=150 HEIGHT=110 ALT="" BORDER="0"></A></TD>
+</TR>
+</TABLE>
+</DIV>
+<DIV ID="menu" STYLE="position:absolute; top:0; left:0; width:900;visibility:hidden">
+<TABLE WIDTH="137" BORDER="0" CELLSPACING="0" CELLPADDING="0">
+<TR>
+    <TD ALIGN="CENTER" VALIGN="TOP" BGCOLOR="#333333">
+
+<TABLE WIDTH="137" BORDER="0" CELLSPACING="1" CELLPADDING="1">
+<TR>
+    
+<TD BGCOLOR="Black"><IMG SRC="box/menuLEX.gif" WIDTH=137 HEIGHT=10 ALT="" BORDER="0"  VSPACE=2></TD>
+</TR>
+<TR>
+    
+<TD BGCOLOR="Black"><A HREF="01attachment.html"><IMG SRC="box/menu-ATTCH.gif" WIDTH=137 HEIGHT=10 ALT="" BORDER=0 VSPACE=2></A></TD>
+</TR>
+<TR>
+    
+<TD BGCOLOR="Black"><A HREF="02funnels.html"><IMG SRC="box/menu-FNNL.gif" WIDTH=137 HEIGHT=10 ALT="" BORDER="0"  VSPACE=2></A></TD>
+</TR>
+<TR>
+    
+<TD BGCOLOR="Black"><A HREF="03metastrophe.html"><IMG SRC="box/menu-META.gif" WIDTH=137 HEIGHT=10 ALT="" BORDER="0"  VSPACE=2></A></TD>
+</TR>
+<TR>
+    
+<TD BGCOLOR="Black"><A HREF="04extermination.html"><IMG SRC="box/menu-XTRM.gif" WIDTH=137 HEIGHT=10 ALT="" BORDER="0"  VSPACE=2></A></TD>
+</TR>
+<TR>
+    
+<TD BGCOLOR="Black"><A HREF="appendix-1.html"><IMG SRC="box/menu-AUTH.gif" WIDTH=137 HEIGHT=11 ALT="" BORDER="0"  VSPACE=2></A></TD>
+</TR>
+</TABLE></TD>
+</TR>
+</TABLE>
+</DIV>
+
+
+
+
+</BODY>
+</HTML>

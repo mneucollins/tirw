@@ -1,0 +1,178 @@
+<HTML>
+<Title>The Birth of Detachment</Title>
+<body bgcolor="#FFFFFF" text=black font="Arial, Verdana">
+<!-- This script came from the public archives of JavaScript Planet at http://www.js-planet.com --> 
+<!-- For more scripts, tutorials, links, discussion forums, help, or anything else JavaScript, --> 
+<!-- Please visit JavaScript Planet at http://www.js-planet.com. Please keep this header intact. --> 
+
+<style type="text/css">
+body
+        {
+        background-color:#FFFFFF; 
+        font-family: Arial, Verdana; 
+        font-size:15pt; color:#CE5CFF
+        }
+A       
+        {
+        color:#7D326D; 
+        text-decoration:none
+        }
+A:hover
+        {
+        color:blue
+        }
+
+A:visited:
+        {
+        color:#808080
+        }
+#startingMsg 
+        {
+        position:absolute;
+        background: #FFFFFF;
+        HEIGHT:10;
+        TOP:30;
+        text-align: middle;
+        font-family:Arial, Verdana; 
+        color:#000000; 
+        left:370
+        }
+</STYLE>
+
+<SCRIPT LANGUAGE="JAVASCRIPT">
+
+
+messages=new Array(4)
+
+messages[0]="Painted in 1863"
+
+messages[1]="Painted in 1873-1874"
+
+messages[2]="Cezanne would have you believe it was Manet."
+
+messages[3]="Many of us now believe it was Olympia."
+
+messages[4]=""
+
+
+
+
+var browser;
+
+//if explorer (4.x)
+
+if (document.all) {
+
+                layerRef='document.all.'
+
+                styleRef='.style.'
+
+                changeMessages=".innerHTML=messages[num]"
+
+                closeit=""
+
+                browser=true
+
+}
+
+//else if netscape (4.x)
+
+else if (document.layers) {
+
+                layerRef='document.layers.'
+
+                styleRef='.'
+
+                changeMessages='.document.write(" <font face=VERDANA color=#CCCCCC size=5 style=text-align:middle;background:#FFFFFF;><BR><BR><BR><BR><B>-- "+messages[num]+"</B></font><BR>")'
+
+                closeit=".document.close()"
+
+                browser=true
+
+        } 
+
+
+
+function mover(num){
+
+        if(browser){
+
+                eval(layerRef+'startingMsg'+changeMessages)
+
+                eval(layerRef+'startingMsg'+closeit);
+
+        }
+
+}
+
+function mout(num){
+
+        if(browser){
+
+                eval(layerRef+'startingMsg'+changeMessages);
+
+                eval(layerRef+'startingMsg'+closeit);
+
+        }
+
+}
+
+
+</SCRIPT>
+<font face="Arial, Verdana" size=6 color="#DEDC50">
+<p align=right>
+
+The Birth of Detachment<BR>
+</font>
+<p align=left>
+<BR><BR><BR><BR>
+<a href="maneto.html" onmouseover="mover(0)" onMouseout="mout(4,0)">Olympia by Edouard Manet 
+</a>
+<P>
+<a href="modern.html" onmouseover="mover(1)" onmouseout="mout(4,1)">A Modern Olympia, by Paul Cezanne</a>
+<P>
+
+<a href="wild3.html" onmouseover="mover(2)" onmouseout="mout(4,2)">Who was the wildman?</a>
+<P>
+
+<a href="abducted3.html" onmouseover="mover(3)" onmouseout="mout(4,3)">What was abducted?</a>
+<P>
+
+
+
+
+<div id="startingMsg">
+
+<BR><BR>
+
+"He is arresting through his images - more rich <BR>
+in <A HREF="heroism.html">suggestive content</A> than has been supposed ... <BR>
+<BR>
+
+
+
+
+<img src="olympiaanim.gif">
+
+<BR>
+<BR>
+and also through his uninterpreted strokes<BR> 
+which make us see that there can be qualities <BR>
+of greatness in little touches of paint."<BR>
+
+</div>
+
+<div>
+<font face="Arial, Verdana" size=6 color="#DEDC50">
+
+<B>______________________________________________________</B>
+
+<BR><BR>
+
+<A HREF="olympia.html"><img border=0 src="recherche.jpg"></A><BR>
+
+<p align=left><A HREF="heroism.html"><img border=0 src="arrow.jpg"> </A>
+</FONT></div>
+
+</Body>
+</Html>

@@ -1,0 +1,137 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+
+<HTML>
+<HEAD>
+<TITLE>2christians</TITLE>
+<META NAME="Generator" " CONTENT="Built using NetObjects Fusion 2.0.1 for Macintosh">
+
+<style>
+.spanstyle {
+	position:absolute;
+	visibility:visible;
+	top:-50px;
+	font-size:9pt;
+	font-family:verdana;
+
+
+	color:blue;
+}
+</style>
+<script>
+
+/*
+Cursor Trailor Text- By Peter Gehrig (http://www.24fun.ch/)
+Permission given to Dynamicdrive.com to feature script in it's archive.
+For full source code, installation instructions, and 1000's more DHTML scripts,
+visit http://dynamicdrive.com
+*/
+
+var x,y
+var step=20
+var flag=0
+
+// Your snappy message. Important: the space at the end of the sentence!!!
+var message="2. investigation "
+message=message.split("")
+
+var xpos=new Array()
+for (i=0;i<=message.length-1;i++) {
+	xpos[i]=-50
+}
+
+var ypos=new Array()
+for (i=0;i<=message.length-1;i++) {
+	ypos[i]=-50
+}
+
+function handlerMM(e){
+	x = (document.layers) ? e.pageX : document.body.scrollLeft+event.clientX
+	y = (document.layers) ? e.pageY : document.body.scrollTop+event.clientY
+	flag=1
+}
+
+function makesnake() {
+	if (flag==1 && document.all) {
+    	for (i=message.length-1; i>=1; i--) {
+   			xpos[i]=xpos[i-1]+step
+			ypos[i]=ypos[i-1]
+    	}
+		xpos[0]=x+step
+		ypos[0]=y
+	
+		for (i=0; i<message.length-1; i++) {
+    		var thisspan = eval("span"+(i)+".style")
+    		thisspan.posLeft=xpos[i]
+			thisspan.posTop=ypos[i]
+    	}
+	}
+	
+	else if (flag==1 && document.layers) {
+    	for (i=message.length-1; i>=1; i--) {
+   			xpos[i]=xpos[i-1]+step
+			ypos[i]=ypos[i-1]
+    	}
+		xpos[0]=x+step
+		ypos[0]=y
+	
+		for (i=0; i<message.length-1; i++) {
+    		var thisspan = eval("document.span"+i)
+    		thisspan.left=xpos[i]
+			thisspan.top=ypos[i]
+    	}
+	}
+		var timer=setTimeout("makesnake()",30)
+}
+
+</script>
+
+
+
+
+</HEAD>
+
+<BODY onLoad="makesnake()"
+                          style="width:100%;overflow-x:hidden;overflow-y:scroll"
+BACKGROUND="../assets/images/baybridg.jpg" LINK="#0000FF" VLINK="#800080" TEXT="#000000"  >
+
+<script>
+<!-- Beginning of JavaScript -
+
+for (i=0;i<=message.length-1;i++) {
+    document.write("<span id='span"+i+"' class='spanstyle'>")
+	document.write(message[i])
+    document.write("</span>")
+}
+
+if (document.layers){
+	document.captureEvents(Event.MOUSEMOVE);
+}
+document.onmousemove = handlerMM;
+
+// - End of JavaScript - -->
+</script>
+
+
+  <TABLE BORDER=0 CELLSPACING=0 CELLPADDING=0 WIDTH=638>
+   <TR VALIGN="top" ALIGN="left">
+	
+<TD WIDTH=8 HEIGHT =95><IMG SRC="../assets/images/dot_clear.gif" WIDTH =8 HEIGHT =1 BORDER=0></TD>
+	
+<TD WIDTH=366><IMG SRC="../assets/images/dot_clear.gif" WIDTH =366 HEIGHT =1 BORDER=0></TD>
+	
+<TD WIDTH=264><IMG SRC="../assets/images/dot_clear.gif" WIDTH =264 HEIGHT =1 BORDER=0></TD>
+   </TR>
+   <TR VALIGN="top" ALIGN="left">
+	<TD></TD>
+	<TD WIDTH=366><P><B><FONT SIZE="+1" FACE="Arial,Helvetica">We ate riboflavin tablets to release energy at the cellular level.&nbsp; We took gingko extract for circulation, B6 for depression, and ascorbic acid for bones and teeth.&nbsp; I never had any problems with my teeth but Betsey did.&nbsp; We were having a lot of sex then and Betsey liked to fuck and watch television and have a cigarette going at the same time but after we stopped smoking everything seemed a little less meaningful.&nbsp; At the Vallejo county fair we met some Californians for Christian Focus and attended a rock concert for Jesus.&nbsp; Two of the Christians gave us woven friendship bracelets in bright purple and green and the gesture touched me because I had often seen young girls making these on Telegraph Avenue as they sat on relay mail boxes and both the young girls and the young Christians seemed so fresh and hopeful.&nbsp; Later that week Betsey and I went to a meeting where a woman announced she was giving herself permission to wet the bed.&nbsp; After that we cut back on our meetings and our sex drive improved.</FONT></B></P><P>&nbsp;</P>
+<P><A HREF="2bleaves.html"><B><FONT COLOR="#996600" SIZE="+1" FACE="Arial,Helvetica">january</FONT></B></A><B><FONT COLOR="#996600" SIZE="+1" FACE="Arial,Helvetica"></FONT></B>
+</TD>
+
+	<TD></TD>
+   </TR>
+   <TR VALIGN="top" ALIGN="left">
+	<TD COLSPAN=3 HEIGHT =20></TD>
+   </TR>
+  </TABLE>
+</BODY>
+</HTML>

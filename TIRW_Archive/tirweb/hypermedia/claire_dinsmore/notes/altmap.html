@@ -1,0 +1,276 @@
+<html>
+<head>
+<title>map</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<script language="JavaScript">
+<!--
+function MM_displayStatusMsg(msgStr) { //v2.0
+  status=msgStr;
+  document.MM_returnValue = true;
+}
+
+function MM_timelinePlay(tmLnName, myID) { //v1.2
+  //Copyright 1997 Macromedia, Inc. All rights reserved.
+  var i,j,tmLn,props,keyFrm,sprite,numKeyFr,firstKeyFr,propNum,theObj,firstTime=false;
+  if (document.MM_Time == null) MM_initTimelines(); //if *very* 1st time
+  tmLn = document.MM_Time[tmLnName];
+  if (myID == null) { myID = ++tmLn.ID; firstTime=true;}//if new call, incr ID
+  if (myID == tmLn.ID) { //if Im newest
+    setTimeout('MM_timelinePlay("'+tmLnName+'",'+myID+')',tmLn.delay);
+    fNew = ++tmLn.curFrame;
+    for (i=0; i<tmLn.length; i++) {
+      sprite = tmLn[i];
+      if (sprite.charAt(0) == 's') {
+        if (sprite.obj) {
+          numKeyFr = sprite.keyFrames.length; firstKeyFr = sprite.keyFrames[0];
+          if (fNew >= firstKeyFr && fNew <= sprite.keyFrames[numKeyFr-1]) {//in range
+            keyFrm=1;
+            for (j=0; j<sprite.values.length; j++) {
+              props = sprite.values[j]; 
+              if (numKeyFr != props.length) {
+                if (props.prop2 == null) sprite.obj[props.prop] = props[fNew-firstKeyFr];
+                else        sprite.obj[props.prop2][props.prop] = props[fNew-firstKeyFr];
+              } else {
+                while (keyFrm<numKeyFr && fNew>=sprite.keyFrames[keyFrm]) keyFrm++;
+                if (firstTime || fNew==sprite.keyFrames[keyFrm-1]) {
+                  if (props.prop2 == null) sprite.obj[props.prop] = props[keyFrm-1];
+                  else        sprite.obj[props.prop2][props.prop] = props[keyFrm-1];
+        } } } } }
+      } else if (sprite.charAt(0)=='b' && fNew == sprite.frame) eval(sprite.value);
+      if (fNew > tmLn.lastFrame) tmLn.ID = 0;
+  } }
+}
+
+function MM_timelineGoto(tmLnName, fNew, numGotos) { //v2.0
+  //Copyright 1997 Macromedia, Inc. All rights reserved.
+  var i,j,tmLn,props,keyFrm,sprite,numKeyFr,firstKeyFr,lastKeyFr,propNum,theObj;
+  if (document.MM_Time == null) MM_initTimelines(); //if *very* 1st time
+  tmLn = document.MM_Time[tmLnName];
+  if (numGotos != null)
+    if (tmLn.gotoCount == null) tmLn.gotoCount = 1;
+    else if (tmLn.gotoCount++ >= numGotos) {tmLn.gotoCount=0; return}
+  jmpFwd = (fNew > tmLn.curFrame);
+  for (i = 0; i < tmLn.length; i++) {
+    sprite = (jmpFwd)? tmLn[i] : tmLn[(tmLn.length-1)-i]; //count bkwds if jumping back
+    if (sprite.charAt(0) == "s") {
+      numKeyFr = sprite.keyFrames.length;
+      firstKeyFr = sprite.keyFrames[0];
+      lastKeyFr = sprite.keyFrames[numKeyFr - 1];
+      if ((jmpFwd && fNew<firstKeyFr) || (!jmpFwd && lastKeyFr<fNew)) continue; //skip if untouchd
+      for (keyFrm=1; keyFrm<numKeyFr && fNew>=sprite.keyFrames[keyFrm]; keyFrm++);
+      for (j=0; j<sprite.values.length; j++) {
+        props = sprite.values[j];
+        if (numKeyFr == props.length) propNum = keyFrm-1 //keyframes only
+        else propNum = Math.min(Math.max(0,fNew-firstKeyFr),props.length-1); //or keep in legal range
+        if (sprite.obj != null) {
+          if (props.prop2 == null) sprite.obj[props.prop] = props[propNum];
+          else        sprite.obj[props.prop2][props.prop] = props[propNum];
+      } }
+    } else if (sprite.charAt(0)=='b' && fNew == sprite.frame) eval(sprite.value);
+  }
+  tmLn.curFrame = fNew;
+  if (tmLn.ID == 0) eval('MM_timelinePlay(tmLnName)');
+}
+
+function MM_initTimelines() {
+    //MM_initTimelines() Copyright 1997 Macromedia, Inc. All rights reserved.
+    var ns = navigator.appName == "Netscape";
+    document.MM_Time = new Array(2);
+    document.MM_Time[0] = new Array(2);
+    document.MM_Time["Timeline1"] = document.MM_Time[0];
+    document.MM_Time[0].MM_Name = "Timeline1";
+    document.MM_Time[0].fps = 20;
+    document.MM_Time[0][0] = new String("sprite");
+    document.MM_Time[0][0].slot = 1;
+    if (ns)
+        document.MM_Time[0][0].obj = document["vert"];
+    else
+        document.MM_Time[0][0].obj = document.all ? document.all["vert"] : null;
+    document.MM_Time[0][0].keyFrames = new Array(1, 11, 25);
+    document.MM_Time[0][0].values = new Array(3);
+    document.MM_Time[0][0].values[0] = new Array(161,161,161,161,161,161,161,161,161,161,161,161,161,161,161,161,161,161,161,161,161,161,161,161,161);
+    document.MM_Time[0][0].values[0].prop = "left";
+    document.MM_Time[0][0].values[1] = new Array(-93,-61,-29,3,35,67,100,132,164,196,228,205,182,159,136,113,90,68,45,22,-1,-24,-47,-70,-93);
+    document.MM_Time[0][0].values[1].prop = "top";
+    if (!ns) {
+        document.MM_Time[0][0].values[0].prop2 = "style";
+        document.MM_Time[0][0].values[1].prop2 = "style";
+    }
+    document.MM_Time[0][0].values[2] = new Array("visible","visible","visible");
+    document.MM_Time[0][0].values[2].prop = "visibility";
+    if (!ns)
+        document.MM_Time[0][0].values[2].prop2 = "style";
+    document.MM_Time[0][1] = new String("behavior");
+    document.MM_Time[0][1].frame = 26;
+    document.MM_Time[0][1].value = "MM_timelineGoto('Timeline1','1')";
+    document.MM_Time[0].lastFrame = 26;
+    document.MM_Time[1] = new Array(6);
+    document.MM_Time["Timeline2"] = document.MM_Time[1];
+    document.MM_Time[1].MM_Name = "Timeline2";
+    document.MM_Time[1].fps = 15;
+    document.MM_Time[1][0] = new String("sprite");
+    document.MM_Time[1][0].slot = 1;
+    if (ns)
+        document.MM_Time[1][0].obj = document["horiz2"];
+    else
+        document.MM_Time[1][0].obj = document.all ? document.all["horiz2"] : null;
+    document.MM_Time[1][0].keyFrames = new Array(104, 119);
+    document.MM_Time[1][0].values = new Array(3);
+    document.MM_Time[1][0].values[0] = new Array(469,427,386,344,302,261,219,177,136,94,52,11,-31,-73,-114,-156);
+    document.MM_Time[1][0].values[0].prop = "left";
+    document.MM_Time[1][0].values[1] = new Array(71,71,71,71,71,71,71,71,71,71,71,71,71,71,71,71);
+    document.MM_Time[1][0].values[1].prop = "top";
+    if (!ns) {
+        document.MM_Time[1][0].values[0].prop2 = "style";
+        document.MM_Time[1][0].values[1].prop2 = "style";
+    }
+    document.MM_Time[1][0].values[2] = new Array("inherit","inherit");
+    document.MM_Time[1][0].values[2].prop = "visibility";
+    if (!ns)
+        document.MM_Time[1][0].values[2].prop2 = "style";
+    document.MM_Time[1][1] = new String("sprite");
+    document.MM_Time[1][1].slot = 1;
+    if (ns)
+        document.MM_Time[1][1].obj = document["horiz"];
+    else
+        document.MM_Time[1][1].obj = document.all ? document.all["horiz"] : null;
+    document.MM_Time[1][1].keyFrames = new Array(25, 92);
+    document.MM_Time[1][1].values = new Array(2);
+    document.MM_Time[1][1].values[0] = new Array(-144,-135,-125,-116,-107,-98,-88,-79,-70,-60,-51,-42,-32,-23,-14,-5,5,14,23,33,42,51,61,70,79,88,98,107,116,126,135,144,154,163,172,181,191,200,209,219,228,237,247,256,265,274,284,293,302,312,321,330,340,349,358,367,377,386,395,405,414,423,433,442,451,460,470,479);
+    document.MM_Time[1][1].values[0].prop = "left";
+    document.MM_Time[1][1].values[1] = new Array(71,71,71,71,71,71,71,71,71,71,71,71,71,71,71,71,71,71,71,71,71,71,71,71,71,71,71,71,71,71,71,71,71,71,71,71,71,71,71,71,71,71,71,71,71,71,71,71,71,71,71,71,71,71,71,71,71,71,71,71,71,71,71,71,71,71,71,71);
+    document.MM_Time[1][1].values[1].prop = "top";
+    if (!ns) {
+        document.MM_Time[1][1].values[0].prop2 = "style";
+        document.MM_Time[1][1].values[1].prop2 = "style";
+    }
+    document.MM_Time[1][2] = new String("sprite");
+    document.MM_Time[1][2].slot = 1;
+    if (ns)
+        document.MM_Time[1][2].obj = document["horiz4"];
+    else
+        document.MM_Time[1][2].obj = document.all ? document.all["horiz4"] : null;
+    document.MM_Time[1][2].keyFrames = new Array(123, 137);
+    document.MM_Time[1][2].values = new Array(2);
+    document.MM_Time[1][2].values[0] = new Array(503,455,408,360,312,264,217,169,121,74,26,-22,-70,-117,-165);
+    document.MM_Time[1][2].values[0].prop = "left";
+    document.MM_Time[1][2].values[1] = new Array(71,71,71,71,71,71,71,72,72,72,72,72,72,72,72);
+    document.MM_Time[1][2].values[1].prop = "top";
+    if (!ns) {
+        document.MM_Time[1][2].values[0].prop2 = "style";
+        document.MM_Time[1][2].values[1].prop2 = "style";
+    }
+    document.MM_Time[1][3] = new String("sprite");
+    document.MM_Time[1][3].slot = 1;
+    if (ns)
+        document.MM_Time[1][3].obj = document["horiz5"];
+    else
+        document.MM_Time[1][3].obj = document.all ? document.all["horiz5"] : null;
+    document.MM_Time[1][3].keyFrames = new Array(159, 185, 195);
+    document.MM_Time[1][3].values = new Array(2);
+    document.MM_Time[1][3].values[0] = new Array(505,490,474,459,443,428,412,397,382,366,351,335,320,305,289,274,259,245,230,216,201,187,174,160,146,133,120,90,60,32,6,-20,-46,-71,-97,-122,-148);
+    document.MM_Time[1][3].values[0].prop = "left";
+    document.MM_Time[1][3].values[1] = new Array(71,71,71,71,71,71,71,71,71,71,71,71,71,71,71,71,71,71,71,71,71,71,71,71,71,71,71,71,71,71,71,71,71,71,71,71,71);
+    document.MM_Time[1][3].values[1].prop = "top";
+    if (!ns) {
+        document.MM_Time[1][3].values[0].prop2 = "style";
+        document.MM_Time[1][3].values[1].prop2 = "style";
+    }
+    document.MM_Time[1][4] = new String("sprite");
+    document.MM_Time[1][4].slot = 1;
+    if (ns)
+        document.MM_Time[1][4].obj = document["horiz3"];
+    else
+        document.MM_Time[1][4].obj = document.all ? document.all["horiz3"] : null;
+    document.MM_Time[1][4].keyFrames = new Array(142, 156);
+    document.MM_Time[1][4].values = new Array(2);
+    document.MM_Time[1][4].values[0] = new Array(-140,-94,-49,-3,43,89,134,180,226,271,317,363,409,454,500);
+    document.MM_Time[1][4].values[0].prop = "left";
+    document.MM_Time[1][4].values[1] = new Array(71,71,71,71,71,71,71,71,71,71,71,71,71,71,71);
+    document.MM_Time[1][4].values[1].prop = "top";
+    if (!ns) {
+        document.MM_Time[1][4].values[0].prop2 = "style";
+        document.MM_Time[1][4].values[1].prop2 = "style";
+    }
+    document.MM_Time[1][5] = new String("behavior");
+    document.MM_Time[1][5].frame = 196;
+    document.MM_Time[1][5].value = "MM_timelineGoto('Timeline2','1')";
+    document.MM_Time[1].lastFrame = 196;
+    for (i=0; i<document.MM_Time.length; i++) {
+        document.MM_Time[i].ID = null;
+        document.MM_Time[i].curFrame = 0;
+        document.MM_Time[i].delay = 1000/document.MM_Time[i].fps;
+    }
+}
+//-->
+</script>
+</head>
+
+<body bgcolor="#000000" MARGINHEIGHT="0" MARGINWIDTH="12" LEFTMARGIN="12"
+TOPMARGIN="0" text="#CE6B29" onLoad="MM_displayStatusMsg('map');MM_timelinePlay('Timeline1');MM_timelinePlay('Timeline2');return document.MM_returnValue">
+<div align="left">
+  
+<div id="horiz" style="position:absolute; width:123px; height:71px; z-index:2; left: -144px; top: 71px; visibility: visible"><img src="images/orskelrev.gif" width="149" height="94"></div>
+  
+<div id="horiz2" style="position:absolute; width:132px; height:57px; z-index:3; left: 477px; top: 71px; visibility: inherit"><img src="images/orskelrev2.gif" width="149" height="94"></div>
+  
+<div id="horiz3" style="position:absolute; width:137px; height:93px; z-index:4; left: -140px; top: 71px; visibility: visible"><img src="images/orskelrev.gif" width="149" height="94"></div>
+  
+<div id="horiz4" style="position:absolute; width:136px; height:61px; z-index:5; left: 503px; top: 71px"><img src="images/orskelrev2.gif" width="149" height="94"></div>
+</div>
+<div id="vert" style="position:absolute; width:143px; height:77px; z-index:1; left: 161px; top: -93px; visibility: visible"><img src="images/orskel.gif" width="156" height="97"></div>
+<map name="toes">
+  
+<area shape="circle" coords="422,71,19" href="etc09.html" target="infoWindow">
+  
+<area shape="circle" coords="386,53,17" href="etc04.html" target="infoWindow">
+  <area shape="circle" coords="352,34,17" href="../../../../hypermedia/claire_dinsmore/etc10.html" target="infoWindow">
+  
+<area shape="circle" coords="317,26,16" href="etc06.html" target="infoWindow">
+  
+<area shape="circle" coords="256,64,27" href="etc03.html" target="infoWindow">
+  
+<area shape="circle" coords="196,63,26" href="etc08.html" target="infoWindow">
+  
+<area shape="circle" coords="135,24,17" href="etc05.html" target="infoWindow">
+  
+<area shape="circle" coords="100,35,16" href="etc02.html" target="infoWindow">
+  
+<area shape="circle" coords="67,52,17" href="etc07.html" target="infoWindow">
+  <area shape="circle" coords="31,69,16" href="../../../../hypermedia/claire_dinsmore/etc.html" target="infoWindow">
+</map> <map name="map">
+       <area shape="circle" coords="224,144,19" href="http://www.ministrymall.com/thewalk.html" target="infoWindow">
+  <area shape="circle" coords="316,23,16" target="infoWindow" href="../../../../hypermedia/claire_dinsmore/notes/lost.html">
+  
+<area shape="circle" coords="419,66,16" href="etc012.html" target="infoWindow">
+  
+<area shape="circle" coords="312,263,16" href="etc016.html" target="infoWindow">
+  
+<area shape="circle" coords="29,221,18" href="etc015.html" target="infoWindow">
+       <area shape="circle" coords="102,30,15" href="http://janar.com/" target="infoWindow">
+  
+<area shape="circle" coords="383,236,18" href="etc013.html" target="infoWindow">
+  
+<area shape="circle" coords="198,58,23" href="etc017.html" target="infoWindow">
+  
+<area shape="circle" coords="251,224,22" href="etc011.html" target="infoWindow">
+  <area shape="circle" coords="351,33,16" target="infoWindow" href="http://www.sccs.swarthmore.edu/org/feet/">
+  
+<area shape="circle" coords="70,48,18" target="infoWindow" href="../walkin.html">
+       <area shape="circle" coords="66,237,17" target="infoWindow" href="http://www.tori.com/">
+  <area shape="circle" coords="135,20,17" target="infoWindow" href="http://www.ofesite.com/health/reflex/reflex.htm">
+  <area shape="circle" coords="419,220,17" target="infoWindow" href="http://www.dcs.qmw.ac.uk/~nickbk/web_camera/">
+  
+<area shape="circle" coords="135,266,18" href="etc010.html" target="infoWindow">
+  <area shape="circle" coords="195,224,20" target="infoWindow" href="http://www.geocities.com/FashionAvenue/1595/">
+  <area shape="circle" coords="383,50,18" target="infoWindow" href="http://www.mg.co.za/mg/pc/feet/web.htm">
+  <area shape="circle" coords="347,254,17" target="infoWindow" href="http://www.apma.org/">
+       
+<area shape="circle" coords="28,65,20" href="etc.html" target="infoWindow">
+  <area shape="circle" coords="97,255,17" target="infoWindow" href="http://www.foottalk.com/anatomy.htm">
+  <area shape="circle" coords="251,59,21" target="infoWindow" href="http://www.bigfoot.com/">
+</map>
+ <img src="images/map21div1.gif" width="447" height="291" border="0" usemap="#map" alt="toemap"> 
+<div id="horiz5" style="position:absolute; width:139px; height:70px; z-index:6; left: 505px; top: 71px"><img src="images/orskelrev2.gif" width="149" height="94"></div>
+</body>
+</html>

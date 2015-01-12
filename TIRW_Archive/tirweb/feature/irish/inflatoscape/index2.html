@@ -1,0 +1,63 @@
+<HTML>
+<HEAD>
+<TITLE> : inflat : o : scape :</TITLE>
+<script language="JavaScript">
+<!--
+function MM_openBrWindow(theURL,winName,features) { //v2.0
+  window.open(theURL,winName,features);
+}
+//-->
+</script>
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+<!-- Original:  Ronnie T. Moore, Editor -->
+<!-- Web Site:  JavaScript Source -->
+
+<!-- This script and many more are available free online at -->
+<!-- The JavaScript Source!! http://javascript.internet.com -->
+
+<!-- Begin
+netscape = "netscape.html"; // set your browser pages
+explorer = "explorer.html";
+unknown  = "unknown.html";
+
+// Determine the popup window properties
+// options include:  top, left, toolbars, scrollbars,
+// menubar, location, statusbar, and resizable
+
+windowprops = "top=0,left=0,resizable=no"
++ ",width=" + screen.width + ",height=" + screen.height;
+
+ns = (navigator.appName == 'Netscape');
+ie = (navigator.appName == 'Microsoft Internet Explorer');
+url = (!ns & !ie) ? unknown : ( ns ? netscape : explorer);
+window.open(url, "popupPage", windowprops);
+//  End -->
+
+function MM_checkBrowser(NSvers,NSpass,NSnoPass,IEvers,IEpass,IEnoPass,OBpass,URL,altURL) { //v3.0
+  var newURL='', verStr=navigator.appVersion, app=navigator.appName, version = parseFloat(verStr);
+  if (app.indexOf('Netscape') != -1) {
+    if (version >= NSvers) {if (NSpass>0) newURL=(NSpass==1)?URL:altURL;}
+    else {if (NSnoPass>0) newURL=(NSnoPass==1)?URL:altURL;}
+  } else if (app.indexOf('Microsoft') != -1) {
+    if (version >= IEvers || verStr.indexOf(IEvers) != -1)
+     {if (IEpass>0) newURL=(IEpass==1)?URL:altURL;}
+    else {if (IEnoPass>0) newURL=(IEnoPass==1)?URL:altURL;}
+  } else if (OBpass>0) newURL=(OBpass==1)?URL:altURL;
+  if (newURL) { window.location=unescape(newURL); document.MM_returnValue=false; }
+}
+//-->
+</script>
+<meta name="keywords" content="inflatoscape, inflat-o-scape, architecture, creative capital, net art, Jessica Irish, web based art, experimental, inflatable architecture, network architecture, hot air, pnuematic, internet art, inflat-o-scape, inflation, deflation, archititechural utopia, urban design, new technologies, Phil Curtis, UCLA, OnRamp Arts ">
+<meta name="description" content="An 
+experimental net art project by Jessica Irish, exploring the relationship between 
+urban space, network architecture and inflatable forms. 
+">
+</HEAD>
+<BODY bgcolor="#FF6633" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" onLoad="MM_checkBrowser(4.0,0,2,4.0,0,2,2,'','beta2.html');return document.MM_returnValue" text="#000000" link="#666666" vlink="#666666">
+<!-- URL's used in the movie--> <!-- text used in the movie--> 
+<p>&nbsp;</p>
+<div align="center"><font face="Verdana, Arial, Helvetica, sans-serif" size="4">( 
+  <a href="beta.html">re-launch</a> )</font></div>
+</BODY>
+</HTML>

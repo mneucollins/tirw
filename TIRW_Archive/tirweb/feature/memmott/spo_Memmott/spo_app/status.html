@@ -1,0 +1,33 @@
+
+<html>
+<BODY bgcolor="Black" onLoad="parent.done()" TEXT="White" LINK="#7592A2" VLINK="#7592A2" ALINK="#7592A2" LEFTMARGIN=0 TOPMARGIN=0 marginheight="0" marginwidth="0">
+<center>
+<br><br>
+<IMG SRC="base/preCov.gif" WIDTH="406" HEIGHT="261" ALT="" BORDER="0">
+
+<script language="JavaScript">
+<!--
+function done() {
+ // If this function gets called, there is a problem.
+ // This document should only be displayed as a child frame of
+ // the setup.html frameset
+ alert('You need to open up the frameset page (predex.html) not this page.');
+}
+
+if (parent.vers < 1.1) {
+ document.write('<form name="stats">GO: <input type=text value="|" size="'
+  +(parent.pages.length*2+1)+'" name="status"></form><br><br>');
+} else {
+ document.write('<TABLE ALIGN="CENTER"><tr><td align="CENTER"><font face="Times New Roman,Times" size="4" color="#7592A2"><b>&nbsp;&nbsp;LOADING&nbsp;&nbsp;</b><br> '
+  + '<img src="base/01.gif" width=12 height=8>');
+ for (k=0;k<parent.pages.length;k++)
+  document.write('<img src="base/02.gif" width=12 height=8 name="status'+k+'">');
+ document.write('<BR>&nbsp;</td></tr></table><br>');
+}
+document.write('<b> <a href="'+parent.secondpage+'" target="_parent"><FONT FACE="Times New Roman,Times" SIZE="2">SKIP PRELOAD</a></b><br>'
+ + '<font face="Arial" size="2">');
+// -->
+</script>
+</center>
+</body>
+</html>

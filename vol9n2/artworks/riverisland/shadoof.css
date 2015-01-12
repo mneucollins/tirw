@@ -1,0 +1,82 @@
+BODY
+
+.greenbody
+{
+	background-color: #003333;
+}
+
+.wcbstopbar {background-color: #CCCC33;}
+
+.wcbsbody {background-color: #CCCC66;}
+
+.wcbsaltbody {background-color: #CCCC99;}
+
+.hstbody
+{
+	background-color: #FFCC99;
+	margin: 16px;
+}
+
+P {font-family: Lucida Grande, Verdana, Arial, sans-serif; font-size: 11pt; line-height: 16pt}
+
+TD {font-family: Lucida Grande, Verdana, Arial, sans-serif; font-size: 11pt; line-height: 16pt}
+
+.heading {font-family: Lucida Grande, Verdana, Arial, sans-serif; font-size: 16pt; line-height: 24pt}
+
+.ital {font-family: Lucida Grande, Verdana, Arial, sans-serif; font-size: 11pt; line-height: 16pt; font-style: italic}
+
+.italsmall {font-family: Lucida Grande, Verdana, Arial, sans-serif; font-size: 9pt; line-height: 14pt; font-style: italic}
+
+.mono {font-family: Courier, Monaco, mono; font-size: 12pt; line-height: 18pt}
+
+.norm {font-family: Lucida Grande, Verdana, Arial, sans-serif; font-size: 11pt; line-height: 16pt}
+
+.rec {font-family: Lucida Grande, Verdana, Arial, sans-serif; font-size: 11pt; line-height: 16pt}
+
+.small {font-family: Lucida Grande, Verdana, Arial, sans-serif; font-size: 9pt; line-height: 14pt}
+
+.smallIn {text-indent: 8pt; font-family: Lucida Grande, Verdana, Arial, sans-serif; font-size: 9pt; line-height: 14pt}
+
+.alan
+{
+	font-family: Lucida Grande, Verdana, Arial, sans-serif;
+	font-size: 11pt;
+	line-height: 16pt;
+	color: #600;
+}
+
+.john
+{
+	margin: 16pt;
+	font-family: Lucida Grande, Verdana, Arial, sans-serif;
+	font-size: 11pt;
+	line-height: 16pt;
+	color: #033;
+}
+
+.alan1
+{
+	margin: 32pt;
+	font-family: Lucida Grande, Verdana, Arial, sans-serif;
+	font-size: 11pt;
+	line-height: 16pt;
+	color: #600;
+}
+
+.john1
+{
+	margin: 48pt;
+	font-family: Lucida Grande, Verdana, Arial, sans-serif;
+	font-size: 11pt;
+	line-height: 16pt;
+	color: #033;
+}
+
+.alan2
+{
+	margin: 64pt;
+	font-family: Lucida Grande, Verdana, Arial, sans-serif;
+	font-size: 11pt;
+	line-height: 16pt;
+	color: #600;
+}

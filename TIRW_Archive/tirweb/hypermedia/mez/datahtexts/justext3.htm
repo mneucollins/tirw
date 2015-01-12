@@ -1,0 +1,285 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <meta name="GENERATOR" content="Mozilla/4.51 [en] (Win98; I) [Netscape]">
+   <meta name="Author" content="Mez">
+   <title>/P[H]ost orgasm yrself in2 WAR[ning]z/</title>
+</head>
+<body text="#000000" bgcolor="#000000" link="#CCCCCC" vlink="#FFFFFF" alink="#FFFFFF">
+<b><font face="Abadi MT Condensed Light"></font></b>&nbsp;<b><font face="Abadi MT Condensed Light"></font></b>
+<center>
+<p><!-- Demonstration --><b><font face="Abadi MT Condensed Light"></font></b>
+</center><p><center><script LANGUAGE="JavaScript1.2">
+
+<!-- Original:  Altan (snow@altan.hr) -->
+
+<!-- Web Site:  http://www.altan.hr/snow -->
+
+
+
+<!-- This script and many more are available free online at -->
+
+<!-- The JavaScript Source!! http://javascript.internet.com -->
+
+
+
+<!-- Begin
+
+var no = 25; // snow number
+
+var speed = 10; // smaller number moves the snow faster
+
+var snowflake = "cross.gif";
+
+
+
+var ns4up = (document.layers) ? 1 : 0;  // browser sniffer
+
+var ie4up = (document.all) ? 1 : 0;
+
+var dx, xp, yp;    // coordinate and position variables
+
+var am, stx, sty;  // amplitude and step variables
+
+var i, doc_width = 800, doc_height = 600;
+
+if (ns4up) {
+
+doc_width = self.innerWidth;
+
+doc_height = self.innerHeight;
+
+} else if (ie4up) {
+
+doc_width = document.body.clientWidth;
+
+doc_height = document.body.clientHeight;
+
+}
+
+dx = new Array();
+
+xp = new Array();
+
+yp = new Array();
+
+am = new Array();
+
+stx = new Array();
+
+sty = new Array();
+
+for (i = 0; i < no; ++ i) {  
+
+dx[i] = 0;                        // set coordinate variables
+
+xp[i] = Math.random()*(doc_width-50);  // set position variables
+
+yp[i] = Math.random()*doc_height;
+
+am[i] = Math.random()*20;         // set amplitude variables
+
+stx[i] = 0.02 + Math.random()/10; // set step variables
+
+sty[i] = 0.7 + Math.random();     // set step variables
+
+if (ns4up) {                      // set layers
+
+if (i == 0) {
+
+document.write("<layer name=\"dot"+ i +"\" left=\"15\" ");
+
+document.write("top=\"15\" visibility=\"show\"><img src=\"");
+
+document.write(snowflake + "\" border=\"0\"></layer>");
+
+} else {
+
+document.write("<layer name=\"dot"+ i +"\" left=\"15\" ");
+
+document.write("top=\"15\" visibility=\"show\"><img src=\"");
+
+document.write(snowflake + "\" border=\"0\"></layer>");
+
+   }
+
+} else if (ie4up) {
+
+if (i == 0) {
+
+document.write("<div id=\"dot"+ i +"\" style=\"POSITION: ");
+
+document.write("absolute; Z-INDEX: "+ i +"; VISIBILITY: ");
+
+document.write("visible; TOP: 15px; LEFT: 15px;\"><img src=\"");
+
+document.write(snowflake + "\" border=\"0\"></div>");
+
+} else {
+
+document.write("<div id=\"dot"+ i +"\" style=\"POSITION: ");
+
+document.write("absolute; Z-INDEX: "+ i +"; VISIBILITY: ");
+
+document.write("visible; TOP: 15px; LEFT: 15px;\"><img src=\"");
+
+document.write(snowflake + "\" border=\"0\"></div>");
+
+      }
+
+   }
+
+}
+
+function snowNS() {  // Netscape main animation function
+
+for (i = 0; i < no; ++ i) {  // iterate for every dot
+
+yp[i] += sty[i];
+
+if (yp[i] > doc_height-50) {
+
+xp[i] = Math.random()*(doc_width-am[i]-30);
+
+yp[i] = 0;
+
+stx[i] = 0.02 + Math.random()/10;
+
+sty[i] = 0.7 + Math.random();
+
+doc_width = self.innerWidth;
+
+doc_height = self.innerHeight;
+
+}
+
+dx[i] += stx[i];
+
+document.layers["dot"+i].top = yp[i];
+
+document.layers["dot"+i].left = xp[i] + am[i]*Math.sin(dx[i]);
+
+}
+
+setTimeout("snowNS()", speed);
+
+}
+
+function snowIE() {  // IE main animation function
+
+for (i = 0; i < no; ++ i) {  // iterate for every dot
+
+yp[i] += sty[i];
+
+if (yp[i] > doc_height-50) {
+
+xp[i] = Math.random()*(doc_width-am[i]-30);
+
+yp[i] = 0;
+
+stx[i] = 0.02 + Math.random()/10;
+
+sty[i] = 0.7 + Math.random();
+
+doc_width = document.body.clientWidth;
+
+doc_height = document.body.clientHeight;
+
+}
+
+dx[i] += stx[i];
+
+document.all["dot"+i].style.pixelTop = yp[i];
+
+document.all["dot"+i].style.pixelLeft = xp[i] + am[i]*Math.sin(dx[i]);
+
+}
+
+setTimeout("snowIE()", speed);
+
+}
+
+if (ns4up) {
+
+snowNS();
+
+} else if (ie4up) {
+
+snowIE();
+
+}
+
+// End -->
+
+</script>
+</CENTER>
+<b><font face="Abadi MT Condensed Light"></font></b>
+<p><br><b><font face="Abadi MT Condensed Light"></font></b>
+<br><b><font face="Abadi MT Condensed Light"></font></b>&nbsp;
+<br><b><font face="Abadi MT Condensed Light"></font></b>&nbsp;
+<br><b><font face="Abadi MT Condensed Light"></font></b>&nbsp;
+<br><b><font face="Abadi MT Condensed Light"></font></b>&nbsp;
+<br><b><font face="Abadi MT Condensed Light"></font></b>&nbsp;
+<center><table COLS=1 WIDTH="100%" >
+<tr>
+<td>
+<center><b><font face="Abadi MT Condensed Light"><font color="#FFFFFF"><font size=+4>---------</font></font><font color="#CCCCCC">....../Po</font><font color="#FFFFFF">[E].</font><font color="#CCCCCC">ST
+War</font><font color="#FFFFFF">[ning]<font size=+4>+---------&nbsp;</font></font></font></b>
+<br><b><font face="Abadi MT Condensed Light"><font color="#FFFFFF"><font size=+4>+---------
++---------&nbsp;</font></font></font></b>
+<br><b><font face="Abadi MT Condensed Light"><font color="#FFFFFF"><font size=+4>---------</font></font></font></b><b><font face="Abadi MT Condensed Light"></font></b>
+<p><b><font face="Abadi MT Condensed Light"><font color="#FFFFFF">[m-magez
+of a single [m]mage, humanoid antz trapped in a horsefleshian c +</font></font></b>
+<br><b><font face="Abadi MT Condensed Light"><font color="#FFFFFF">blunderin
+beastz screamingly N-oh-cent + 14 yearish bebbez s-s-[N]sueing</font></font></b>
+<br><b><font face="Abadi MT Condensed Light"><font color="#FFFFFF">throat
+bleeding yellz from the back of the s[11]idelinez]</font></font></b><b><font face="Abadi MT Condensed Light"></font></b>
+<p><b><font face="Abadi MT Condensed Light"><font color="#CCCCCC">/Post
+Awe-ganic.........</font></font></b><b><font face="Abadi MT Condensed Light"></font></b>
+<p><b><font face="Abadi MT Condensed Light"><font color="#FFFFFF">[1 gets
+their teeth knocked bac + N-other buttered by baton wingz + n-other</font></font></b>
+<br><b><font face="Abadi MT Condensed Light"><font color="#FFFFFF">victim
+of a chant resplendent in a nazi gooze[hop &amp; bashe &amp;]bumpish step]</font></font></b><b><font face="Abadi MT Condensed Light"></font></b>
+<p><b><font face="Abadi MT Condensed Light"><font color="#CCCCCC">|||||||||/Post
+[w]Ar.gentic Do[$]11.ar Shine</font></font></b>
+<br><b><font face="Abadi MT Condensed Light"><font color="#FFFFFF"><font size=+4>-------------+-------------</font></font></font></b>
+<br><b><font face="Abadi MT Condensed Light"><font color="#FFFFFF">[bootz
+clicked in2 shape + N-ee-me beaniez blackened by the char[red]coaled</font></font></b>
+<br><b><font face="Abadi MT Condensed Light"><font color="#FFFFFF">breath
+of gl.o[r]b[it]al g[rave]ods - a turninge pointed stick d-signed to</font></font></b>
+<br><b><font face="Abadi MT Condensed Light"><font color="#FFFFFF">rape
+&amp; scrap the remains in2 the numbered whorls &amp; worlds [tri the</font></font></b>
+<br><b><font face="Abadi MT Condensed Light"><font color="#FFFFFF">3rd
+or 3.8th]</font></font></b><b><font face="Abadi MT Condensed Light"></font></b>
+<p><b><font face="Abadi MT Condensed Light"><font color="#CCCCCC">WARninge??????????????</font></font></b><b><font face="Abadi MT Condensed Light"></font></b>
+<p><b><font face="Abadi MT Condensed Light"><font color="#FFFFFF">[came
+2 late - remnants ov sci-[D-]fied pro.te[ster]en gene warz - splice</font></font></b>
+<br><b><font face="Abadi MT Condensed Light"><font color="#FFFFFF">spitting
+- clone contusionz]</font></font></b><b><font face="Abadi MT Condensed Light"></font></b>
+<p><b><font face="Abadi MT Condensed Light"><font color="#CCCCCC">/Post
+Or[dure]ganz+++++++++++++++++</font></font></b>
+<br><b><font face="Abadi MT Condensed Light"><font color="#FFFFFF"><font size=+4>---------</font></font></font></b>
+<br><b><font face="Abadi MT Condensed Light"><font color="#FFFFFF">[m-bedded
+in2 a scemata of hate = awareness lost N licked by the gell-mass</font></font></b>
+<br><b><font face="Abadi MT Condensed Light"><font color="#FFFFFF">core.poor.8
+= stitched uppe suitez &amp; sue[t]ings commonplace::</font></font></b><b><font face="Abadi MT Condensed Light"></font></b>
+<p><b><font face="Abadi MT Condensed Light"><font color="#FFFFFF">IF ewe
+= suit s[l]ick, then<font size=+4> + ---------+ + + +</font>====</font></font></b>
+<br><b><font face="Abadi MT Condensed Light"><font color="#FFFFFF">Ignore::
+d-isplacement, d-evil.ution, d-esperation</font></font></b>
+<br><b><font face="Abadi MT Condensed Light"><font color="#FFFFFF">M-brace::
+slick I-T regurgitation, eek[!].o[g]nomic augmentation&nbsp;</font></font></b><b><font face="Abadi MT Condensed Light"></font></b>
+<p><b><font face="Abadi MT Condensed Light"><font color="#FFFFFF"><font size=+4>+</font></font></font></b>
+<br><b><font face="Abadi MT Condensed Light"><font color="#FFFFFF"><font size=+4>---------</font></font></font></b>
+<br><b><font face="Abadi MT Condensed Light"><font color="#CCCCCC">/P[H]ost
+orgasm yrself in2 war[ning]z/.</font></font></b>
+<br><b><font face="Abadi MT Condensed Light"><font color="#FFFFFF"><font size=+4>---------</font></font></font></b></center>
+
+<div align=right><b><font face="Abadi MT Condensed Light"><font color="#FFFFFF"><a href="justext4.htm">][jus][t.ext4</a></font></font></b></div>
+</td>
+</tr>
+</table></center>
+<b><font face="Abadi MT Condensed Light"></font></b>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<html>
+<head><title>...V...</title>
+
+</head>
+
+<script language="JavaScript">
+
+                
+function MM_checkPlugin(plugin, theURL, altURL, IEGoesToURL) { //v2.0
+
+        var browserName = navigator.appName;
+        if (browserName == "Netscape") {
+                var mWidth = screen.availWidth - 13;
+                var mHeight = screen.availHeight - 30;
+        }
+        else {
+                var mWidth = screen.availWidth;
+                var mHeight = screen.availHeight;
+        }
+
+  if ((navigator.plugins && navigator.plugins[plugin]) || //if NS, or
+      (IEGoesToURL &&  //if flag set, and MSIE browser for Win95/NT (ActiveX)
+       navigator.appName.indexOf('Microsoft') != -1 &&
+       navigator.appVersion.indexOf('Mac') == -1 &&
+       navigator.appVersion.indexOf('3.1') == -1)) {
+    if (theURL.length>2) newWindow(mWidth,mHeight,theURL);
+  } else {
+    if (altURL.length>2) newWindow(mWidth,mHeight,altURL);
+  }
+  document.MM_returnValue = false;
+}
+
+var newwin = null;
+
+function newWindow(theWidth,theHeight,theURL)
+{
+newwin = window.open(theURL,"mwin","width=" + theWidth + ",height=" + theHeight + ",screenX=" + screen.availLeft + ",left=" + screen.availLeft + ",screenY=" + screen.availTop + ",top=" + screen.availTop + ",resizable=yes,status=yes,toolbar=no,scrollbars=yes")
+newwin.focus()
+}
+        
+
+</script>
+
+
+<body bgcolor = "#99cccc" text ="003399" onLoad="MM_checkPlugin('Shockwave for Director','director.html','plugin.html',true);return document.MM_returnValue">
+
+
+
+<p align = "right">updated on 04.11.01</p>
+
+<center>
+<h1>...V...</h1>
+  <h3>There Is a Woman in a Conical Hat</h3>
+<br>
+<br>
+<a href="http://www.cynthialawson.com/v">...click here to reload...</a>
+</center>
+</body>
+
+</html>

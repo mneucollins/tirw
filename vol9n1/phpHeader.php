@@ -1,0 +1,87 @@
+<?PHP
+// start session
+session_start();
+
+function db_connect() {
+	$db = mysql_pconnect("lamp-db2.its.uiowa.edu", "intermedia", "craigd");
+	if (!mysql_select_db("intermedia",$db)) {
+		echo '<p><b>Could Not Select The Database.  Please try again later</b></p>';
+		exit;
+	}
+	return $db;
+}
+$db = db_connect();
+if (!$db) {
+	echo '<p><b>The database is down.  Please try again later</b></p>';
+	exit;
+}
+
+function fullName($name1, $name2='', $name3='') {
+  $name = '';
+	if (!empty($name1)) $name .= $name1;
+	if (!empty($name2)) {
+	  if (!empty($name)) $name .= ' ';
+		$name .= $name2;
+	}
+	if (!empty($name3)) {
+	  if (!empty($name)) $name .= ' ';
+		$name .= $name3;
+	}
+	return ucwords($name);
+}
+
+
+define('STR_HIGHLIGHT_SIMPLE', 1);
+define('STR_HIGHLIGHT_WHOLEWD', 2);
+define('STR_HIGHLIGHT_CASESENS', 4);
+define('STR_HIGHLIGHT_STRIPLINKS', 8);
+
+function highlight($text, $search) {
+	
+  $text = str_highlight($text, $search);
+	return $text;
+				
+}
+	
+function str_highlight($text, $needle, $options = null, $highlight = null) {
+  
+  // Default highlighting
+  if ($highlight === null) $highlight = '<span class="sr">\1</span>';
+    
+  // Select pattern to use
+  if ($options & STR_HIGHLIGHT_SIMPLE) {
+    $pattern = '#(%s)#';
+    $sl_pattern = '#(%s)#';
+  } else {
+    $pattern = '#(?!<.*?)(%s)(?![^<>]*?>)#';
+    $sl_pattern = '#<a\s(?:.*?)>(%s)</a>#';
+  }
+    
+  // Case sensitivity
+  if (!($options & STR_HIGHLIGHT_CASESENS)) {
+    $pattern .= 'i';
+    $sl_pattern .= 'i';
+  }
+    
+  $needle = (array) $needle;
+    
+ foreach ($needle as $needle_s) {
+  
+    $needle_s = preg_quote($needle_s);
+    
+    // Escape needle with optional whole word check
+    if ($options & STR_HIGHLIGHT_WHOLEWD) $needle_s = '\b' . $needle_s . '\b';
+    
+    // Strip links
+    if ($options & STR_HIGHLIGHT_STRIPLINKS) {
+      $sl_regex = sprintf($sl_pattern, $needle_s);
+      $text = preg_replace($sl_regex, '\1', $text);
+    }
+    
+    $regex = sprintf($pattern, $needle_s);
+    $text = preg_replace($regex, $highlight, $text);
+  }
+    
+  return $text;
+  	
+}

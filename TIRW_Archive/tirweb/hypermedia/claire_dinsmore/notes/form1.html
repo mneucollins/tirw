@@ -1,0 +1,47 @@
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<script language="JavaScript">
+<!--
+function Choice1() {
+	Pages = new Array(2)
+
+	Pages[0] = "main.html"
+	Pages[1] = "etc01.html"
+	Pages[2] = "fquote1.html"
+
+	x = document.forms["Form1"].elements["TheList"].selectedIndex
+	parent.frames["content"].location = Pages[x]
+}
+
+function Choice2() {
+	Pages = new Array(2)
+
+	Pages[0] = "main.html"
+	Pages[1] = "etc06.html"
+	Pages[2] = "wquote1.html"
+
+	x = document.forms["Form1"].elements["walkselect"].selectedIndex
+	parent.frames["content"].location = Pages[x]
+}
+//-->
+</script>
+</head>
+
+<body bgcolor="#000000">
+<form method="post" action="" name="Form1">
+  <select name="TheList"  onChange="Choice1()">
+    <option selected>foot</option>
+    <option>thesaurus</option>
+    <option>quote</option>
+  </select>
+  &nbsp;&nbsp;&nbsp;
+  <select name="walkselect" onChange="Choice2()">
+    <option selected>walk/ing</option>
+    <option>thesaurus</option>
+    <option>quotes</option>
+  </select>
+</form>
+</body>
+</html>

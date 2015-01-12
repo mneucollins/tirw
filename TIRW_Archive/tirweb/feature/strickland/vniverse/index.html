@@ -1,0 +1,195 @@
+<!-- saved from url=(0022)http://internet.e-mail -->
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<HTML>
+
+<HEAD>
+<style type="text/css">
+<!--
+a {  text-decoration: none}
+-->
+</style>
+
+
+<TITLE>splash</TITLE>
+
+<SCRIPT language="JavaScript" type="text/javascript">
+
+function hide(id,nest){
+
+if(document.layers){
+
+if(nest) document.layers[nest].document.layers[id].visibility="hidden"
+
+else document.layers[id].visibility="hidden"
+
+}
+
+else if(document.all) document.all[id].style.visibility="hidden"
+
+else if(document.getElementById)document.getElementById(id).style.visibility = "hidden";
+
+}
+
+
+
+function show(id,nest){
+
+if(document.layers){
+
+if(nest) document.layers[nest].document.layers[id].visibility="visible"
+
+else document.layers[id].visibility="visible"
+
+}
+
+else if(document.all) document.all[id].style.visibility="visible"
+
+else if(document.getElementById)document.getElementById(id).style.visibility = "visible";
+
+
+
+}
+
+
+
+function MM_checkPlugin(plugin, theURL, altURL, IEGoesToURL) { //v2.0
+
+
+
+        var browserName = navigator.appName;
+
+        if (browserName == "Netscape") {
+
+                var mWidth = screen.availWidth - 13;
+
+                var mHeight = screen.availHeight - 30;
+
+        }
+
+        else {
+
+                var mWidth = screen.availWidth;
+
+                var mHeight = screen.availHeight;
+
+        }
+
+
+
+  if ((navigator.plugins && navigator.plugins[plugin]) || //if NS, or
+
+      (IEGoesToURL &&  //if flag set, and MSIE browser for Win95/NT (ActiveX)
+
+       navigator.appName.indexOf('Microsoft') != -1 &&
+
+       navigator.appVersion.indexOf('Mac') == -1 &&
+
+       navigator.appVersion.indexOf('3.1') == -1)) {
+
+    if (theURL.length>2) newWindow(mWidth,mHeight,theURL);
+
+  } else {
+
+    if (altURL.length>2) newWindow(mWidth,mHeight,altURL);
+
+  }
+
+  document.MM_returnValue = false;
+
+}
+
+
+
+var newwin = null;
+
+
+
+function newWindow(theWidth,theHeight,theURL)
+
+{
+
+newwin = window.open(theURL,"mwin","width=" + theWidth + ",height=" + theHeight + ",screenX=" + screen.availLeft + ",left=" + screen.availLeft + ",screenY=" + screen.availTop + ",top=" + screen.availTop + ",resizable=yes,status=yes,toolbar=no,scrollbars=yes")
+
+newwin.focus()
+
+}
+
+
+
+</SCRIPT>
+
+<SCRIPT LANGUAGE="JavaScript1.2">
+
+                      <!--
+
+                         NS4 = document.layers;
+
+                         if (NS4) {
+
+                            origWidth = innerWidth;
+
+                            origHeight = innerHeight;
+
+                         }
+
+
+
+                      function reDo() {
+
+                         if (innerWidth != origWidth || innerHeight != origHeight) 
+
+                            location.reload();
+
+                      }
+
+
+
+                      if (NS4) onresize = reDo;
+
+                      //-->
+
+                      </SCRIPT>
+
+</HEAD>
+
+
+
+<BODY BGCOLOR="#000000" LEFTMARGIN="0" TOPMARGIN="0" MarginHeight="0" MarginWidth="0"> 
+
+<center>
+<TABLE WIDTH=759 BORDER=0 CELLPADDING=0 CELLSPACING=0>
+	<TR>
+		<TD COLSPAN=3>
+			<IMG SRC="images/a4tr_01.gif" WIDTH=759 HEIGHT=351 ALT=""></TD>
+	</TR>
+	<TR>
+		<TD ROWSPAN=5>
+			<IMG SRC="images/a4tr_02.gif" WIDTH=343 HEIGHT=124 ALT=""></TD>
+		<TD>
+			<A HREF="#" onClick="MM_checkPlugin('Shockwave for Director','director.html','plugin.html',true);return document.MM_returnValue"><IMG SRC="images/a4tr_03.gif" WIDTH=76 HEIGHT=28 ALT="enter" BORDER="0"></A></TD>
+		<TD ROWSPAN=5>
+			<IMG SRC="images/a4tr_04.gif" WIDTH=340 HEIGHT=124 ALT=""></TD>
+	</TR>
+	<TR>
+		<TD>
+			<A HREF="#" onClick="javascript:window.open('book.html','book','width=269,height=110,screenX=50,screenY=280,top=280,left=50')"><IMG SRC="images/a4tr_05.gif" WIDTH=76 HEIGHT=27 ALT="book" BORDER="0"></A></TD>
+	</TR>
+	<TR>
+		<TD>
+			<A HREF="#" onClick="javascript:window.open('credits.html','credits','width=269,height=250,screenX=100,screenY=430,top=430,left=100')"><IMG SRC="images/a4tr_06.gif" WIDTH=76 HEIGHT=30 ALT="credits" BORDER="0"></A></TD>
+	</TR>
+	<TR>
+		<TD>
+			<A HREF="#" onClick="javascript:window.open('howto.html','howto','width=269,height=485,screenX=650,screenY=150,top=150,left=650')"><IMG SRC="images/a4tr_07.gif" WIDTH=76 HEIGHT=26 ALT="how-to" BORDER="0"></A></TD>
+	</TR>
+	<TR>
+		<TD>
+			<IMG SRC="images/a4tr_08.gif" WIDTH=76 HEIGHT=13 ALT=""></TD>
+	</TR>
+</TABLE>
+</center>
+</BODY>
+
+</HTML>

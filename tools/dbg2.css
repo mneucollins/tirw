@@ -1,0 +1,319 @@
+BODY {background:#FFFFFF; margin:0px 0px 0px 0px;}
+IMG, DIV, TABLE {margin:0; padding:0; border:0;}
+
+/* top */
+
+#tableTop         {width:100%; height:18px; border-bottom:solid 1px #848484;}
+#tdTopLogo        {width:259px; vertical-align:top;}
+.tdTopMiddle      {white-space:nowrap; font-size:1px; height:18px; padding:0px 0px 0px 0px; overflow:hidden; background-image:url('images/white/top/middle.jpg'); background-repeat:repeat-x;}
+#divTopMiddleText {white-space:nowrap; margin:5px 0px 0px 0px; font-size:10px; color:#666666; font-family:Arial; letter-spacing:1px;}
+#tdTopRight       {width:100%; font-size:1px; overflow:hidden; background-image:url('images/white/top/middle.jpg'); background-repeat:repeat-x;}
+A.linkTopHidden               {color:#666666; font-size:10px; font-family:Arial; letter-spacing:1px; text-decoration:none;}
+A:link.linkTopHidden          {color:#666666; text-decoration:none;}
+A:hover.linkTopHidden         {color:blue;text-decoration:none;}
+A:active.linkTopHidden        {color:#666666; text-decoration:none;}
+A:visited.linkTopHidden       {color:#666666; text-decoration:none;}
+A:visited:hover.linkTopHidden {color:blue;text-decoration:none;}
+
+.tableTopButton    {height:13px; margin:5px 0px 0px 0px;}
+.tdTopButtonSide   {}
+.tdTopButtonMiddle {font-size:10px; color: #666666; letter-spacing:0px; font-family:Arial; white-space:nowrap; padding: 0px 8px 0px 8px; background-image:url('images/white/topButton/middle.jpg'); background-repeat:repeat-x;}
+A.linkTopButton               {color:blue; font-weight:bold; font-size:10px; letter-spacing:0px; font-family:Arial; text-decoration:none;}
+A:link.linkTopButton          {color:blue; text-decoration:none;}
+A:hover.linkTopButton         {color:#302F46;text-decoration:none;}
+A:active.linkTopButton        {color:blue; text-decoration:none;}
+A:visited.linkTopButton       {color:blue; text-decoration:none;}
+A:visited:hover.linkTopButton {color:#302F46;text-decoration:none;}
+
+/* login form */
+#tableLogin   {margin: 20px 20px 0px 20px;}
+.tdLogin      {font-size:12px; white-space:nowrap; font-family:Arial;}
+.tdLoginError {font-size:11px; white-space:nowrap; font-family:Arial; color:#986D6D; font-weight:bold; padding: 0px 0px 0px 20px;}
+.inputLogin   {margin: 4px 0px 4px 10px; border:solid 1px #AAAAAA;}
+.tdList       {font-size:12px; padding: 0px 6px 6px 0px;}
+
+.spanLoginError {font-size:11px; white-space:nowrap; font-family:Arial; color:#C44343; font-weight:bold; padding: 0px 0px 0px 20px;}
+
+
+/* table select and options & more optioins */
+
+#tableSelect         {width:100%; margin: 6px 0px 0px 0px;}
+.inputTableSelect    {border:solid 1px #AAAAAA; font-size:12px;}
+.tdSelectBorderRight {border-right:solid 2px #FFFFFF; background:#E8EDE9; vertical-align:middle; padding: 1px 8px 1px 8px; font-weight:normal; font-size:11px; letter-spacing:0px; font-family:Arial; white-space:nowrap; text-align:right;}
+.tdSelectBorderRightHighlight {border-right:solid 2px #FFFFFF; background:#EDE8E8; vertical-align:middle; padding: 1px 8px 1px 8px; font-weight:normal; font-size:11px; letter-spacing:0px; font-family:Arial; white-space:nowrap; text-align:right;}
+.tdSelectMiddle      {width:80%;font-size:1px;background:#EEEEEE;}
+.tdSelectNoBorder    {background:#E8EDE9; vertical-align:middle; padding: 1px 2px 1px 8px; font-weight:normal; font-size:11px; letter-spacing:0px; font-family:Arial; white-space:nowrap;}
+.tdSelectBorderLeft  {border-left:solid 2px #FFFFFF; background:#E8EDE9; vertical-align:middle; padding: 1px 8px 1px 8px; font-weight:normal; font-size:11px; letter-spacing:0px; font-family:Arial; white-space:nowrap;}
+.tdSelectBorderLeftDark      {border-left:solid 2px #FFFFFF; background:#BBBBBB; vertical-align:middle; padding: 1px 8px 1px 8px; font-weight:normal; font-size:11px; letter-spacing:0px; font-family:Arial; white-space:nowrap;}
+.tdSelectBorderLeftHighlight {border-left:solid 2px #FFFFFF; background:#EDE8E8; vertical-align:middle; padding: 1px 8px 1px 8px; font-weight:normal; font-size:11px; letter-spacing:0px; font-family:Arial; white-space:nowrap; text-align:right;}
+.tdSelectMiddleFull  {width:100%;font-size:1px; border-left:solid 2px #FFFFFF; border-right:solid 2px #FFFFFF;}
+
+#tableMoreOptions  {width:100%; margin: 1px 0px 0px 0px;}
+
+A.linkOptionsBar               {color:blue; font-weight:normal; font-size:11px; letter-spacing:0px; font-family:Arial; text-decoration:none;}
+A:link.linkOptionsBar          {color:blue; text-decoration:none;}
+A:hover.linkOptionsBar         {color:#302F46;text-decoration:none;}
+A:active.linkOptionsBar        {color:blue; text-decoration:none;}
+A:visited.linkOptionsBar       {color:blue; text-decoration:none;}
+A:visited:hover.linkOptionsBar {color:#302F46;text-decoration:none;}
+
+/* edit box */
+
+#formEditBox  {display:none; position:absolute; top:0px; left:0px; z-index:6;}  /* conversation area z-index is 5 */
+#tableEditBox {
+	border-top:solid 1px #C6CA9A; border-left:solid 1px #C6CA9A; border-right: solid 1px #AAAC90; border-bottom:solid 1px #AAAC90;
+	background:#E7E6EB; margin: 3px 0px 0px 5px;
+}
+#tdEditBoxTopLeft  {white-space:nowrap; padding: 2px 6px 2px 2px; font-size:12px; font-family:Arial; color:#A76666; letter-spacing:0px; font-weight:normal; text-align:left;} 
+#tdEditBoxTopRight {white-space:nowrap; padding: 2px 5px 2px 2px; font-size:12px; font-family:Arial; color:#333333; letter-spacing:0px; text-align:right;}
+#tdEditBox         {vertical-align:top; padding: 2px 2px 2px 2px; font-size:11px; font-family:Arial; color:#666666;}
+
+.divEditBoxHold    {display:none;}
+
+.textAreaEditBox   {
+  border-top:solid 1px #C6CA9A; border-left:solid 1px #C6CA9A; border-right: solid 1px #AAAC90; border-bottom:solid 1px #AAAC90;
+	background:#FFFFFF; font-size:11px;
+	width:600px; height:350px; padding: 0px 3px 0px 3px;
+}
+.inputEditBox      {
+  border-top:solid 1px #C6CA9A; border-left:solid 1px #C6CA9A; border-right: solid 1px #AAAC90; border-bottom:solid 1px #AAAC90;
+	background:#FFFFFF; font-size:11px;
+	width:420px; padding: 3px 3px 3px 3px;
+}
+.inputEditBoxInt {
+  border-top:solid 1px #C6CA9A; border-left:solid 1px #C6CA9A; border-right: solid 1px #AAAC90; border-bottom:solid 1px #AAAC90;
+	background:#FFFFFF; font-size:11px;
+	width:30px; padding: 3px 3px 3px 3px;
+}
+.inputEditBoxRadio {margin: 5px 5px 0px 5px;}
+.selectEditBox {
+  border-top:solid 1px #C6CA9A; border-left:solid 1px #C6CA9A; border-right: solid 1px #AAAC90; border-bottom:solid 1px #AAAC90;
+	background:#FFFFFF; font-size:11px; font-family:Verdana;
+	width:350px; padding: 0px 0px 0px 0px;
+}
+
+.inputDatetime {
+  text-align:left;height:20px;font-family:arial;font-size:12px;background-color:#FFFFFF;color:#555555;
+  border-width:1px;border-color:#252525;margin-top:3px;margin-bottom:0px;width:500px;
+}
+
+A.linkEditBox               {color:blue; text-decoration:none;}
+A:link.linkEditBox          {color:blue; text-decoration:none;}
+A:hover.linkEditBox         {color:#302F46;text-decoration:none;}
+A:active.linkEditBox        {color:blue; text-decoration:none;}
+A:visited.linkEditBox       {color:blue; text-decoration:none;}
+A:visited:hover.linkEditBox {color:#302F46;text-decoration:none;}
+
+/* custom query box */
+
+#formCustomQuery  {display:none; position:absolute; top:0px; left:0px; z-index:3;}
+#tableCustomQuery {
+	border-top:solid 1px #999999; border-left:solid 1px #999999; border-right: solid 1px #888888; border-bottom:solid 1px #888888;
+	background:#444444; margin: 3px 0px 0px 5px;
+}
+#tdCustomQueryLeft  {white-space:nowrap; padding: 2px 10px 2px 2px; font-size:12px; font-family:Arial; color:#EEEEEE; letter-spacing:0px; font-weight:normal; text-align:left;} 
+#tdCustomQueryRight {white-space:nowrap; padding: 2px 5px 2px 2px; font-size:12px; font-family:Arial; color:#EEEEEE; letter-spacing:0px; text-align:right;}
+#tdCustomQuery      {white-space:nowrap; vertical-align:top; padding: 2px 2px 2px 2px; font-size:11px; font-family:Arial; color:#666666;}
+#inputCustomQuery   {width:400px; border:solid 1px #AAAAAA; margin: 0px 5px 0px 0px; font-size:12px;}
+
+A.linkCustomQuery               {color:#A8A8FF; font-weight:bold; font-size:9px; letter-spacing:1px; font-family:Arial; text-decoration:none;}
+A:link.linkCustomQuery          {color:#A8A8FF; text-decoration:none;}
+A:hover.linkCustomQuery         {color:#FFFFFF; text-decoration:none;}
+A:active.linkCustomQuery        {color:#A8A8FF; text-decoration:none;}
+A:visited.linkCustomQuery       {color:#A8A8FF; text-decoration:none;}
+A:visited:hover.linkCustomQuery {color:#FFFFFF; text-decoration:none;}
+
+/* custom query results */
+
+#divCustomQuery {
+  display:none; position:absolute; top: 50px; left:0px; z-index:7; 
+	padding: 5px 10px 5px 10px; margin: 0px 0px 0px 0px;
+	border:solid 1px #AAAAAA; background:#FFFFFF;
+}
+#divCustomQueryResults {
+	font-size:11px; color:#444444; letter-spacing:1px; line-height:140%; font-family:Courier, Arial;
+}
+
+/* add table box */
+
+#formAddTable  {display:none; position:absolute; top:0px; left:0px; z-index:3;}
+#tableAddTable {
+	border-top:solid 1px #999999; border-left:solid 1px #999999; border-right: solid 1px #888888; border-bottom:solid 1px #888888;
+	background:#444444; margin: 3px 0px 0px 5px;
+}
+#tdAddTableLeft  {white-space:nowrap; width:50%; padding: 2px 6px 2px 2px; font-size:12px; font-family:Arial; color:#EEEEEE; letter-spacing:0px; font-weight:normal; text-align:left;} 
+#tdAddTableRight {white-space:nowrap; width:50%; padding: 2px 5px 2px 2px; font-size:12px; font-family:Arial; color:#EEEEEE; letter-spacing:0px; text-align:right;}
+#tdAddTable      {white-space:nowrap; vertical-align:top; padding: 2px 2px 2px 2px; font-size:11px; font-family:Arial; color:#666666;}
+#inputAddTable   {width:110px; border:solid 1px #AAAAAA; margin: 0px 5px 0px 0px; font-size:12px;}
+#inputAddTablePk {width:85px; border:solid 1px #AAAAAA; font-size:12px;}
+
+A.linkAddTable               {color:#A8A8FF; font-weight:bold; font-size:9px; letter-spacing:1px; font-family:Arial; text-decoration:none;}
+A:link.linkAddTable          {color:#A8A8FF; text-decoration:none;}
+A:hover.linkAddTable         {color:#FFFFFF; text-decoration:none;}
+A:active.linkAddTable        {color:#A8A8FF; text-decoration:none;}
+A:visited.linkAddTable       {color:#A8A8FF; text-decoration:none;}
+A:visited:hover.linkAddTable {color:#FFFFFF; text-decoration:none;}
+
+/* add field box */
+
+#formAddField  {display:none; position:absolute; top:0px; left:0px; z-index:3;}
+#tableAddField {
+	border-top:solid 1px #999999; border-left:solid 1px #999999; border-right: solid 1px #888888; border-bottom:solid 1px #888888;
+	background:#444444; margin: 3px 0px 0px 5px;
+}
+#tdAddFieldLeft  {white-space:nowrap; width:50%; padding: 2px 6px 2px 2px; font-size:12px; font-family:Arial; color:#EEEEEE; letter-spacing:0px; font-weight:normal; text-align:left;} 
+#tdAddFieldRight {white-space:nowrap; width:50%; padding: 2px 5px 2px 2px; font-size:12px; font-family:Arial; color:#EEEEEE; letter-spacing:0px; text-align:right;}
+#tdAddField      {white-space:nowrap; vertical-align:top; padding: 2px 2px 2px 2px; font-size:12px; font-family:Arial; color:#EEEEEE;}
+#inputAddField   {width:110px; border:solid 1px #AAAAAA; margin: 0px 0px 0px 0px; font-size:12px;}
+#selectAddFieldAfter {border:solid 1px #AAAAAA; margin: 0px 5px 0px 5px; font-size:12px;}
+#selectAddFieldType  {border:solid 1px #AAAAAA; margin: 0px 5px 0px 5px; font-size:12px;}
+
+A.linkAddField               {color:#A8A8FF; font-weight:bold; font-size:9px; letter-spacing:1px; font-family:Arial; text-decoration:none;}
+A:link.linkAddField          {color:#A8A8FF; text-decoration:none;}
+A:hover.linkAddField         {color:#FFFFFF; text-decoration:none;}
+A:active.linkAddField        {color:#A8A8FF; text-decoration:none;}
+A:visited.linkAddField       {color:#A8A8FF; text-decoration:none;}
+A:visited:hover.linkAddField {color:#FFFFFF; text-decoration:none;}
+
+/* add note box */
+
+#formAddNote  {display:none; position:absolute; top:0px; left:0px; z-index:3;}
+#tableAddNote {
+	border-top:solid 1px #999999; border-left:solid 1px #999999; border-right: solid 1px #888888; border-bottom:solid 1px #888888;
+	background:#E5C5B5; margin: 3px 0px 0px 5px;
+}
+#tdAddNoteRight {white-space:nowrap; padding: 2px 5px 2px 2px; font-size:12px; font-family:Arial; color:#000000; letter-spacing:0px; text-align:right;}
+#tdAddNote      {white-space:nowrap; vertical-align:top; padding: 2px 2px 2px 4px; font-size:11px; font-family:Arial; color:#666666;}
+#inputAddNote   {width:260px; border:solid 1px #AAAAAA; margin: 0px 0px 0px 0px; font-size:12px;}
+
+A.linkAddNote               {color:#5E5ED0; font-weight:bold; font-size:9px; letter-spacing:1px; font-family:Arial; text-decoration:none;}
+A:link.linkAddNote          {color:#5E5ED0; text-decoration:none;}
+A:hover.linkAddNote         {color:#000000; text-decoration:none;}
+A:active.linkAddNote        {color:#5E5ED0; text-decoration:none;}
+A:visited.linkAddNote       {color:#5E5ED0; text-decoration:none;}
+A:visited:hover.linkAddNote {color:#000000; text-decoration:none;}
+
+/* notes box */
+.divNote {
+  position:absolute; top:2px; right:6px; z-index:3;  
+  font-size:9px; font-family:Arial; line-height:130%;
+	margin:0px; padding:0px 3px 0px 3px; border:solid 1px #AAAAAA; background: #E5C5B5;
+}
+	
+/* global display table */
+#tableMain      {width:100%;}
+#tdConversation {vertical-align:top;}  /* 'width' defined inline */
+#tdMainSheet    {vertical-align:top;}
+
+/* spreadsheet */
+
+#tableSheet           {width:100%; margin: 1px 0px 0px 0px; border-bottom:solid 1px #BBBBBB;}
+.tdSheetHeader        {}
+.tableSheetHeader     {width:100%;}
+.tdSheetHeaderSide    {width:1px;}
+.tdSheetHeaderMiddle  {text-align:center; white-space:nowrap; padding: 0px 8px 0px 8px; background-repeat:repeat-x;}  /* 'background-image' defined inline */
+.tdSheetHeaderOptions {vertical-align:top; width:6px; padding:2px 1px 0px 1px; background-repeat:repeat-x;}  /* 'background-image' defined inline */
+
+A.linkSheetHeader               {color:blue; font-weight:bold; font-size:9px; letter-spacing:1px; font-family:Arial; text-decoration:none;}
+A:link.linkSheetHeader          {color:blue; text-decoration:none;}
+A:hover.linkSheetHeader         {color:#302F46; text-decoration:none;}
+A:active.linkSheetHeader        {color:blue; text-decoration:none;}
+A:visited.linkSheetHeader       {color:blue; text-decoration:none;}
+A:visited:hover.linkSheetHeader {color:#302F46; text-decoration:none;}
+
+.spanSheetHeader {color:#990000; font-weight:bold; font-size:9px; letter-spacing:1px; font-family:Arial; text-decoration:none;}
+
+.tdSheetOptions     {width:34px; background:#FFFFFF; border-top:solid 1px #EEEEEE; border-bottom:solid 1px #FFFFFF; white-space:nowrap; padding: 3px 4px 3px 5px; color:#302F46; font-weight:normal; font-size:10px; letter-spacing:0px; font-family:Arial;}
+
+.tdSheetTopRow        {background:#EEEEEE; border-top:solid 2px #FFFFFF; border-bottom:solid 1px #FFFFFF; border-right:solid 1px #FFFFFF; border-left:solid 1px #FFFFFF;  padding: 0px 0px 0px 0px; color:#333333; font-weight:normal; font-size:10px; letter-spacing:0px; font-family:Arial;}
+.tdSheet              {background:#EEEEEE; border-top:solid 1px #FFFFFF; border-bottom:solid 1px #FFFFFF; border-right:solid 1px #FFFFFF; border-left:solid 1px #FFFFFF;  padding: 0px 0px 0px 0px; color:#333333; font-weight:normal; font-size:10px; letter-spacing:0px; font-family:Arial;}
+.tdSheetEmptyTopRow   {background:#FAFAFA; border-top:solid 2px #EEEEEE; border-bottom:solid 1px #EEEEEE; border-right:solid 1px #EEEEEE; border-left:solid 1px #EEEEEE;  padding: 0px 0px 0px 0px; color:#333333; font-weight:normal; font-size:10px; letter-spacing:0px; font-family:Arial;}
+.tdSheetEmpty         {background:#FAFAFA; border-top:solid 1px #EEEEEE; border-bottom:solid 1px #EEEEEE; border-right:solid 1px #EEEEEE; border-left:solid 1px #EEEEEE;  padding: 0px 0px 0px 0px; color:#333333; font-weight:normal; font-size:10px; letter-spacing:0px; font-family:Arial;}
+.tdSheetTopRowMo      {background:#DBB3B3; border-top:solid 2px #FFFFFF; border-bottom:solid 1px #FFFFFF; border-right:solid 1px #FFFFFF; border-left:solid 1px #FFFFFF;  padding: 0px 0px 0px 0px; color:#333333; font-weight:normal; font-size:10px; letter-spacing:0px; font-family:Arial;}
+.tdSheetMo            {background:#DBB3B3; border-top:solid 1px #FFFFFF; border-bottom:solid 1px #FFFFFF; border-right:solid 1px #FFFFFF; border-left:solid 1px #FFFFFF;  padding: 0px 0px 0px 0px; color:#333333; font-weight:normal; font-size:10px; letter-spacing:0px; font-family:Arial;}
+.tdSheetEmptyTopRowMo {background:#E3C7C7; border-top:solid 2px #EEEEEE; border-bottom:solid 1px #EEEEEE; border-right:solid 1px #EEEEEE; border-left:solid 1px #EEEEEE;  padding: 0px 0px 0px 0px; color:#333333; font-weight:normal; font-size:10px; letter-spacing:0px; font-family:Arial;}
+.tdSheetEmptyMo       {background:#E3C7C7; border-top:solid 1px #EEEEEE; border-bottom:solid 1px #EEEEEE; border-right:solid 1px #EEEEEE; border-left:solid 1px #EEEEEE;  padding: 0px 0px 0px 0px; color:#333333; font-weight:normal; font-size:10px; letter-spacing:0px; font-family:Arial;}
+.divSheetOuter        {position:relative; top:0px; left:0px; z-index:0;}
+.divSheet             {padding: 3px 2px 3px 8px; margin:0px 6px 0px 0px; color:#333333; font-weight:normal; font-size:10px; letter-spacing:0px; font-family:Arial;}
+
+
+A.linkSheetOption               {color:blue; font-weight:bold; font-size:10px; letter-spacing:0px; font-family:Arial; text-decoration:none;}
+A:link.linkSheetOption          {color:blue; text-decoration:none;}
+A:hover.linkSheetOption         {color:#302F46;text-decoration:none;}
+A:active.linkSheetOption        {color:blue; text-decoration:none;}
+A:visited.linkSheetOption       {color:blue; text-decoration:none;}
+A:visited:hover.linkSheetOption {color:#302F46;text-decoration:none;}
+
+.tdAddRowText                {background:#B36464; color:#FFFFFF; border-top:solid 1px #EEEEEE; border-bottom:solid 1px #EEEEEE; border-right:solid 1px #EEEEEE; border-left:solid 1px #EEEEEE;  padding: 3px 8px 3px 8px; font-weight:normal; font-size:10px; letter-spacing:0px; font-family:Arial;}
+
+.spanContinue                {color:#777777; font-weight:normal; font-size:9px; letter-spacing:0px; font-family:Arial; text-decoration:none;}
+A.linkContinue               {color:blue; font-weight:normal; font-size:9px; letter-spacing:0px; font-family:Arial; text-decoration:none;}
+A:link.linkContinue          {color:blue; text-decoration:none;}
+A:hover.linkContinue         {color:#302F46;text-decoration:none;}
+A:active.linkContinue        {color:blue; text-decoration:none;}
+A:visited.linkContinue       {color:blue; text-decoration:none;}
+A:visited:hover.linkContinue {color:#302F46;text-decoration:none;}
+
+.imgNotepad {position:absolute; top:0px; right:0px;}
+
+#tdSheetListAssociations {padding:1px 0px 0px 0px; vertical-align:top; text-align:right; font-size:10px; letter-spacing:0px; font-family:Arial; font-weight:normal; color:#AAAAAA;}
+
+A.linkSheetRelation               {color:#8181C0; font-weight:normal; font-size:9px; letter-spacing:0px; font-family:Arial; text-decoration:none;}
+A:link.linkSheetRelation          {color:#8181C0; text-decoration:none;}
+A:hover.linkSheetRelation         {color:#302F46;text-decoration:none;}
+A:active.linkSheetRelation        {color:#8181C0; text-decoration:none;}
+A:visited.linkSheetRelation       {color:#8181C0; text-decoration:none;}
+A:visited:hover.linkSheetRelation {color:#302F46;text-decoration:none;}
+
+A.linkSheetRelateText               {color:#222222; text-decoration:none;}
+A:link.linkSheetRelateText          {color:#222222; text-decoration:none;}
+A:hover.linkSheetRelateText         {color:#222222;text-decoration:none;}
+A:active.linkSheetRelateText        {color:#222222; text-decoration:none;}
+A:visited.linkSheetRelateText       {color:#222222; text-decoration:none;}
+A:visited:hover.linkSheetRelateText {color:#222222;text-decoration:none;}
+
+#tdSheetNumRows {padding:1px 0px 0px 10px; vertical-align:top; font-size:11px; letter-spacing:0px; font-family:Arial; font-weight:normal; color:#777777;}
+
+A.linkSheetNumRows               {color:blue; text-decoration:none;}
+A:link.linkSheetNumRows          {color:blue; text-decoration:none;}
+A:hover.linkSheetNumRows         {color:#302F46;text-decoration:none;}
+A:active.linkSheetNumRows        {color:blue; text-decoration:none;}
+A:visited.linkSheetNumRows       {color:blue; text-decoration:none;}
+A:visited:hover.linkSheetNumRows {color:#302F46;text-decoration:none;}
+
+/* conversation */
+
+.divConversationText {margin: 0px 0px 6px 0px; background:#EEEEEE;}
+
+A.linkConversationAdd               {color:blue; font-weight:normal; font-size:9px; letter-spacing:0px; font-family:Arial; text-decoration:none;}
+A:link.linkConversationAdd          {color:blue; text-decoration:none;}
+A:hover.linkConversationAdd         {color:#302F46;text-decoration:none;}
+A:active.linkConversationAdd        {color:blue; text-decoration:none;}
+A:visited.linkConversationAdd       {color:blue; text-decoration:none;}
+A:visited:hover.linkConversationAdd {color:#302F46;text-decoration:none;}
+
+/* settings tools */
+#formSettings     {margin: 20px 20px 20px 20px;}
+#tableSettings    {}
+.tdSettingsHeader {padding: 0px 0px 6px 0px; border-bottom: solid 2px #986D6D; font-size:12px; color:#444444; font-family:Arial; letter-spacing:0px; line-height:140%;}
+.tdSettingsField  {padding: 0px 20px 10px 0px; vertical-align:top; font-size:12px; color:#444444; font-family:Arial; letter-spacing:0px; line-height:133%;}
+.tdSettingsValue  {padding: 0px 0px 10px 0px; vertical-align:top;}
+.tdSettingsFieldTop  {padding: 20px 20px 10px 0px; vertical-align:top; font-size:12px; color:#444444; font-family:Arial; letter-spacing:0px; line-height:133%;}
+.tdSettingsValueTop  {padding: 20px 0px 10px 0px; vertical-align:top;}
+
+.tdSettingsSubField  {padding: 0px 5px 5px 0px; vertical-align:top; font-size:12px; color:#444444; font-family:Arial; letter-spacing:0px; line-height:133%;}
+.tdSettingsSubValue  {padding: 0px 0px 5px 0px; vertical-align:top;}
+.tdSettingsSubValueText {padding: 0px 0px 5px 0px; vertical-align:top; font-size:12px; color:#444444; font-family:Arial; letter-spacing:0px;}
+
+.inputSettings    {width:208px; margin:0px 5px 0px 0px; border: solid 1px #986D6D; font-size:12px; font-size:12px; color:#444444; font-family:Arial;}
+.inputSettingsCheckbox {margin: 2px 4px 4px 8px;}
+
+.spanSettingsAddAnother {padding:0px 0px 0px 2px;}
+
+A.linkSettingsAddAnother               {color:blue; font-weight:normal; font-size:11px; letter-spacing:0px; font-family:Arial; text-decoration:none;}
+A:link.linkSettingsAddAnother          {color:blue; text-decoration:none;}
+A:hover.linkSettingsAddAnother         {color:#302F46;text-decoration:none;}
+A:active.linkSettingsAddAnother        {color:blue; text-decoration:none;}
+A:visited.linkSettingsAddAnother       {color:blue; text-decoration:none;}
+A:visited:hover.linkSettingsAddAnother {color:#302F46;text-decoration:none;}
+

@@ -1,0 +1,54 @@
+Judy Malloy
+
+Instructions for Installing and Viewing Concerto for Narrative Data
+
+Concerto for Narrative Data was created in basic HTML and should 
+run on any computer platform, with any browser,  without any special plugins.ÿ 
+
+The entire work is compressed in concerto_IRW_08.zip 
+This file contains 179 files:
+170 .html files
+8 image files
+and a copy of these instructions: help.txt  
+
+The image files (that will need to be loaded in binary mode if they are 
+uploaded to the Internet)  are: 
+
+title.JPG
+image_top.JPG
+image_top2.JPG
+image2.jpg
+image3.jpg
+image4.jpg
+image5.jpg
+image6.jpg
+
+Note that the .jpg and .JPG files were created with different software. 
+The capitalization differences should not be changed as they are keyed exactly 
+to the files that call these images.
+
+
+INSTALLING CONCERTO
+
+To install the work, unzip concerto_IRW_08.zip and install the files 
+(except help.txt which is for the person installing the work) 
+all in one directory.
+
+
+READING CONCERTO
+
+The top file is begin.html
+Type in the url begin.html to begin the work
+
+Click on the photograph to continue. 
+The columns of the "concertare" will appear slowly, one by one. 
+When the columns of text have all appeared on the screen, Concerto for Narrative Data 
+can be experienced by selecting links anywhere in the concertare interface.
+After a link is selected from the concertare, the reader can either return 
+to the concertare (clicking on "concertare" brings up the animated version; 
+clicking on "Concerto for Narrative Data"  returns to a static interface) 
+or, by clicking on the space bar below the text, follow the words of
+an individual voice. The reader can also select "about this work" to find
+out more about Concerto for Narrative Data.
+
+

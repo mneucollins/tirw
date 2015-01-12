@@ -1,0 +1,105 @@
+<html>
+
+<head>
+<meta name="GENERATOR" content="Microsoft FrontPage 3.0">
+<title>Frame Work</title>
+<script language="JavaScript"><!--
+//This code is called from each node when a conditional link
+//is to be rendered. If the link would lead to a node that is already
+//loaded, the link is suppressed and only unlinked text is displayed.
+
+//array for the names of the frames that will hold the nodes
+var frameNames = new Array()
+frameNames[0] = "topFrame"
+frameNames[1] = "middleFrame"
+frameNames[2] = "bottomFrame"
+totalFrames = frameNames.length
+
+//extract filename of node from URL
+function getFilename(fullPath) {
+	var offset = fullPath.lastIndexOf("/") + 1
+	var end = fullPath.length
+	var fileOnly = fullPath.substring(offset, end)
+	return(fileOnly)	
+}
+
+//Function for determining whether or not to display link;
+//if node is already visible in another frame, the link to it is not displayed.
+//The function parameters are the URL of the link, the anchor text,
+//and the number of the frame containing the conditional link.
+function condLink(linkURL, linkText, currentFrame) {
+	frameIndex = new Array()
+	//get frame array index numbers that correspond to frame names
+	//(the following "for" statement must be executed inside the function;
+	//otherwise it can't access the frames array)
+	for (var i = 0; i < totalFrames; i++) {
+		for (var j = 0; j < top.frames.length; j++) {
+			if (frameNames[i] == top.frames[j].name) {
+				frameIndex[i] = j
+			}
+		}
+	}
+	//array for the names of the nodes currently loaded
+	var nodeNames = new Array()
+	for (var i = 0; i < totalFrames; i++) {
+		nodeNames[i] = getFilename(top.frames[frameIndex[i]].location.pathname)
+	}
+	//determine whether the link URL passed to this function
+	//leads to a node that is already displayed
+	var nodeLoaded = false
+	for (var i = 0; i < totalFrames; i++) {
+		if (linkURL == nodeNames[i]) {
+			nodeLoaded = true
+		}
+	}
+	//extract the number of the target frame from
+	//the name of the new node being loaded
+	var targetNo = parseInt(linkURL.charAt(0))
+	var textString
+	//if node isn't currently loaded, display the link to it;
+	//otherwise display unlinked text
+	if (nodeLoaded == false) {
+		textString = "<a href='" + linkURL + "' target='" + frameNames[targetNo - 1] + "'>" + linkText + "</a>"
+	} else {
+		textString = linkText
+	}
+top.frames[frameIndex[currentFrame - 1]].document.write(textString)
+}
+
+// --></script>
+
+
+<meta name="Microsoft Theme" content="framewor 000, default"></head>
+
+<frameset border="0" frameborder="0" cols="640,*">
+  <noframes>
+  <body bgcolor="#000000" text="#FFFFFF" link="#E4C5A0" vlink="#C0C0C0" alink="#FFA2A2"><!--mstheme--><font face="times new roman, times new roman, times">
+  <p align="center">This page uses frames, but your browser doesn't support them.</p>
+  <!--mstheme--></font></body>
+  </noframes>
+  <frameset border="0" frameborder="0" rows="288,*">
+    <frameset border="0" frameborder="0" cols="154,332,154">
+      
+<frame name="leftFrame" scrolling="no" noresize src="left.htm" marginwidth="0" marginheight="0">
+      <frameset border="0" frameborder="0" rows="10,132,*,19">
+        
+<frame name="upper-edge" scrolling="no" noresize src="white.htm" marginwidth="0" marginheight="0">
+        
+<frame name="topFrame" scrolling="no" noresize src="sight.htm" marginwidth="0" marginheight="10">
+        
+<frame name="middleFrame" src="black.htm" scrolling="no" noresize marginwidth="0" marginheight="0">
+        
+<frame name="lower-edge" scrolling="no" noresize src="white.htm" marginwidth="0" marginheight="0">
+      </frameset>
+      
+<frame name="rightFrame" scrolling="no" noresize src="right.htm" marginwidth="0" marginheight="0">
+    </frameset>
+    
+<frame name="bottomFrame" src="white.htm" scrolling="auto" noresize marginwidth="0" marginheight="0">
+  </frameset>
+  
+<frame name="right-edge" scrolling="no" noresize src="white.htm" marginwidth="0" marginheight="0">
+  <noframes>
+  </noframes>
+</frameset>
+</html>

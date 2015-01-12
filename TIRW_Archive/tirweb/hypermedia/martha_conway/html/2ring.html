@@ -1,0 +1,162 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+
+<HTML>
+<HEAD>
+<TITLE>2ring</TITLE>
+<META NAME="Generator" " CONTENT="Built using NetObjects Fusion 2.0.1 for Macintosh">
+
+<style>
+.spanstyle {
+	position:absolute;
+	visibility:visible;
+	top:-50px;
+	font-size:9pt;
+	font-family:verdana;
+
+
+	color:blue;
+}
+</style>
+<script>
+
+/*
+Cursor Trailor Text- By Peter Gehrig (http://www.24fun.ch/)
+Permission given to Dynamicdrive.com to feature script in it's archive.
+For full source code, installation instructions, and 1000's more DHTML scripts,
+visit http://dynamicdrive.com
+*/
+
+var x,y
+var step=20
+var flag=0
+
+// Your snappy message. Important: the space at the end of the sentence!!!
+var message="2. investigation "
+message=message.split("")
+
+var xpos=new Array()
+for (i=0;i<=message.length-1;i++) {
+	xpos[i]=-50
+}
+
+var ypos=new Array()
+for (i=0;i<=message.length-1;i++) {
+	ypos[i]=-50
+}
+
+function handlerMM(e){
+	x = (document.layers) ? e.pageX : document.body.scrollLeft+event.clientX
+	y = (document.layers) ? e.pageY : document.body.scrollTop+event.clientY
+	flag=1
+}
+
+function makesnake() {
+	if (flag==1 && document.all) {
+    	for (i=message.length-1; i>=1; i--) {
+   			xpos[i]=xpos[i-1]+step
+			ypos[i]=ypos[i-1]
+    	}
+		xpos[0]=x+step
+		ypos[0]=y
+	
+		for (i=0; i<message.length-1; i++) {
+    		var thisspan = eval("span"+(i)+".style")
+    		thisspan.posLeft=xpos[i]
+			thisspan.posTop=ypos[i]
+    	}
+	}
+	
+	else if (flag==1 && document.layers) {
+    	for (i=message.length-1; i>=1; i--) {
+   			xpos[i]=xpos[i-1]+step
+			ypos[i]=ypos[i-1]
+    	}
+		xpos[0]=x+step
+		ypos[0]=y
+	
+		for (i=0; i<message.length-1; i++) {
+    		var thisspan = eval("document.span"+i)
+    		thisspan.left=xpos[i]
+			thisspan.top=ypos[i]
+    	}
+	}
+		var timer=setTimeout("makesnake()",30)
+}
+
+</script>
+
+
+
+
+</HEAD>
+
+<BODY onLoad="makesnake()"
+                          style="width:100%;overflow-x:hidden;overflow-y:scroll"
+BACKGROUND="../assets/images/baybridg.jpg" LINK="#0000FF" VLINK="#800080" TEXT="#000000"  >
+
+<script>
+<!-- Beginning of JavaScript -
+
+for (i=0;i<=message.length-1;i++) {
+    document.write("<span id='span"+i+"' class='spanstyle'>")
+	document.write(message[i])
+    document.write("</span>")
+}
+
+if (document.layers){
+	document.captureEvents(Event.MOUSEMOVE);
+}
+document.onmousemove = handlerMM;
+
+// - End of JavaScript - -->
+</script>
+
+<TABLE CELLPADDING=0 CELLSPACING=0 BORDER=0 WIDTH=638>
+<TR VALIGN="top" ALIGN="left">
+<TD>
+
+  <TABLE BORDER=0 CELLSPACING=0 CELLPADDING=0 WIDTH=375>
+   <TR VALIGN="top" ALIGN="left">
+	
+<TD WIDTH=8 HEIGHT =95><IMG SRC="../assets/images/dot_clear.gif" WIDTH =8 HEIGHT =1 BORDER=0></TD>
+	
+<TD WIDTH=367><IMG SRC="../assets/images/dot_clear.gif" WIDTH =367 HEIGHT =1 BORDER=0></TD>
+   </TR>
+   <TR VALIGN="top" ALIGN="left">
+	<TD></TD>
+	<TD WIDTH=367><P><B><FONT SIZE="+1" FACE="Arial,Helvetica">We met some Californians for Christian Focus and two of the Christians gave us woven friendship bracelets in bright purple and green and the gesture touched me.&nbsp; In addition to the bracelet Betsey wore a ring of her mother's, a small silver ring with small claws that held a small blue stone, and it fit loosely on her third finger and made her hand look delicate and thin.&nbsp; When we went to the movies I held her hand over the armrests and twisted the ring with my fingers.&nbsp; She brought along brewer's yeast to sprinkle on popcorn.&nbsp; She gave me a cashmere scarf for Christmas, black on one side and gray on the other, which made my skin itch and I gave it to Goodwill but later lied about that.&nbsp; </FONT></B></P><P><B><FONT SIZE="+1" FACE="Arial,Helvetica">We set out our pills in small plastic containers with the names of the day printed on them.&nbsp; I thought about getting a new living room rug.&nbsp; Our couch faded and we put it on the curb and we heard a pick up truck stop and two guys in black overalls hauled it away.&nbsp; We stopped eating out then we stopped holding hands in the movies.&nbsp; She told me she had no time to meditate.&nbsp; We tried yoga together.&nbsp; She spent more time in the library.</FONT></B></P><P>&nbsp;</P>
+<P><A HREF="2bleaves.html"><B><FONT COLOR="#996600" SIZE="+1" FACE="Arial,Helvetica">january</FONT></B></A><B><FONT COLOR="#996600" SIZE="+1" FACE="Arial,Helvetica"></FONT></B>
+</TD>
+
+   </TR>
+   <TR VALIGN="top" ALIGN="left">
+	<TD COLSPAN=2 HEIGHT =26></TD>
+   </TR>
+  </TABLE>
+</TD>
+<TD>
+
+  <TABLE BORDER=0 CELLSPACING=0 CELLPADDING=0 WIDTH=263>
+   <TR VALIGN="top" ALIGN="left">
+	
+<TD WIDTH=26 HEIGHT =95><IMG SRC="../assets/images/dot_clear.gif" WIDTH =26 HEIGHT =1 BORDER=0></TD>
+	
+<TD WIDTH=102><IMG SRC="../assets/images/dot_clear.gif" WIDTH =102 HEIGHT =1 BORDER=0></TD>
+	
+<TD WIDTH=135><IMG SRC="../assets/images/dot_clear.gif" WIDTH =135 HEIGHT =1 BORDER=0></TD>
+   </TR>
+   <TR VALIGN="top" ALIGN="left">
+	<TD></TD>
+	<TD WIDTH=102><P><FONT SIZE="-2" FACE="Arial,Helvetica">Our mattress was on the floor and the moon shone through the blinds in stripes. She told me that people should not walk upright exposing our hearts, we should crouch over our hearts like the animals. </FONT></TD>
+
+	<TD></TD>
+   </TR>
+   <TR VALIGN="top" ALIGN="left">
+	<TD COLSPAN=3 HEIGHT =380></TD>
+   </TR>
+  </TABLE>
+</TD>
+</TR>
+</TABLE>
+</BODY>
+</HTML>

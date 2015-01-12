@@ -1,0 +1,186 @@
+<html>
+<head>
+<title>FootNotes, or: a small journey on the WWW</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<script language="javascript">
+<!--
+function etyWindow(n) {
+  if (n==1) {
+	etyWin=window.open('etym.html','Etymology','width=221,height=218,screenX=372,screenY=100,scrollbars=no') }
+   else {
+	etyWin.close() }
+}
+function mapWindow() {
+  	mapWin=window.open('notes/altmap.html','map','width=475,height=290,screenX=265,screenY=60,status=yes,scrollbars=no'); 
+window.close();
+}
+
+function MM_timelinePlay(tmLnName, myID) { //v1.2
+  //Copyright 1997 Macromedia, Inc. All rights reserved.
+  var i,j,tmLn,props,keyFrm,sprite,numKeyFr,firstKeyFr,propNum,theObj,firstTime=false;
+  if (document.MM_Time == null) MM_initTimelines(); //if *very* 1st time
+  tmLn = document.MM_Time[tmLnName];
+  if (myID == null) { myID = ++tmLn.ID; firstTime=true;}//if new call, incr ID
+  if (myID == tmLn.ID) { //if Im newest
+    setTimeout('MM_timelinePlay("'+tmLnName+'",'+myID+')',tmLn.delay);
+    fNew = ++tmLn.curFrame;
+    for (i=0; i<tmLn.length; i++) {
+      sprite = tmLn[i];
+      if (sprite.charAt(0) == 's') {
+        if (sprite.obj) {
+          numKeyFr = sprite.keyFrames.length; firstKeyFr = sprite.keyFrames[0];
+          if (fNew >= firstKeyFr && fNew <= sprite.keyFrames[numKeyFr-1]) {//in range
+            keyFrm=1;
+            for (j=0; j<sprite.values.length; j++) {
+              props = sprite.values[j]; 
+              if (numKeyFr != props.length) {
+                if (props.prop2 == null) sprite.obj[props.prop] = props[fNew-firstKeyFr];
+                else        sprite.obj[props.prop2][props.prop] = props[fNew-firstKeyFr];
+              } else {
+                while (keyFrm<numKeyFr && fNew>=sprite.keyFrames[keyFrm]) keyFrm++;
+                if (firstTime || fNew==sprite.keyFrames[keyFrm-1]) {
+                  if (props.prop2 == null) sprite.obj[props.prop] = props[keyFrm-1];
+                  else        sprite.obj[props.prop2][props.prop] = props[keyFrm-1];
+        } } } } }
+      } else if (sprite.charAt(0)=='b' && fNew == sprite.frame) eval(sprite.value);
+      if (fNew > tmLn.lastFrame) tmLn.ID = 0;
+  } }
+}
+
+function MM_timelineGoto(tmLnName, fNew, numGotos) { //v2.0
+  //Copyright 1997 Macromedia, Inc. All rights reserved.
+  var i,j,tmLn,props,keyFrm,sprite,numKeyFr,firstKeyFr,lastKeyFr,propNum,theObj;
+  if (document.MM_Time == null) MM_initTimelines(); //if *very* 1st time
+  tmLn = document.MM_Time[tmLnName];
+  if (numGotos != null)
+    if (tmLn.gotoCount == null) tmLn.gotoCount = 1;
+    else if (tmLn.gotoCount++ >= numGotos) {tmLn.gotoCount=0; return}
+  jmpFwd = (fNew > tmLn.curFrame);
+  for (i = 0; i < tmLn.length; i++) {
+    sprite = (jmpFwd)? tmLn[i] : tmLn[(tmLn.length-1)-i]; //count bkwds if jumping back
+    if (sprite.charAt(0) == "s") {
+      numKeyFr = sprite.keyFrames.length;
+      firstKeyFr = sprite.keyFrames[0];
+      lastKeyFr = sprite.keyFrames[numKeyFr - 1];
+      if ((jmpFwd && fNew<firstKeyFr) || (!jmpFwd && lastKeyFr<fNew)) continue; //skip if untouchd
+      for (keyFrm=1; keyFrm<numKeyFr && fNew>=sprite.keyFrames[keyFrm]; keyFrm++);
+      for (j=0; j<sprite.values.length; j++) {
+        props = sprite.values[j];
+        if (numKeyFr == props.length) propNum = keyFrm-1 //keyframes only
+        else propNum = Math.min(Math.max(0,fNew-firstKeyFr),props.length-1); //or keep in legal range
+        if (sprite.obj != null) {
+          if (props.prop2 == null) sprite.obj[props.prop] = props[propNum];
+          else        sprite.obj[props.prop2][props.prop] = props[propNum];
+      } }
+    } else if (sprite.charAt(0)=='b' && fNew == sprite.frame) eval(sprite.value);
+  }
+  tmLn.curFrame = fNew;
+  if (tmLn.ID == 0) eval('MM_timelinePlay(tmLnName)');
+}
+
+function MM_initTimelines() {
+    //MM_initTimelines() Copyright 1997 Macromedia, Inc. All rights reserved.
+    var ns = navigator.appName == "Netscape";
+    document.MM_Time = new Array(2);
+    document.MM_Time[0] = new Array(2);
+    document.MM_Time["Timeline1"] = document.MM_Time[0];
+    document.MM_Time[0].MM_Name = "Timeline1";
+    document.MM_Time[0].fps = 10;
+    document.MM_Time[0][0] = new String("sprite");
+    document.MM_Time[0][0].slot = 1;
+    if (ns)
+        document.MM_Time[0][0].obj = document["bk"];
+    else
+        document.MM_Time[0][0].obj = document.all ? document.all["bk"] : null;
+    document.MM_Time[0][0].keyFrames = new Array(1, 150, 300);
+    document.MM_Time[0][0].values = new Array(4);
+    document.MM_Time[0][0].values[0] = new Array(-757,-752,-747,-742,-737,-732,-727,-722,-717,-712,-707,-701,-696,-691,-686,-681,-676,-671,-666,-661,-656,-651,-646,-641,-636,-631,-626,-621,-616,-611,-606,-601,-596,-590,-585,-580,-575,-570,-565,-560,-555,-550,-545,-540,-535,-530,-525,-520,-515,-510,-505,-500,-495,-490,-485,-479,-474,-469,-464,-459,-454,-449,-444,-439,-434,-429,-424,-419,-414,-409,-404,-399,-394,-389,-384,-379,-373,-368,-363,-358,-353,-348,-343,-338,-333,-328,-323,-318,-313,-308,-303,-298,-293,-288,-283,-278,-273,-268,-262,-257,-252,-247,-242,-237,-232,-227,-222,-217,-212,-207,-202,-197,-192,-187,-182,-177,-172,-167,-162,-156,-151,-146,-141,-136,-131,-126,-121,-116,-111,-106,-101,-96,-91,-86,-81,-76,-71,-66,-61,-55,-50,-45,-40,-35,-30,-25,-20,-15,-10,-5,-10,-15,-20,-25,-30,-35,-40,-45,-50,-55,-60,-65,-70,-75,-80,-85,-90,-95,-100,-105,-110,-115,-120,-125,-130,-135,-140,-146,-151,-156,-161,-166,-171,-176,-181,-186,-191,-196,-201,-206,-211,-216,-221,-226,-231,-236,-241,-246,-251,-256,-261,-266,-271,-276,-281,-286,-291,-296,-301,-306,-311,-316,-321,-326,-331,-336,-341,-346,-351,-356,-361,-366,-371,-376,-381,-386,-391,-397,-402,-407,-412,-417,-422,-427,-432,-437,-442,-447,-452,-457,-462,-467,-472,-477,-482,-487,-492,-497,-502,-507,-512,-517,-522,-527,-532,-537,-542,-547,-552,-557,-562,-567,-572,-577,-582,-587,-592,-597,-602,-607,-612,-617,-622,-627,-632,-638,-643,-648,-653,-658,-663,-668,-673,-678,-683,-688,-693,-698,-703,-708,-713,-718,-723,-728,-733,-738,-743,-748,-753,-758);
+    document.MM_Time[0][0].values[0].prop = "left";
+    document.MM_Time[0][0].values[1] = new Array(-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9);
+    document.MM_Time[0][0].values[1].prop = "top";
+    if (!ns) {
+        document.MM_Time[0][0].values[0].prop2 = "style";
+        document.MM_Time[0][0].values[1].prop2 = "style";
+    }
+    document.MM_Time[0][0].values[2] = new Array("visible","visible","visible");
+    document.MM_Time[0][0].values[2].prop = "visibility";
+    if (!ns)
+        document.MM_Time[0][0].values[2].prop2 = "style";
+    document.MM_Time[0][0].values[3] = new Array(448,448,448,448,448,448,448,448,448,448,448,448,448,448,448,449,449,449,449,449,449,449,449,449,449,449,449,449,449,449,450,450,450,450,450,450,450,450,450,450,450,450,450,450,450,451,451,451,451,451,451,451,451,451,451,451,451,451,451,451,452,452,452,452,452,452,452,452,452,452,452,452,452,452,452,453,453,453,453,453,453,453,453,453,453,453,453,453,453,453,454,454,454,454,454,454,454,454,454,454,454,454,454,454,454,455,455,455,455,455,455,455,455,455,455,455,455,455,455,455,456,456,456,456,456,456,456,456,456,456,456,456,456,456,456,457,457,457,457,457,457,457,457,457,457,457,457,457,457,458,458,458,458,458,458,458,458,458,458,458,458,458,458,458,458,458,458,458,458,458,458,458,458,458,458,458,458,458,458,458,458,458,458,458,458,458,458,458,458,458,458,458,458,458,458,458,458,458,458,458,458,458,458,458,458,458,458,458,458,458,458,458,458,458,458,458,458,458,458,458,458,458,458,458,458,458,458,458,458,458,458,458,458,458,458,458,458,458,458,458,458,458,458,458,458,458,458,458,458,458,458,458,458,458,458,458,458,458,458,458,458,458,458,458,458,458,458,458,458,458,458,458,458,458,458,458,458,458,458,458,458,458,458,458,458,458,458,458,458,458,458,458,458,458,458,458,458,458,458,458);
+    document.MM_Time[0][0].values[3].prop = "height";
+    if (!ns)
+        document.MM_Time[0][0].values[3].prop2 = "style";
+    document.MM_Time[0][1] = new String("behavior");
+    document.MM_Time[0][1].frame = 300;
+    document.MM_Time[0][1].value = "MM_timelineGoto('Timeline1','1')";
+    document.MM_Time[0].lastFrame = 300;
+    document.MM_Time[1] = new Array(1);
+    document.MM_Time["Timeline2"] = document.MM_Time[1];
+    document.MM_Time[1].MM_Name = "Timeline2";
+    document.MM_Time[1].fps = 15;
+    document.MM_Time[1][0] = new String("behavior");
+    document.MM_Time[1][0].frame = 151;
+    document.MM_Time[1][0].value = "MM_timelineGoto('Timeline2','1')";
+    document.MM_Time[1].lastFrame = 151;
+    for (i=0; i<document.MM_Time.length; i++) {
+        document.MM_Time[i].ID = null;
+        document.MM_Time[i].curFrame = 0;
+        document.MM_Time[i].delay = 1000/document.MM_Time[i].fps;
+    }
+}
+//-->
+</script>
+</head>
+
+<body bgcolor="#88664B" MARGINHEIGHT="0" MARGINWIDTH="0" LEFTMARGIN="0" TOPMARGIN="0" SCROLLING="NO" onLoad="MM_timelinePlay('Timeline1');MM_timelinePlay('Timeline2')" text="#94735A">
+<div id="bk" style="position:absolute; width:1200px; height:448px; z-index:1; left: -757px; top: -9px; background-image:     url(infomen/printcloud4.jpg); layer-background-image:     url(infomen/printcloud4.jpg); border: 1px none #000000; visibility: visible"> 
+</div>
+<map name="info">
+  <area shape="rect" coords="46,369,382,428" href="#" onClick="mapWindow()">
+  <area shape="poly" coords="53,94,43,117,80,132,97,147,128,122,120,112,75,100,52,93,53,93" target="infoWindow" href="http://www.parsed-out.demon.co.uk/geekfun/items/shoot.html">
+  <area shape="circle" coords="211,191,85" href="#" onMouseover="etyWindow(1)" onMouseout="etyWindow()" >
+  <area shape="rect" coords="297,167,422,201" target="infoWindow" href="http://www.unc.edu/~rowlett/units/dictF.html#foot">
+  <area shape="rect" coords="12,151,107,211" href="http://forfeetsake.com/foot_facts1.htm" target="infoWindow">
+  <area shape="rect" coords="104,41,157,101" target="infoWindow" href="http://www.geodatasolutions.com/personal/jmiller/oed2/foot.htm">
+  <area shape="poly" coords="126,276,144,300,128,313,120,324,113,331,104,331,96,328,90,320,82,316,71,309,62,295,67,286,75,283,89,287,102,291,117,285,128,277" target="infoWindow" href="http://members.tripod.com/~bletch/index.html">
+  <area shape="poly" coords="31,240,45,286,113,262,97,217,31,241,32,242" href="http://russian.dmll.cornell.edu/russian.web/BODY/MAC_ACAD/NOG/NOG.HTM" target="infoWindow">
+  <area shape="poly" coords="331,319,331,318,330,323" href="http://www.foottalk.com/anatomy.htm">
+  <area shape="poly" coords="291,278,284,284,289,297,298,320,321,337,332,337,336,324,346,322,353,311,351,294,333,290,326,286,318,271,303,265,294,274,290,280,289,280" href="http://www.foot-fetish.com/" target="infoWindow">
+  <area shape="rect" coords="152,309,278,366" href="http://www.geocities.com/CollegePark/Campus/2159/meter2.htm" target="infoWindow">
+  <area shape="poly" coords="331,209,313,252,382,282,400,244,329,210,332,211" href="http://www.sonic.net/~yronwode/rabbitfoot.html" target="infoWindow">
+  <area shape="rect" coords="258,14,295,85" target="infoWindow" href="http://www.kinesis-ergo.com/fs-apps.html">
+  <area shape="rect" coords="166,-1,243,70" href="http://onhealth.com/ch1/Columnist/item,25585.asp" target="infoWindow">
+</map> <map name="walk">
+  <area shape="rect" coords="0,0,60,68" href="http://www.foothealth.com/06.htm" target="infoWindow">
+</map>
+<div id="map" style="position:absolute; width:455px; height:434px; z-index:2; left: -13px; top: 0px; visibility: visible"> 
+  <table width="103%" border="0" cellspacing="0" cellpadding="0" align="left" height="424">
+    <tr> 
+      <td height="412"> 
+                            
+<div align="center"><img src="infomen/infomenusq.gif" width="411" height="410" border="0" usemap="#notes"></div>
+      </td>
+    </tr>
+  </table>
+</div>
+<map name="notes">
+  <area shape="poly" coords="300,139,312,140,351,125,353,120,360,120,377,112,374,91,368,79,366,67,366,64,332,67,323,75,323,86,315,110,295,125,293,130,297,141,302,142" href="http://www.dfki.uni-kl.de/km/java/java/gfc/api/com/ibm/graph/Walk.html" target="infoWindow">
+  <area shape="rect" coords="37,368,372,408" href="#" onClick="mapWindow()">
+  <area shape="rect" coords="1,143,101,206" href="http://forfeetsake.com/foot_facts1.htm" target="infoWindow">
+  <area shape="poly" coords="21,230,38,279,104,257,88,209,21,232" href="http://russian.dmll.cornell.edu/russian.web/BODY/MAC_ACAD/NOG/NOG.HTM" target="infoWindow">
+  <area shape="poly" coords="65,277,57,280,54,289,69,304,83,312,92,322,108,322,114,306,134,292,128,275,115,267,95,284,75,282,66,275,65,275" href="http://members.tripod.com/~bletch/index.html" target="infoWindow">
+  <area shape="rect" coords="139,299,270,363" href="http://www.geocities.com/CollegePark/Campus/2159/meter2.htm" target="infoWindow">
+  <area shape="poly" coords="296,255,269,268,267,277,284,310,311,330,323,331,329,322,331,316,341,308,346,293,339,277,321,273,310,260,299,253,294,257" href="http://www.foot-fetish.com/" target="infoWindow">
+  <area shape="poly" coords="321,200,299,247,376,286,398,240" href="http://www.sonic.net/~yronwode/rabbitfoot.html" target="infoWindow">
+  <area shape="rect" coords="289,162,412,192" href="http://www.unc.edu/~rowlett/units/dictF.html#foot" target="infoWindow">
+  <area shape="rect" coords="248,4,293,81" href="http://www.kinesis-ergo.com/fs-apps.html" target="infoWindow">
+  <area shape="rect" coords="159,3,234,58" href="http://onhealth.com/ch1/Columnist/item,25585.asp" target="infoWindow">
+  <area shape="rect" coords="96,32,155,97" href="http://www.geodatasolutions.com/personal/jmiller/oed2/foot.htm" target="infoWindow">
+  <area shape="poly" coords="47,82,35,90,30,106,74,127,88,139,118,116,120,107,83,96,48,78,44,83" href="http://www.parsed-out.demon.co.uk/geekfun/items/shoot.html" target="infoWindow">
+</map>
+<div id="walk" style="position:absolute; width:59px; height:59px; z-index:4; left: 440px; top: 336px; visibility: hidden"><a href="http://www.foothealth.com/06.htm" target="infoWindow"><img src="../../../artpool/fut/infomen/walkrev2.gif" width="61" height="69" border="0"></a> 
+</div>
+<div id="dial" style="position:absolute; width:97px; height:115px; z-index:3; left: 153px; top: 132px"><a href="#" onMouseover="etyWindow(1)" onMouseout="etyWindow()"><img src="infomen/xrotate.gif" width="120" height="119" border="0"></a></div>
+<div id="angwalk" style="position:absolute; width:48px; height:64px; z-index:5; left: 312px; top: 82px"><a href="http://www.foothealth.com/06.htm" target="infoWindow"><img src="images/climwalkang.gif" width="61" height="69" border="0"></a></div>
+</body>
+</html>

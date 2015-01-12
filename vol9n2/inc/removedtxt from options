@@ -1,0 +1,73 @@
+	<h3>
+	<h2>
+		Essays
+	</h2>
+	<h2>
+		Launch the Artworks
+	</h2>
+	<h3>
+		<a href="artworks/underLanguage/index.htm" target="_new">
+			Under Language</a>
+	</h3>
+	<h3>
+		<a href="artworks/concerto/begin.html" target="_new">
+			Concerto for Narrative Data</a>
+	</h3>
+	<h3>
+		<a href="http://www.dreamdilation.com/activereader.html" target="_new">
+			activeReader</a>
+	</h3>
+	<h3>
+		<a href="artworks/soRandom/" target="_new">
+			So Random</a>
+	</h3>
+	<h3>
+		<a href="http://shawnrider.com/pitp/" target="_new">
+			PiTP</a>
+			<!-- 
+<br />
+			<a href="artworks/pitp/index.php" target="_blank">PiTP(local)</a>
+ -->
+	</h3>
+	<h3>
+		<a href="artworks/riverisland/riverislandQT.html" target="_new">
+			riverIsland QT</a>
+	</h3>
+	<h3>
+		<a href="artworks/The_Purpling/index.html" target="_new">
+			The Purpling</a>
+	</h3>
+	<br />
+<!-- 
+	<h2>
+		Biographical Information
+	</h2>
+	<h3>
+		<a href="bios.php?bio=1" id="bio1" 
+<?if ($_GET['bio'] == '1') echo 'class="highlight" '?>
+		>Stephanie Strickland</a>
+	</h3>
+	<h3>
+		<a href="bios.php?bio=2" id="bio2" 
+<?if ($_GET['bio'] == '2') echo 'class="highlight" '?>
+		>Majorie Coverley Luesebrink</a>
+	</h3>
+	<h3>
+		<a href="bios.php?bio=3" id="bio3" 
+<?if ($_GET['bio'] == '3') echo 'class="highlight" '?>
+		>Donna Leishman</a>
+	</h3>
+	<h3>
+		<a href="bios.php?bio=4" id="bio4" 
+<?if ($_GET['bio'] == '4') echo 'class="highlight" '?>
+		>Jason Nelson</a>
+	</h3>
+	<h3>
+		<a href="bios.php?bio=5" id="bio5" 
+<?if ($_GET['bio'] == '5') echo 'class="highlight" '?>
+		>Talan Memmott</a>
+	</h3>
+
+	<div id="forceWidth" style="width:200px;">
+	</div>
+ -->

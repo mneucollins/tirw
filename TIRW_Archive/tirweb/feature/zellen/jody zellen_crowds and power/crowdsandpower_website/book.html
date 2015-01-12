@@ -1,0 +1,303 @@
+<HTML>
+<HEAD>
+<TITLE>crowds and power</TITLE>
+
+<SCRIPT LANGUAGE = "JavaScript">
+<!--
+<!-- hide from old browsers
+
+
+var masterCycle = new Function( "rotateBG(), cycle(), cycle2(), cycle3(), cycle4(),cycle5(), cycle6(), cycle7(), cycle8(), cycle9(), cycle10(), cycle11(), cycle12()")
+
+
+var BGrounds = new Array ("#000000", "#111111", "#222222",
+"#333333", "#444444", "#555555", "#666666", "#777777", "#888888", "#999999")
+var thisBG = 0
+var bgColorCount = 10
+
+function rotateBG()   {
+     if (document.images) {
+
+     thisBG++
+        if (thisBG == bgColorCount) { thisBG = 0}
+
+   document.bgColor=BGrounds[thisBG]
+   setTimeout ("rotateBG()", 2* 1000)
+   }
+
+
+}
+
+
+
+
+
+
+
+
+var adImages = new Array ("images/11_01.jpg","images/12_01.jpg", "images/1_01.jpg","images/2_01.jpg","images/3_01.jpg","images/4_01.jpg","images/5_01.jpg", "images/6_01.jpg","images/7_01.jpg","images/8_01.jpg","images/9_01.jpg","images/10_01.jpg")
+var thisAd = 0 
+var smallChanges = 12
+var imgCt1 = 11
+
+function cycle()  {
+
+        if (document.images)  {
+          thisAd++
+           if (thisAd == imgCt1) {
+              thisAd = 0}
+    document.power1.src= adImages[thisAd]
+     setTimeout("cycle()", 2 * 1000)
+}
+
+}
+
+
+var adImages2 = new Array ("images/10_02.jpg", "images/11_02.jpg","images/12_02.jpg", "images/1_02.jpg", "images/2_02.jpg","images/3_02.jpg","images/4_02.jpg", "images/5_02.jpg","images/6_02.jpg","images/7_02.jpg","images/8_02.jpg","images/9_02.jpg")
+
+
+function cycle2()  {
+
+        if (document.images)  {
+          thisAd++
+           if (thisAd == imgCt1) {
+              thisAd = 0}
+    document.power2.src= adImages2[thisAd]
+     setTimeout("cycle2()", 2 * 1000)
+}
+
+}
+
+
+var adImages3 = new Array ("images/9_03.jpg", "images/10_03.jpg","images/11_03.jpg", "images/12_03.jpg", "images/1_03.jpg","images/2_03.jpg","images/3_03.jpg", "images/4_03.jpg","images/5_03.jpg","images/6_03.jpg","images/7_03.jpg","images/8_03.jpg")
+
+
+function cycle3()  {
+
+        if (document.images)  {
+          thisAd++
+           if (thisAd == imgCt1) {
+              thisAd = 0}
+    document.power3.src= adImages3[thisAd]
+     setTimeout("cycle3()", 2 * 1000)
+}
+
+}
+
+
+
+var adImages4 = new Array ("images/8_04.jpg", "images/9_04.jpg","images/10_04.jpg", "images/11_04.jpg", "images/12_04.jpg","images/1_04.jpg","images/2_04.jpg", "images/3_04.jpg","images/4_04.jpg","images/5_04.jpg","images/6_04.jpg","images/7_04.jpg")
+
+
+function cycle4()  {
+
+        if (document.images)  {
+          thisAd++
+           if (thisAd == imgCt1) {
+              thisAd = 0}
+    document.power4.src= adImages4[thisAd]
+     setTimeout("cycle4()", 2 * 1000)
+}
+
+}
+
+
+
+var adImages5 = new Array ("images/7_05.jpg", "images/8_05.jpg","images/9_05.jpg", "images/10_05.jpg", "images/11_05.jpg","images/12_05.jpg","images/1_05.jpg", "images/2_05.jpg","images/3_05.jpg","images/4_05.jpg","images/5_05.jpg","images/6_05.jpg")
+
+
+function cycle5()  {
+
+        if (document.images)  {
+          thisAd++
+           if (thisAd == imgCt1) {
+              thisAd = 0}
+    document.power5.src= adImages5[thisAd]
+     setTimeout("cycle5()", 2 * 1000)
+}
+
+}
+
+
+
+
+var adImages6 = new Array ("images/6_06.jpg", "images/7_06.jpg","images/8_06.jpg", "images/9_06.jpg", "images/10_06.jpg","images/11_06.jpg","images/12_06.jpg", "images/1_06.jpg","images/2_06.jpg","images/3_06.jpg","images/4_06.jpg","images/5_06.jpg")
+
+
+function cycle6()  {
+
+        if (document.images)  {
+          thisAd++
+           if (thisAd == imgCt1) {
+              thisAd = 0}
+    document.power6.src= adImages6[thisAd]
+     setTimeout("cycle6()", 2 * 1000)
+}
+
+}
+
+
+
+
+var adImages7 = new Array ("images/5_07.jpg", "images/6_07.jpg","images/7_07.jpg", "images/8_07.jpg", "images/9_07.jpg","images/10_07.jpg","images/11_07.jpg", "images/12_07.jpg","images/1_07.jpg","images/2_07.jpg","images/3_07.jpg","images/4_07.jpg")
+
+
+function cycle7()  {
+
+        if (document.images)  {
+          thisAd++
+           if (thisAd == imgCt1) {
+              thisAd = 0}
+    document.power7.src= adImages7[thisAd]
+     setTimeout("cycle7()", 2 * 1000)
+}
+
+}
+
+
+
+var adImages8 = new Array ("images/4_08.jpg", "images/5_08.jpg","images/6_08.jpg", "images/7_08.jpg", "images/8_08.jpg","images/9_08.jpg","images/10_08.jpg", "images/11_08.jpg","images/12_08.jpg","images/1_08.jpg","images/2_08.jpg","images/3_08.jpg")
+
+
+function cycle8()  {
+
+        if (document.images)  {
+          thisAd++
+           if (thisAd == imgCt1) {
+              thisAd = 0}
+    document.power8.src= adImages8[thisAd]
+     setTimeout("cycle8()", 2 * 1000)
+}
+
+}
+
+
+var adImages9 = new Array ("images/3_09.jpg", "images/4_09.jpg","images/5_09.jpg", "images/6_09.jpg", "images/7_09.jpg","images/8_09.jpg","images/9_09.jpg", "images/10_09.jpg","images/11_09.jpg","images/12_09.jpg","images/1_09.jpg","images/2_09.jpg")
+
+
+function cycle9()  {
+
+        if (document.images)  {
+          thisAd++
+           if (thisAd == imgCt1) {
+              thisAd = 0}
+    document.power9.src= adImages9[thisAd]
+     setTimeout("cycle9()", 2 * 1000)
+}
+
+}
+
+
+
+var adImages10 = new Array ("images/2_10.jpg", "images/3_10.jpg","images/4_10.jpg", "images/5_10.jpg", "images/6_10.jpg","images/7_10.jpg","images/8_10.jpg", "images/9_10.jpg","images/10_10.jpg","images/11_10.jpg","images/12_10.jpg","images/1_10.jpg")
+
+
+function cycle10()  {
+
+        if (document.images)  {
+          thisAd++
+           if (thisAd == imgCt1) {
+              thisAd = 0}
+    document.power10.src= adImages10[thisAd]
+     setTimeout("cycle10()", 2 * 1000)
+}
+
+}
+
+
+
+
+var adImages11 = new Array ("images/1_11.jpg", "images/2_11.jpg","images/3_11.jpg", "images/4_11.jpg", "images/5_11.jpg","images/6_11.jpg","images/7_11.jpg", "images/8_11.jpg","images/9_11.jpg","images/10_11.jpg","images/11_11.jpg","images/12_11.jpg")
+
+
+function cycle11()  {
+
+        if (document.images)  {
+          thisAd++
+           if (thisAd == imgCt1) {
+              thisAd = 0}
+    document.power11.src= adImages11[thisAd]
+     setTimeout("cycle11()", 2 * 1000)
+}
+
+}
+
+
+var adImages12 = new Array ("images/12_12.jpg", "images/1_12.jpg","images/2_12.jpg", "images/3_12.jpg", "images/4_12.jpg","images/5_12.jpg","images/6_12.jpg", "images/7_12.jpg","images/8_12.jpg","images/9_12.jpg","images/10_12.jpg","images/11_12.jpg")
+
+
+function cycle12()  {
+
+        if (document.images)  {
+          thisAd++
+           if (thisAd == imgCt1) {
+              thisAd = 0}
+    document.power12.src= adImages12[thisAd]
+     setTimeout("cycle12()", 2 * 1000)
+}
+
+}
+
+
+
+
+
+//STOP HIDING -->
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+//-->
+</SCRIPT>
+
+
+
+
+</HEAD>
+
+
+<BODY BGCOLOR=#FFFFFF onLoad = "masterCycle();MM_preloadImages('images/1_01.jpg','images/1_02.jpg','images/1_03.jpg')">
+<TABLE WIDTH=100% height=100% BORDER=0 CELLPADDING=0 CELLSPACING=0><TR><TD align=center valign=center>
+<TABLE WIDTH=600 BORDER=0 CELLPADDING=0 CELLSPACING=0>
+	<TR>
+		<TD>
+			<IMG SRC="images/1_01.jpg" WIDTH=60 HEIGHT=60 border=0 name="power1"></TD>
+		<TD>
+			<IMG SRC="images/1_02.jpg" WIDTH=240 HEIGHT=60 border=0 name="power2"></TD>
+		<TD>
+			<IMG SRC="images/1_03.jpg" WIDTH=300 HEIGHT=60 border=0 name="power3"></TD>
+	</TR>
+	<TR>
+		<TD>
+			<IMG SRC="images/1_04.jpg" WIDTH=60 HEIGHT=40 border=0 name="power4"></TD>
+		<TD>
+			<IMG SRC="images/1_05.jpg" WIDTH=240 HEIGHT=40 border=0 name="power5"></TD>
+		<TD>
+			<IMG SRC="images/1_06.jpg" WIDTH=300 HEIGHT=40 border=0 name="power6"></TD>
+	</TR>
+	<TR>
+		<TD>
+			<IMG SRC="images/1_07.jpg" WIDTH=60 HEIGHT=34 border=0 name="power7"></TD>
+		<TD>
+			<IMG SRC="images/1_08.jpg" WIDTH=240 HEIGHT=34 border=0 name="power8"></TD>
+		<TD>
+			<IMG SRC="images/1_09.jpg" WIDTH=300 HEIGHT=34 border=0 name="power9"></TD>
+	</TR>
+	<TR>
+		<TD>
+			<IMG SRC="images/1_10.jpg" WIDTH=60 HEIGHT=166 border=0 name="power10"></TD>
+		<TD>
+			<IMG SRC="images/1_11.jpg" WIDTH=240 HEIGHT=166 border=0 name="power11"></TD>
+		<TD>
+			<IMG SRC="images/1_12.jpg" WIDTH=300 HEIGHT=166 border=0 name="power12"></TD>
+	</TR>
+</TABLE>
+    
+      </td>
+  </tr>
+</table>
+</center>
+</BODY>
+</HTML>

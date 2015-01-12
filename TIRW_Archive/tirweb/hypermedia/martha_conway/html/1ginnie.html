@@ -1,0 +1,136 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+
+<HTML>
+<HEAD>
+<TITLE>1ginnie</TITLE>
+<META NAME="Generator" " CONTENT="Built using NetObjects Fusion 2.0.1 for Macintosh">
+<style>
+.spanstyle {
+	position:absolute;
+	visibility:visible;
+	top:-50px;
+	font-size:9pt;
+	font-family:verdana;
+
+
+	color:blue;
+}
+</style>
+<script>
+
+/*
+Cursor Trailor Text- By Peter Gehrig (http://www.24fun.ch/)
+Permission given to Dynamicdrive.com to feature script in it's archive.
+For full source code, installation instructions, and 1000's more DHTML scripts,
+visit http://dynamicdrive.com
+*/
+
+var x,y
+var step=20
+var flag=0
+
+// Your snappy message. Important: the space at the end of the sentence!!!
+var message="4. freedom from suffering "
+message=message.split("")
+
+var xpos=new Array()
+for (i=0;i<=message.length-1;i++) {
+	xpos[i]=-50
+}
+
+var ypos=new Array()
+for (i=0;i<=message.length-1;i++) {
+	ypos[i]=-50
+}
+
+function handlerMM(e){
+	x = (document.layers) ? e.pageX : document.body.scrollLeft+event.clientX
+	y = (document.layers) ? e.pageY : document.body.scrollTop+event.clientY
+	flag=1
+}
+
+function makesnake() {
+	if (flag==1 && document.all) {
+    	for (i=message.length-1; i>=1; i--) {
+   			xpos[i]=xpos[i-1]+step
+			ypos[i]=ypos[i-1]
+    	}
+		xpos[0]=x+step
+		ypos[0]=y
+	
+		for (i=0; i<message.length-1; i++) {
+    		var thisspan = eval("span"+(i)+".style")
+    		thisspan.posLeft=xpos[i]
+			thisspan.posTop=ypos[i]
+    	}
+	}
+	
+	else if (flag==1 && document.layers) {
+    	for (i=message.length-1; i>=1; i--) {
+   			xpos[i]=xpos[i-1]+step
+			ypos[i]=ypos[i-1]
+    	}
+		xpos[0]=x+step
+		ypos[0]=y
+	
+		for (i=0; i<message.length-1; i++) {
+    		var thisspan = eval("document.span"+i)
+    		thisspan.left=xpos[i]
+			thisspan.top=ypos[i]
+    	}
+	}
+		var timer=setTimeout("makesnake()",30)
+}
+
+</script>
+
+
+
+
+
+</HEAD>
+
+<BODY onLoad="makesnake()"
+                          style="width:100%;overflow-x:hidden;overflow-y:scroll"
+BACKGROUND="../assets/images/baybridg.jpg" LINK="#0000FF" VLINK="#800080" TEXT="#000000"  >
+<script>
+<!-- Beginning of JavaScript -
+
+for (i=0;i<=message.length-1;i++) {
+    document.write("<span id='span"+i+"' class='spanstyle'>")
+	document.write(message[i])
+    document.write("</span>")
+}
+
+if (document.layers){
+	document.captureEvents(Event.MOUSEMOVE);
+}
+document.onmousemove = handlerMM;
+
+// - End of JavaScript - -->
+</script>
+
+
+  <TABLE BORDER=0 CELLSPACING=0 CELLPADDING=0 WIDTH=638>
+   <TR VALIGN="top" ALIGN="left">
+	
+<TD WIDTH=8 HEIGHT =95><IMG SRC="../assets/images/dot_clear.gif" WIDTH =8 HEIGHT =1 BORDER=0></TD>
+	
+<TD WIDTH=365><IMG SRC="../assets/images/dot_clear.gif" WIDTH =365 HEIGHT =1 BORDER=0></TD>
+	
+<TD WIDTH=265><IMG SRC="../assets/images/dot_clear.gif" WIDTH =265 HEIGHT =1 BORDER=0></TD>
+   </TR>
+   <TR VALIGN="top" ALIGN="left">
+	<TD HEIGHT =300></TD>
+	<TD WIDTH=365><P><B><FONT SIZE="+1" FACE="Arial,Helvetica">I re-introduced grain into my diet so I could go to a cafe and drink wheat grass tea and maybe meet some women, and it was there that I bumped into Ginnie Foot who was Eric Foot's sister and Kiki's former fiancee.&nbsp; Ginnie was still grieving for Kiki and I could understand that considering I'd never heard him be mean or sarcastic, not once in my life and I'd known him since we were two.&nbsp; Slowly I added items to my diet and convinced Ginnie to move in with me.&nbsp; Her face was sad and lean, the kind of face that only a few months ago I longed to have.&nbsp; Ginnie told me stories of life in a boarding school back east, stories that were more than ten years old, and she had a tattoo on her neck in the shape of a cross.&nbsp; I thought: this is a girl I could marry. </FONT></B></P><P>&nbsp;</P>
+<P><A HREF="1ginnie2.html"><B><FONT COLOR="#996600" SIZE="+1" FACE="Arial,Helvetica">november</FONT></B></A><B><FONT COLOR="#996600" SIZE="+1" FACE="Arial,Helvetica"></FONT></B>
+</TD>
+
+	<TD></TD>
+   </TR>
+   <TR VALIGN="top" ALIGN="left">
+	<TD COLSPAN=3 HEIGHT =20></TD>
+   </TR>
+  </TABLE>
+</BODY>
+</HTML>

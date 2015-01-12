@@ -1,0 +1,128 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/2000/REC-xhtml1-20000126/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />
+<meta name="author" content="Nick Montfort" />
+<meta name="description" content="About Twisty Little Passages: An Approach to Interactive Fiction." />
+<meta name="keywords" content="Twisty Little Passages, interactive fiction, IF" />
+<title>Twisty Little Passages</title>
+<link rel="StyleSheet" href="../overall.css" type="text/css" />
+</head>
+
+<body>
+
+<p class="sitehead"><a href="../">nickm.com</a> &gt; <strong><cite>Twisty Little Passages</cite></strong></p>
+
+<div>
+
+<div class="left"><p><img src="../tlp_cover.jpg" width="155" height="198" alt="Twisty Little Passages cover" class="cover" /></p></div>
+
+<div class="righttext">
+
+<p class="headmatter">&nbsp;</p>
+
+<h1 class="left">Twisty Little Passages</h1>
+
+<h2 class="left">An Approach to Interactive Fiction</h2>
+
+<h2 class="left">by Nick Montfort</h2></div>
+
+<p class="headmatter">&nbsp;</p>
+
+<p class="headmatter">&nbsp;</p>
+
+</div>
+
+<p class="headmatter">
+<a href="http://mitpress.mit.edu/0262134365">(publisher info/order/request examination copy)</a><br />
+<a href="http://isbn.nu/0262134365">(compare online bookstore prices)</a><br />
+The MIT Press, 2003. ISBN: 0262134365. 328 pp. $29.95/&pound;19.95 (cloth)</p>
+
+<p class="central"><big>
+<a href="#description">Description</a> - 
+<a href="#contents">Contents</a> - 
+<a href="#praise">Praise</a></big><br />
+<big><a href="reviews.html">News, Reviews, and Discussion</a><br />
+<a href="updates.html">Updates and Errata</a></big><br />
+Interviews about the book <a href="SPAC_English.html">in <cite>SPAC #33</cite></a> and <a href="http://ifmud.port4000.com/alex/nm-interview.html">on ifMUD</a><br />
+Articles in 
+<a href="http://www.bu.edu/alumni/cas/magazine/archives/2003/spring/computing"><cite>Boston University Arts &amp; Sciences,</cite></a>
+<a href="http://www.dailypennsylvanian.com/vnews/display.v?TARGET=printable&article_id=3fd046a3ef16b"><cite>The Daily Pennsylvanian,</cite></a>
+and <a href="http://www.upenn.edu/pennnews/current/2004/042904/spotlight.html"><cite>Penn Current</cite></a>
+</p>
+
+<blockquote>
+<p>See the <a href="../if/"><big>interactive fiction</big></a> section of nickm.com for other resources on the topic of <cite>Twisty Little Passages.</cite></p>
+</blockquote>
+
+<p><a name="description"><big>Interactive fiction &mdash; </big></a>the best-known form of which is the text game or text adventure &mdash; has not received as much critical attention as have such other forms of electronic literature as hypertext fiction and the conversational programs known as chatterbots. <cite>Twisty Little Passages</cite> (the title refers to a maze in <cite>Adventure,</cite> the first interactive fiction) is the first book-length consideration of this form, examining it from gaming and literary perspectives. Nick Montfort, and interactive fiction author himself, offers both aficionados and first-time users a way to approach interactive fiction that will lead to a more pleasurable and meaningful experience of it.</p>
+
+<p><cite>Twisty Little Passages</cite> looks at interactive fiction beginning with its most important literary ancestor, the riddle. Montfort then discusses <cite>Adventure</cite> and its precursors (including the I Ching and <cite>Dungeons and Dragons</cite>), and follows this with an examination of mainframe text games developed in response, focusing on the most influential work of that era, <cite>Zork.</cite> He then considers the introduction of commercial interactive fiction for home computers, particularly that created by Infocom. Commercial works inspired an independent reaction, and Montfort describes the emergence of independent creators and the development of an online interactive fiction community in the 1990s. Finally, he considers the influence of interactive fiction on other literary and gaming forms. With <cite>Twisty Little Passages</cite> Nick Montfort places interactive fiction in its computational and literary contexts, opening up this still-developing form to new consideration.</p>
+
+<h2><a name="contents">Contents</a></h2>
+
+<ul>
+<li>Preface &nbsp; vii</li>
+<li>Acknowledgements &nbsp; xiii</li>
+<li><ol>
+    <li><big>The Pleasure of the Text Adventure</big> 1</li>
+    <li><big>Riddles</big> 37</li>
+    <li><big><i>Adventure</i> and Its Ancestors</big> 65</li>
+    <li><big><i>Zork</i> and Other Mainframe Works</big> 95</li>
+    <li><big>Infocom and Commercial Beginnings</big> 119</li>
+    <li><big>Different Visions Worldwide</big> 169</li>
+    <li><big>The Independents</big> 193</li>
+    <li><big>Interactive Fiction in Our Culture</big> 223</li>
+    </ol></li>
+<li>Interactive Fiction Works Cited &nbsp; 235</li>
+<li>Secondary Sources &nbsp; 247</li>
+<li>Index &nbsp; 273</li>
+</ul>
+
+<h2><a name="praise">Praise for <cite>Twisty Little Passages</cite></a></h2>
+
+<p><strong>"<cite>Twisty Little Passages</cite> is, quite simply, one of the best books on hypermedia, period.</strong> This book not only made me reconsider the importance of interactive fiction as a genre within hypermedia, it also made me devote a hefty portion of my graduate courses to IF &mdash; and <cite>Twisty Little Passages</cite>. Hell, after reading it, I even went out and bought every Infocom title I could lay my hands on. It's that good."<br />
+&mdash;J. Yellowlees Douglas<br />author of <i>The End of Books or Books Without End: Reading Interactive Narratives</i> and <i>I Have Said Nothing</i></p>
+
+<p><strong>"This is a thoroughly researched history of interactive fiction, as well as a brilliant analysis of the genre.</strong> Reading it makes me itch to fire up that old DEC-20 and start writing interactive fiction again!"<br />
+&mdash;Steve Meretzky<br />creative content director, WorldWinner.com, and interactive fiction pioneer</p>
+
+<p><strong>"Nick Montfort's excellent book puts interactive fiction into its literary context for the first time.</strong> Just as groundbreaking studies of romance and the gothic novel have broadened our idea of literary fiction, so Montfort makes a powerful case for recognition of this extraordinary new form of art: of the poetry that must live within the machine. Newcomers will find all that they need here, while those who are already aficionados will be constantly informed and surprised."<br />
+&mdash;Graham Nelson<br />St Anne's College, Oxford University, author and critic of interactive fiction</p>
+
+<p><strong>"Nick Montfort's <cite>Twistly Little Passages: An Approach to Interactive Fiction</cite> ... is, in many ways, a perfect book.</strong> I don't mean that it's a book without flaw ... But it's clearly the right book by the right person at the right time ... One of the great gifts of the book is the entr&eacute;e it affords into the contemporary IF scene. ... Throughout the text, Montfort triangulates between an IF work's tripartite status as narrative, game, and computer program; and it is the riddle which emerges as the figure to bind all three together."<br />
+&mdash;Matt Kirschenbaum<br />assistant professor of English and digital studies, University of Maryland</p>
+
+<p><strong>"Montfort's book is just what IF needs to establish its rightful place in the scholarly discourse surrounding electronic literature, and indeed literature, full stop.</strong> It never fails to be informative, and frequently succeeds at being sharply insightful about the literary elements of IF. However, <cite>Twisty Little Passages</cite> is quite suitable for readers outside the ivory tower as well. Though the book is clearly aimed at an academic audience, Montfort's prose is blessedly jargon-free, clear, and effective, with generous doses of humor thrown in for good measure. Even in its most theoretical moments, the book manages to balance impressive rigor with unfailing clarity, a feat all too rare in literary theory. Consequently, it's an entertaining read for general audiences and English professors alike. If you're an IF aficionado like me, you'll find <cite>Twisty Little Passages</cite> enlightening and fun, and if there's anyone in your life who genuinely wants to know what interactive fiction is and why they should care, hand them this book."<br />
+&mdash;Paul O'Brian<br />author of <cite>LASH,</cite> editor of <cite>The SPAG Newsletter</cite></p>
+
+<p>"I would have been thrilled to find one book that introduced interactive fiction, another that had a comprehensive history of it, and a third that laid the foundations for a literary theory of interactive fiction. How much better, then, to have a single book that does all three and is even a pleasure to read. <strong>Nick Montfort's book provides both overview and new insight, and is important enough that I expect it to be a canonical reference for years to come."</strong><br />
+&mdash;Stephen Granade<br />author of <cite>Losing Your Grip</cite> and <cite>BrassLantern.org</cite></p>
+
+<p>"The academic origins of Nick Montfort's <cite>Twisty Little Passages</cite> may make it too dense and dry for casual readers, but <strong>his passion for his subject is strong and clear enough that anyone even remotely interested in the aesthetics of gaming should find the book fascinating."</strong><br />
+&mdash;Noel Murray<br /><cite>The Onion A.V. Club</cite></p>
+
+<p>"<strong>Montfort's book provides an indispensable guide for a journey into the past of computer literature.</strong> Like any good travel guide it points out the roadside attractions, but it also teaches you to appreciate their often bizarre beauty. We are so used to the eye-candy that our graphics cards spew forth so abundantly, that the experience of interactive fiction threatens to be disorienting at first &mdash; but once our eyes have adjusted to the dark screen with its scarce spattering of bright alphanumerics, we are likely to feel like we are returning to a place we haven't ever really left. The effect is exciting and soothing at the same time &mdash; like the wave of remembrance that washes over Marcel as he dips the Madeleine into his tea &mdash; and Montfort deserves praise for reviving this lost world for us."<br />
+&mdash;Julian K&uuml;cklich<br /><cite>Game Research</cite></p>
+
+<p>"<strong>Anyone interested in the use of technology for artistic and cultural purposes should crack open <cite>Twisty Little Passages.</cite></strong> Here is a thorough history of interactive fiction as an outgrowth of the computer's capacity for text management."<br />
+&mdash;<cite>North Bay Multimedia Association Book Bytes</cite></p>
+
+<p>"Now, if Nick Montfort's <cite>Twisty Little Passages: An Approach to Interactive Fiction</cite> is any indication, Crowther and Woods's pioneering computer game <cite>Adventure</cite> and its descendants are finally beginning to garner the critical recognition they deserve. At only 286 pages, <cite>Twisty Little Passages</cite> is a small, accessible book that addresses a deep and complex subject. The author's stated intention is to bring us the first book-length consideration of interactive fiction (IF) as a legitimate literary field, and he has certainly succeeded. ... His enthusiasm as an observer of the modern IF scene is infectious. ... <strong>I can wholeheartedly recommend <cite>Twisty Little Passages</cite> not only to IF fans and amateur historians, but to anyone serious about the foundations and culture of computer gaming."</strong><br />
+&mdash;John Miles<br /><cite>Slashdot</cite></p>
+
+<p>"This is a fine history of the interactive fiction form, from <cite>Adventure</cite> up to the present day. ... The text is also surprisingly readable for an academic work, with occasional dry humour and mercifully little jargon. Because it's a good history and contains a number of worthwhile insights, <strong>I strongly recommend this book for any current or former IF fan."</strong><br />
+&mdash;A.M. Kuchling</p>
+
+<p>"This book is [a] new major academic treatment of this type of storytelling as a form of literature. Fortunately, <strong>Nick Montfort keeps the tone light and short on obtuse literary-theory jargon, and tells an entertaining and thoughtful story</strong> of how interactive fiction made the leap from geek pastime to commercial success, and how it ultimately evolved into the tremendously varied forms in which it manifests today.<br />
+&mdash;Arthur Bebak<br />Publisher, <cite>Netsurfer Books</cite></p>
+
+<p>"<strong><cite>Twisty Little Passages</cite> is the first book to devote complete attention to the study of one particular genre of electronic literature, and one hopes it is not the last.</strong> Such a book is timely, much needed, and greatly appreciated by this reviewer for its depth and scope."<br />
+&mdash;Dene Grigar<br />associate professor, Texas Woman's University, in <cite>Leonardo Reviews</cite></p>
+
+<p class="update">nm 2004-07</p>
+
+</body>
+
+</html>

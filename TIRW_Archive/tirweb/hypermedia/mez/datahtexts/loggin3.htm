@@ -1,0 +1,271 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <meta name="GENERATOR" content="Mozilla/4.51 [en] (Win98; I) [Netscape]">
+   <meta name="Author" content="Mez">
+   <title>:::LOG2][adapted from a MOOscape][:::</title>
+<style type="text/css">
+<!--
+.text {  font-family: "Verdana", "Arial", "Helvetica", "sans-serif"; font-size: 10pt; font-weight: bold}
+-->
+  
+
+
+  
+#divUpControl{position:absolute; width:250; left:10; top:10; z-index:1; text-align: right} 
+#divDownControl{position:absolute; width:250; left:10; top:260; z-index:1; text-align: right} 
+#divContainer{position:absolute; width:250; height:230; overflow:hidden; top:30; left:10; clip:rect(0,250,230,0); visibility:hidden} 
+#divContent{position:absolute; top:0; left:0} 
+
+</style>
+<script language="JavaScript">// begin absolutely positioned scrollable area object scripts 
+// Extension developed by David G. Miles 
+// Original Scrollable Area code developed by Thomas Brattli 
+function verifyCompatibleBrowser(){ 
+    this.ver=navigator.appVersion 
+    this.dom=document.getElementById?1:0 
+    this.ie5=(this.ver.indexOf("MSIE 5")>-1 && this.dom)?1:0; 
+    this.ie4=(document.all && !this.dom)?1:0; 
+    this.ns5=(this.dom && parseInt(this.ver) >= 5) ?1:0; 
+ 
+    this.ns4=(document.layers && !this.dom)?1:0; 
+    this.bw=(this.ie5 || this.ie4 || this.ns4 || this.ns5) 
+    return this 
+} 
+bw=new verifyCompatibleBrowser() 
+ 
+ 
+var speed=50 
+ 
+var loop, timer 
+ 
+function ConstructObject(obj,nest){ 
+    nest=(!nest) ? '':'document.'+nest+'.' 
+    this.el=bw.dom?document.getElementById(obj):bw.ie4?document.all[obj]:bw.ns4?eval(nest+'document.'+obj):0; 
+    this.css=bw.dom?document.getElementById(obj).style:bw.ie4?document.all[obj].style:bw.ns4?eval(nest+'document.'+obj):0; 
+    this.scrollHeight=bw.ns4?this.css.document.height:this.el.offsetHeight 
+    this.clipHeight=bw.ns4?this.css.clip.height:this.el.offsetHeight 
+    this.up=MoveAreaUp;this.down=MoveAreaDown; 
+    this.MoveArea=MoveArea; this.x; this.y; 
+    this.obj = obj + "Object" 
+    eval(this.obj + "=this") 
+    return this 
+} 
+function MoveArea(x,y){ 
+    this.x=x;this.y=y 
+    this.css.left=this.x 
+    this.css.top=this.y 
+} 
+ 
+function MoveAreaDown(move){ 
+	if(this.y>-this.scrollHeight+objContainer.clipHeight){ 
+    this.MoveArea(0,this.y-move) 
+    if(loop) setTimeout(this.obj+".down("+move+")",speed) 
+	} 
+} 
+function MoveAreaUp(move){ 
+	if(this.y<0){ 
+    this.MoveArea(0,this.y-move) 
+    if(loop) setTimeout(this.obj+".up("+move+")",speed) 
+	} 
+} 
+ 
+function PerformScroll(speed){ 
+	if(initialised){ 
+		loop=true; 
+		if(speed>0) objScroller.down(speed) 
+		else objScroller.up(speed) 
+	} 
+} 
+ 
+function CeaseScroll(){ 
+    loop=false 
+    if(timer) clearTimeout(timer) 
+} 
+var initialised; 
+function InitialiseScrollableArea(){ 
+    objContainer=new ConstructObject('divContainer') 
+    objScroller=new ConstructObject('divContent','divContainer') 
+    objScroller.MoveArea(0,0) 
+    objContainer.css.visibility='visible' 
+    initialised=true; 
+} 
+// end absolutely positioned scrollable area object scripts 
+
+</script>
+</head>
+<body text="#000000" bgcolor="#990000" link="#000000" vlink="#FFFFFF" alink="#FFFFFF" onLoad="InitialiseScrollableArea()">
+&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<p><span class="text"></span>
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<p><!-- begin absolutely positioned scrollable area object-->
+<div id="divUpControl"><b><font face="Courier New,Courier"><font color="#FFFFCC"><font size=-1><a href="javascript:;" onMouseOver="PerformScroll(-7)" onMouseOut="CeaseScroll()">]+[</a></font></font></font></b></div>
+
+<div id="divDownControl"><b><font face="Courier New,Courier"><font color="#FFFFCC"><font size=-1><a href="javascript:;" onMouseOver="PerformScroll(7)" onMouseOut="CeaseScroll()">]>[</a></font></font></font></b></div>
+
+<div id="divContainer">
+<div id="divContent"><span class="text"><b><font face="Arial Narrow"><font color="#FFFFFF">[read:
+static echos of a </font><font color="#000000">project<sup>ile</sup></font></font></b>
+<br><b><font face="Arial Narrow"><font color="#000000">p<sup>][erformance][</sup>iece]</font></font></b></span>
+<br><b><font face="Arial Narrow"><font color="#000000">******************************************************************</font></font></b>
+<p><b><font face="Arial Narrow"><font color="#FFFFFF">/me echos Joel, mumbling
+thru the </font><font color="#000000">ethe.r<sub>][eality]</sub></font></font></b>
+<p><b><font face="Arial Narrow"><font color="#FFFFFF">/me torques masculine,
+feminine, traits n</font><font color="#333333">.</font><font color="#FFFFFF">stead
+of absolutes, jigsaws</font></font></b>
+<br><b><font face="Arial Narrow"><font color="#FFFFFF">instead of </font><font color="#000000">gen<sub>][re][</sub>ders</font></font></b>
+<p><b><font face="Arial Narrow"><font color="#FFFFFF">/me cs a limp button
+</font><font color="#000000">@</font><font color="#FFFFFF">
+the botTom of the </font><font color="#000000">p<sub>][ure][</sub>age</font><font color="#FFFFFF">,
+</font><font color="#000000">_</font><font color="#FFFFFF">playful</font><font color="#000000">_
+N.</font><font color="#FFFFFF">scribed</font></font></b>
+<br><b><font face="Arial Narrow"><font color="#FFFFFF">on its shining chrome
+cover, dust on its surface and grooved smooth</font></font></b>
+<p><b><font face="Arial Narrow"><font color="#FFFFFF">/me resets the Gender</font><font color="#000000">
+_</font><font color="#FFFFFF">Dis</font><font color="#000000">.</font><font color="#FFFFFF">tinct</font><font color="#000000">.</font><font color="#FFFFFF">ion</font><font color="#000000">_</font><font color="#FFFFFF">
+Button.</font></font></b>
+<p><b><font face="Arial Narrow"><font color="#FFFFFF">/me overlaps </font><font color="#000000">N
+</font><font color="#FFFFFF">links,
+hi-jinx :)</font></font></b>
+<p><b><font face="Arial Narrow"><font color="#FFFFFF">/me streams a cord
+of text, netwurkers fumbling thru files of static</font></font></b>
+<br><b><font face="Arial Narrow"><font color="#FFFFFF">blooms, all wet
+N growing, po</font><sub><font color="#000000">.10.</font></sub><font color="#FFFFFF">ials
+fertile....</font></font></b>
+<p><b><font face="Arial Narrow"><font color="#FFFFFF">/me risk-takes, re-moults,
+re</font><font color="#333333">:</font><font color="#000000">vis<sub>][ion][</sub>es</font></font></b>
+<p><b><font face="Arial Narrow"><font color="#FFFFFF">/me wishes </font><font color="#000000">4</font><font color="#FFFFFF">
+a genderless ID, identic</font><font color="#000000">.</font><font color="#FFFFFF">caul
+twinned balances and </font><font color="#000000">life-n r gees</font><font color="#FFFFFF">....</font></font></b>
+<p><b><font face="Arial Narrow"><font color="#FFFFFF">me/ after-lifes,
+</font><font color="#000000">re<sub>][ar][</sub>solves</font><font color="#FFFFFF">....</font></font></b>
+<p><b><font face="Arial Narrow"><font color="#FFFFFF">/me cs a silver
+</font><font color="#000000">ball<sub>][ancing
+act, complex n complete.ing][</sub></font></font></b>
+<p><b><font face="Arial Narrow"><font color="#FFFFFF">/me runs </font><font color="#000000">h<sub>][im][er
+</sub></font><font color="#FFFFFF">fingahs
+ova the text, removing the lilts
+</font><font color="#000000">N</font><font color="#FFFFFF">
+weights,</font></font></b>
+<br><b><font face="Arial Narrow"><font color="#FFFFFF">ab</font><font color="#000000">.</font><font color="#FFFFFF">solvent....</font></font></b>
+<p><b><font face="Arial Narrow"><font color="#FFFFFF">/me carves a sexless
+frame from jen's air, a sculpture of both faces,</font></font></b>
+<br><b><font face="Arial Narrow"><font color="#FFFFFF">act</font><font color="#000000">.</font><font color="#FFFFFF">u</font><font color="#000000">.</font><font color="#FFFFFF">all....</font></font></b>
+<p><b><font face="Arial Narrow"><font color="#FFFFFF">/me open </font><font color="#000000">s<sub>][ource][</sub>auce</font><font color="#FFFFFF">
+codes, open window </font><font color="#000000">vent]<sub>[ings][</sub></font><font color="#FFFFFF">,
+</font><font color="#000000">o<sub>][h!][.</sub>pens</font><font color="#FFFFFF">
+and</font></font></b>
+<br><b><font face="Arial Narrow"><font color="#FFFFFF">pencils...</font></font></b>
+<p><b><font face="Arial Narrow"><font color="#FFFFFF">/me leans down </font><font color="#000000">2</font><font color="#FFFFFF">
+the room's floor, a velvet sounding boarded surface, and</font></font></b>
+<br><b><font face="Arial Narrow"><font color="#FFFFFF">listens....</font></font></b>
+<p><b><font face="Arial Narrow"><font color="#FFFFFF">/me </font><font color="#000000">D.texts</font><font color="#FFFFFF">
+a soft murmuring, voices swooning in</font><font color="#000000">2</font><font color="#FFFFFF">
+b&amp;w, a soft echo of the</font></font></b>
+<br><b><font face="Arial Narrow"><font color="#FFFFFF">page...</font></font></b>
+<p><b><font face="Arial Narrow"><font color="#FFFFFF">/me snatches </font><font color="#000000">1
+</font><font color="#FFFFFF">voice,
+a crooner's tongue, and stitches it
+</font><font color="#000000">2</font><font color="#FFFFFF">
+a lilting</font></font></b>
+<br><b><font face="Arial Narrow"><font color="#FFFFFF">linked tone...</font></font></b>
+<p><b><font face="Arial Narrow"><font color="#FFFFFF">/me </font><font color="#000000">kant
+</font><font color="#FFFFFF">hear,
+can't speak, </font><font color="#000000">kant d-tect</font><font color="#FFFFFF">
+a pulse, connection dead, computer</font></font></b>
+<br><b><font face="Arial Narrow"><font color="#FFFFFF">corpses...</font></font></b>
+<p><b><font face="Arial Narrow"><font color="#FFFFFF">/me molds a ivory
+stamp with the letters "Print Writers" backwards.</font></font></b>
+<br><b><font face="Arial Narrow"><font color="#FFFFFF">mez washes her browserless
+face, her</font><font color="#000000"> n.oh.sent </font><font color="#FFFFFF">code...</font></font></b>
+<p><b><font face="Arial Narrow"><font color="#FFFFFF">/me offers jen a
+golden </font><font color="#000000">text<sub>][ract][</sub></font><font color="#FFFFFF">smile.</font></font></b>
+<p><b><font face="Arial Narrow"><font color="#FFFFFF">/me </font><font color="#000000">supp<sub>][app][</sub>licates</font><font color="#FFFFFF">,
+again...</font></font></b>
+<p><b><font face="Arial Narrow"><font color="#FFFFFF">/me </font><font color="#000000">rep.lee.kates</font><font color="#FFFFFF">,
+</font><font color="#000000">2wards</font><font color="#FFFFFF">...</font></font></b>
+<p><b><font face="Arial Narrow"><font color="#FFFFFF">/me weaves a small
+silken book out of the dead, the </font><font color="#000000">in.ack.cess<sub>][pit][</sub>able</font><font color="#FFFFFF">...</font></font></b>
+<p><b><font face="Arial Narrow"><font color="#FFFFFF">/me notes and sings
+the re-write, the book of Others, the actual work...</font></font></b>
+<p><b><font face="Arial Narrow"><font color="#FFFFFF">/me peers, a keyholian
+point, a </font><font color="#000000">collab.ore.ative</font><font color="#FFFFFF">
+space with a view...</font></font></b>
+<p><b><font face="Arial Narrow"><font color="#FFFFFF">/me transmissed the
+point, the P O V...</font></font></b>
+<p><b><font face="Arial Narrow"><font color="#FFFFFF">/me visions the
+</font><font color="#000000">e<sub>][mailed][</sub>vent</font><font color="#FFFFFF">
+horizon, the New vanishing p</font><font color="#000000">oint<sub>][allistic</sub></font></font></b>
+<br><b><sub><font face="Arial Narrow"><font color="#000000">urge][</font></font></sub></b>
+<p><b><font face="Arial Narrow"><font color="#FFFFFF">/me plots a red graphian
+curve.</font></font></b>
+<p><b><font face="Arial Narrow"><font color="#FFFFFF">/me concepts, transcepts,
+</font><font color="#000000">seep<sub>][age
+septum][</sub>s</font><font color="#FFFFFF">...</font></font></b>
+<p><b><font face="Arial Narrow"><font color="#FFFFFF">/me spies a bunch
+of fragmented wooden words in a dusty corner. she crawls</font></font></b>
+<br><b><font face="Arial Narrow"><font color="#FFFFFF">ova </font><font color="#000000">2</font><font color="#FFFFFF">
+them, her knees skittering ova jags of techne text and codeic crusts...</font></font></b>
+<p><b><font face="Arial Narrow"><font color="#FFFFFF">/me says, "Scott
+I think yr getting at the crux of the matter here. with an</font></font></b>
+<br><b><font face="Arial Narrow"><font color="#FFFFFF">urge 2 create a
+network that both supports and references, great stuff"</font></font></b>
+<p><b><font face="Arial Narrow"><font color="#FFFFFF">/me looks 2 a red
+blooded </font><font color="#000000">Sun<sub>][system][</sub></font><font color="#FFFFFF">,
+javaesqued and light in scope and</font></font></b>
+<br><b><font face="Arial Narrow"><font color="#FFFFFF">ochre tones...</font></font></b>
+<p><b><font face="Arial Narrow"><font color="#FFFFFF">/me filtahs her broadband,
+playin a narrow tune...</font></font></b>
+<p><b><font face="Arial Narrow"><font color="#FFFFFF">/me plants her hands
+in a jumble of the virtual</font></font></b>
+<p><b><font face="Arial Narrow"><font color="#FFFFFF">/me confers, her
+body light and silicon bright...</font></font></b>
+<p><b><font face="Arial Narrow"><font color="#FFFFFF">/me says, "Hmmm"</font></font></b>
+<p><b><font face="Arial Narrow"><font color="#FFFFFF">/me says, "Love the
+snuff word:)"</font></font></b>
+<p><b><font face="Arial Narrow"><font color="#FFFFFF">/me says, "Lol"</font></font></b>
+<p><b><font face="Arial Narrow"><font color="#FFFFFF">/me gently passes
+her rewurked ire, her ivory, her ink </font><font color="#000000">N</font><font color="#FFFFFF">
+papered snuff.</font></font></b>
+<p><b><font face="Arial Narrow"><font color="#FFFFFF">/me says, "Heh Margie,
+possibly..I love the connotations of it, like a</font></font></b>
+<br><b><font face="Arial Narrow"><font color="#FFFFFF">snuffing, a good
+</font><font color="#000000">ro]<sub>[ute]</sub>[ot
+</font><font color="#FFFFFF">round
+in gritty places, a hard look at aspects</font></font></b>
+<br><b><font face="Arial Narrow"><font color="#FFFFFF">of work we usually
+ignore..."</font></font></b>
+<p><b><font face="Arial Narrow"><font color="#FFFFFF">/me </font><font color="#000000">pre.serves.
+per.sever.es</font><font color="#FFFFFF">...</font></font></b>
+<p><b><font face="Arial Narrow"><font color="#FFFFFF">/me says, "Cya jen:)"</font></font></b>
+<p><b><font face="Arial Narrow"><font color="#FFFFFF">/me thirds it</font></font></b>
+<p><b><font face="Arial Narrow"><font color="#FFFFFF">/me watches the nodes</font><font color="#000000"><sub>][r][</sub>emote</font><font color="#FFFFFF">,
+disconnected, whispering in</font><font color="#000000">2</font><font color="#FFFFFF">
+an </font><font color="#000000">m.T.ing</font></font></b>
+<br><b><font face="Arial Narrow"><font color="#FFFFFF">ether...</font></font></b>
+<p><b><font face="Arial Narrow"><font color="#FFFFFF">/me </font><font color="#000000">b-comes</font><font color="#FFFFFF">
+hazy, silken and webbish.............mez says, "Poof!" and</font></font></b>
+<br><b><font face="Arial Narrow"><font color="#FFFFFF">disconnects.</font></font></b>
+<br><b><font face="Arial Narrow"><font color="#000000">******************************************************************</font></font></b>
+<br>&nbsp;
+<p><b><font face="Arial Narrow"><font color="#FFFFFF">:::::::::::::::::::::::::</font></font></b>
+<br><b><font face="Arial Narrow"><font color="#FFFFFF">:::::</font></font></b>
+<br>
+<b><font face="Arial Narrow"><font color="#FFFFFF">::::<a href="loggin4.htm">LOG<sup>3</sup></a>::::</font></font></b>
+<br>
+&nbsp;
+<br>&nbsp;</div>
+</div>
+<!-- end absolutely positioned scrollable area object -->
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+</body>
+</html>

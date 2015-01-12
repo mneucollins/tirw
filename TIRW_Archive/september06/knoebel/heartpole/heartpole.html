@@ -1,0 +1,190 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTDHTML 4.01 Transitional//EN">
+
+<HTML>
+
+<TITLE>Heart Pole - Click Poetry - David Knoebel</TITLE>
+
+<STYLE TYPE="text/css">
+.insideborder {
+border:4px solid #70908E;
+border-top-color:#70908E;
+border-bottom-color:#70908E;
+border-left-color:#70908E;
+border-right-color:#70908E;
+}
+.outsideborder {
+border:5px solid #A96F36;
+border-top-color:#A96F36;
+border-left-color:#A96F36; 
+}
+
+
+
+
+	A:link { color:#000000;  font-weight:700; text-decoration:none}
+	A:visited { color:#333333; font-weight:700; text-decoration:none }
+	A:active { color:#000000; font-weight:normal; text-decoration:none }
+	
+	.key1 { font-family:arial;font-size:9pt;font-style:italic;color:#666666;}
+	
+</STYLE>
+	
+<SCRIPT LANGUAGE="JavaScript" type="text/javascript">
+ 
+<!--
+	
+	// pop to top if in frame
+	
+	if (parent.location.href != window.location.href) parent.location.href = window.location.href;
+
+	// avoids a js error when buttons are clicked
+	function do_nothing(){}
+		
+	// change cluster view
+	var rot = new Array;
+	rot[0] = "0.602 0.775 0.190 2.259";
+	rot[1] = "0.931 0.268 0.246 2.343";
+	rot[2] = "-0.321 -0.553 -0.769 2.592";
+	rot[3] = "-0.471 -0.783 0.406 2.352";
+	
+	var rt = 0;
+	function chg_view() {
+		document.browser.setNodeField("ROOT","rotation",rot[rt]);
+		rt++;
+		if (rt > 3) {
+			rt = 0;
+		}
+	}
+	
+	// field script observer
+	function addFieldScriptObserver() {
+		document.browser.addFieldScriptObserver("mover","value_changed","receiveEvent");
+	}
+	
+	// receive event
+	var v = 0;
+	var b = 0;
+	var hf = [0, 0, 0, 0, 0, 10, 10, 0, 0, 10, 0, 10, 20, 0, 0, 20, 0, 10, 30, 0, 0, 30, 0, 10, 0, 0, 20, 10, 0, 20, 20, 0, 20, 30, 0, 20, 0, 0, 30, 10, 0, 30, 20, 0, 30, 30, 0, 30];	
+	var hf1 = [0];
+	
+	// this code based on code found on the internet five+ years ago. I couldn't find it during a recent search, and I've lost the name of its creator, but will happy to give credit. 
+	function receiveEvent(type,nodename,fieldname) {
+		if (nodename=="mover") {
+			if (fieldname=="value_changed") {
+				v = document.browser.getNodeField("mover","value_changed") + "";
+				b = v.substr(5,3)-0;  // extract value, convert to number
+				hf[1]  = Math.round(Math.cos(b)*1000)/1000;
+				hf[13] = Math.round(Math.cos(b+(0.628*2))*1000)/1000;
+				hf[25] = Math.round(Math.cos(b+(0.628*4))*1000)/1000;
+				hf[37] = Math.round(Math.cos(b+(0.628*6))*1000)/1000;
+				
+				hf[40]=hf[25];
+				hf[28]=hf[43]=hf[13];
+				hf[16]=hf[31]=hf[46]=hf[1];
+				
+				hf[4]=hf[19]=hf[34]=hf[37];
+				hf[7]=hf[22]=hf[25];
+				hf[10]=hf[13];
+				
+				hf1 = hf; //conserve original array and copy to another for conversion below
+				hf1 = "[ " + hf1.join(" ") + " ]"; // convert new array to format that b3D understands
+
+				document.browser.setNodeField("waveplane","point",hf1);
+			}
+		}
+	}
+	
+
+	
+	// hold action until applet is ready
+	
+	var ready=false;
+	
+	function isAppletReady() {
+		
+		while (ready==false)
+			
+		{
+			
+			ready=document.browser.isActive();
+			
+		}
+		
+		ready=false;
+		
+		while (!ready)
+			
+		{
+			
+			ready=document.browser.setNodeField("DUMMY","translation","0 0 0");
+			
+		}
+		
+		
+			// set up action
+			
+			addFieldScriptObserver();
+
+	}
+
+
+// -->
+
+</SCRIPT> 
+  
+<link href="../../CSS/insideborder.css" rel="stylesheet" type="text/css">
+</HEAD>
+
+<BODY ONLOAD="isAppletReady();" BGCOLOR="#333333" ALINK="#000000" LINK="#666666" VLINK="#999999" TEXT="#CC0000">
+<table width="450" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    </tr>
+</table>
+<img src="../../../pics3/index2_r2_c17_f2.jpg" width="99" height="60" align="right">
+<table width="450" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td height="603" class="outsideborder"><table width="448" height="592" border="0" cellpadding="0" cellspacing="0">
+      <tr>
+        <td height="570" class="insideborder"><TABLE WIDTH="400" BORDER="0" ALIGN="center" CELLPADDING="0" CELLSPACING="0" summary=""><br/>
+              <TR><TD WIDTH="400" BGCOLOR="WHITE" ALIGN="center"><H4>&nbsp;</H4></TD></TR>
+              <TR>
+                <TD BGCOLOR="WHITE" WIDTH="100%" ALIGN="CENTER">
+                  <H2><FONT FACE="ARIAL, HELVETICA" COLOR="#666666">David Knoebel</FONT></H2>
+				    <H1><FONT FACE="ARIAL, HELVETICA" COLOR="#333333">Heart Pole</FONT></H1>
+				    <applet archive="examine.jar" code="examine.class" name="applet" width="0" height="0" MAYSCRIPT>
+				      <param name=zoomspeed value="1.2">
+				      <param name=turnspeed value="0.9">
+				      <param name=maxDistance value="50">
+				      <param name=minDistance value="1.0">	
+				      <param name=twistmode value="off">
+			        </applet>
+                  <applet archive="examine.jar" code="blaxxun/blaxxun3d.class" name="browser" width="300" height="300" MAYSCRIPT>
+                    <param name=scene value="htpl.bx3d">
+                    <param name=time value="timer">
+                    <param name=loading value="dynamic">
+                    <param name=statistics value="off">
+                    <param name=lighting value="on">
+                    <param name=antialiasing value="on">
+                    Sorry, your browser doesn't support Java. 
+                  </applet
+			></TD>
+		    </TR>
+              <TR><TD WIDTH="400" BGCOLOR="WHITE" ALIGN="center"><H4>&nbsp;</H4></TD></TR>
+              <TR><TD WIDTH="400" BGCOLOR="WHITE" ALIGN="center">&nbsp;</TD></TR>		
+              <TR><TD WIDTH="400" BGCOLOR="WHITE" ALIGN="center">&nbsp;</TD></TR>		
+              <TR>
+                <TD WIDTH="400" BGCOLOR="WHITE" ALIGN="center">
+                  <CENTER><FONT CLASS="key1">Click and drag the image</FONT></CENTER>			  </TD>
+		    </TR>			
+              <TR><TD WIDTH="400" BGCOLOR="WHITE" ALIGN="center">&nbsp;</TD></TR>
+              <TR><TD WIDTH="400" BGCOLOR="WHITE" ALIGN="center">&nbsp;</TD></TR>
+</TABLE>
+          <br/></td>
+      </tr>
+    </table></td>
+  </tr>
+</table>
+
+</BODY>
+</HTML>
+

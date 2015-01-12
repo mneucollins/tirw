@@ -1,0 +1,101 @@
+<html>
+<head>
+<title>:: CITY OF BITS ::</title>
+<script LANGUAGE="JavaScript">
+<!--
+
+function newImage(arg) {
+	if (document.images) {
+		rslt = new Image();
+		rslt.src = arg;
+		return rslt;
+	}
+}
+
+function changeImages() {
+	if (document.images && (preloadFlag == true)) {
+		for (var i=0; i<changeImages.arguments.length; i+=2) {
+			document[changeImages.arguments[i]].src = changeImages.arguments[i+1];
+		}
+	}
+}
+
+var preloadFlag = false;
+function preloadImages() {
+	if (document.images) {
+		page3_09_over = newImage("images/page3_09_over.gif");
+		preloadFlag = true;
+	}
+}
+
+// -->
+</script>
+</head>
+<body BGCOLOR="#FFFFFF" ONLOAD="preloadImages();" topmargin=0 leftmargin=0  rightmargin=0 marginheight=0 marginwidth=0 >
+<table BORDER="0" CELLPADDING="0" CELLSPACING="0">
+	<tr>
+		
+<td ROWSPAN="2">
+			<img SRC="images/page3_01.gif" WIDTH="160" HEIGHT="146"></td>
+		
+<td COLSPAN="4">
+			<img SRC="images/page3_02.jpg" WIDTH="480" HEIGHT="127"></td>
+		
+<td>
+			<img SRC="images/spacer.gif" WIDTH="1" HEIGHT="127"></td>
+	</tr>
+	<tr>
+		
+<td>
+			<img SRC="images/page3_03.jpg" WIDTH="100" HEIGHT="19"></td>
+		
+<td ROWSPAN="4">
+			<img SRC="images/page3_04.gif" WIDTH="167" HEIGHT="203"></td>
+		
+<td COLSPAN="2" ROWSPAN="3">
+			<img SRC="images/page3_05.jpg" WIDTH="213" HEIGHT="191"></td>
+		
+<td>
+			<img SRC="images/spacer.gif" WIDTH="1" HEIGHT="19"></td>
+	</tr>
+	<tr>
+		
+<td COLSPAN="2">
+			<img SRC="images/page3_06.gif" WIDTH="260" HEIGHT="25"></td>
+		
+<td>
+			<img SRC="images/spacer.gif" WIDTH="1" HEIGHT="25"></td>
+	</tr>
+	<tr>
+		
+<td COLSPAN="2" ROWSPAN="2">
+			<img SRC="images/page3_07.jpg" WIDTH="260" HEIGHT="159"></td>
+		
+<td>
+			<img SRC="images/spacer.gif" WIDTH="1" HEIGHT="147"></td>
+	</tr>
+	<tr>
+		
+<td>
+			<img SRC="images/page3_08.jpg" WIDTH="91" HEIGHT="12"></td>
+		
+    
+<td ROWSPAN="2"> <a HREF="page4.html"
+			   ONMOUSEOVER="changeImages('page3_09', 'images/page3_09_over.gif'); return true;"
+			   ONMOUSEOUT="changeImages('page3_09', 'images/page3_09.gif'); return true;"> 
+      <img NAME="page3_09" SRC="images/page3_09.gif" WIDTH="122" HEIGHT="82" BORDER="0"></a></td>
+		
+<td>
+			<img SRC="images/spacer.gif" WIDTH="1" HEIGHT="12"></td>
+	</tr>
+	<tr>
+		
+<td COLSPAN="4">
+			<img SRC="images/page3_10.gif" WIDTH="518" HEIGHT="70"></td>
+		
+<td>
+			<img SRC="images/spacer.gif" WIDTH="1" HEIGHT="70"></td>
+	</tr>
+</table>
+</body>
+</html>

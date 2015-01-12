@@ -1,0 +1,137 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+
+<HTML>
+<HEAD>
+<TITLE>3bends</TITLE>
+<META NAME="Generator" " CONTENT="Built using NetObjects Fusion 2.0.1 for Macintosh">
+
+<style>
+.spanstyle {
+	position:absolute;
+	visibility:visible;
+	top:-50px;
+	font-size:9pt;
+	font-family:verdana;
+
+
+	color:blue;
+}
+</style>
+<script>
+
+/*
+Cursor Trailor Text- By Peter Gehrig (http://www.24fun.ch/)
+Permission given to Dynamicdrive.com to feature script in it's archive.
+For full source code, installation instructions, and 1000's more DHTML scripts,
+visit http://dynamicdrive.com
+*/
+
+var x,y
+var step=20
+var flag=0
+
+// Your snappy message. Important: the space at the end of the sentence!!!
+var message="5. doubt "
+message=message.split("")
+
+var xpos=new Array()
+for (i=0;i<=message.length-1;i++) {
+	xpos[i]=-50
+}
+
+var ypos=new Array()
+for (i=0;i<=message.length-1;i++) {
+	ypos[i]=-50
+}
+
+function handlerMM(e){
+	x = (document.layers) ? e.pageX : document.body.scrollLeft+event.clientX
+	y = (document.layers) ? e.pageY : document.body.scrollTop+event.clientY
+	flag=1
+}
+
+function makesnake() {
+	if (flag==1 && document.all) {
+    	for (i=message.length-1; i>=1; i--) {
+   			xpos[i]=xpos[i-1]+step
+			ypos[i]=ypos[i-1]
+    	}
+		xpos[0]=x+step
+		ypos[0]=y
+	
+		for (i=0; i<message.length-1; i++) {
+    		var thisspan = eval("span"+(i)+".style")
+    		thisspan.posLeft=xpos[i]
+			thisspan.posTop=ypos[i]
+    	}
+	}
+	
+	else if (flag==1 && document.layers) {
+    	for (i=message.length-1; i>=1; i--) {
+   			xpos[i]=xpos[i-1]+step
+			ypos[i]=ypos[i-1]
+    	}
+		xpos[0]=x+step
+		ypos[0]=y
+	
+		for (i=0; i<message.length-1; i++) {
+    		var thisspan = eval("document.span"+i)
+    		thisspan.left=xpos[i]
+			thisspan.top=ypos[i]
+    	}
+	}
+		var timer=setTimeout("makesnake()",30)
+}
+
+</script>
+
+
+
+
+</HEAD>
+
+<BODY onLoad="makesnake()"
+                          style="width:100%;overflow-x:hidden;overflow-y:scroll"
+BACKGROUND="../assets/images/baybridg.jpg" LINK="#0000FF" VLINK="#800080" TEXT="#000000"  >
+
+<script>
+<!-- Beginning of JavaScript -
+
+for (i=0;i<=message.length-1;i++) {
+    document.write("<span id='span"+i+"' class='spanstyle'>")
+	document.write(message[i])
+    document.write("</span>")
+}
+
+if (document.layers){
+	document.captureEvents(Event.MOUSEMOVE);
+}
+document.onmousemove = handlerMM;
+
+// - End of JavaScript - -->
+</script>
+
+
+  <TABLE BORDER=0 CELLSPACING=0 CELLPADDING=0 WIDTH=639>
+   <TR VALIGN="top" ALIGN="left">
+	
+<TD WIDTH=8 HEIGHT =95><IMG SRC="../assets/images/dot_clear.gif" WIDTH =8 HEIGHT =1 BORDER=0></TD>
+	
+<TD WIDTH=367><IMG SRC="../assets/images/dot_clear.gif" WIDTH =367 HEIGHT =1 BORDER=0></TD>
+	
+<TD WIDTH=264><IMG SRC="../assets/images/dot_clear.gif" WIDTH =264 HEIGHT =1 BORDER=0></TD>
+   </TR>
+   <TR VALIGN="top" ALIGN="left">
+	<TD></TD>
+	<TD WIDTH=367><P><B><FONT SIZE="+1" FACE="Arial,Helvetica">What was I doing?&nbsp; I never once asked myself where it would end.&nbsp; Each thing seemed like the last thing at first.&nbsp; I was paying the rent and the gas bill on time.&nbsp; I was washing my whites, boiling water for tea, meditating, taking zinc supplements, toning my abs, lifting the lid of the toilet seat, lifting my hand like the wind.&nbsp; Everything seemed like the end and every time I seemed to be onto something.&nbsp; You listen and look around and pay attention.&nbsp; You wait for a beginning, middle and end, but usually you can't see the end until the beginning comes around again.</FONT></B></P><P>&nbsp;</P>
+<P><A HREF="3jobs.html"><B><FONT COLOR="#996600" SIZE="+1" FACE="Arial,Helvetica">september</FONT></B></A><B><FONT COLOR="#996600" SIZE="+1" FACE="Arial,Helvetica">&nbsp; </FONT></B><A HREF="3cginnie2.html"><B><FONT COLOR="#996600" SIZE="+1" FACE="Arial,Helvetica">november</FONT></B></A><B><FONT COLOR="#996600" SIZE="+1" FACE="Arial,Helvetica"></FONT></B>
+</TD>
+
+	<TD></TD>
+   </TR>
+   <TR VALIGN="top" ALIGN="left">
+	<TD COLSPAN=3 HEIGHT =49></TD>
+   </TR>
+  </TABLE>
+</BODY>
+</HTML>

@@ -1,0 +1,78 @@
+
+<html>
+<HEAD>
+<META NAME="Author" CONTENT="Talan Memmott : 2000">
+<META NAME="Generator" CONTENT="BigBox"><title>setup: E//N</title></head>
+<script language="JavaScript">
+<!--
+vers = 1.0;
+// -->
+</script>
+<script language="JavaScript1.1">
+<!--
+vers = 1.1;  // comment out this line to make it use a non-graphical status bar
+// -->
+</script>
+<script language="javascript">
+<!--
+function initArray() {
+ this.length = initArray.arguments.length;
+ for (var i = 0; i < this.length; i++) {
+  this[i] = initArray.arguments[i];
+ }
+}
+
+// Define the pages you want it to preload here.
+// Note that each of these pages must have a short bit of code
+// at the top as shown in page1.htm.
+var pages = new initArray(
+"cov.html","panel.html","text.html");
+
+var secondpage = "X00.html"; // URL of second page goes here
+
+function transfer(param) {
+ top.location.href = secondpage;
+}
+
+function done() {
+ for (g=0;g<pages.length;g++)
+  eval('self.preload_frame'+g+'.location.href = "'+pages[g]+'";');
+}
+
+// preload the status bar images
+if (vers >= 1.1) {
+ blue = new Image();
+ blue.src = "base/01.gif";
+ black = new Image();
+ black.src = "base/02.gif";
+}
+
+var num_loaded = 0;
+
+function update() {
+ if (vers < 1.1) // non-graphical version
+  self.topframe.document.stats.status.value += "||";
+ else // graphic version
+  eval('self.topframe.document.status'+num_loaded+'.src = "base/01.gif";');
+ num_loaded++;
+ if (num_loaded == pages.length)
+  transfer();
+}
+
+document.write('<FRAMESET FRAMEBORDER=NO BORDER=0 '
+ + ' ROWS="900,*" FRAMESPACING=0>'
+ + '<FRAME SRC="status.html" name="topframe" SCROLLING="no">'
+ + '<FRAMESET FRAMEBORDER=NO BORDER=0 '
+ + 'COLS="900');
+for (g=1;g<pages.length;g++)
+ document.write(',0');
+document.write('" FRAMESPACING=0>');
+for (g=0;g<pages.length;g++)
+ document.write('<FRAME SRC="black.html" NAME="preload_frame'+g+'" '
+  + 'SCROLLING="NO" NORESIZE>');
+document.write('</FRAMESET></FRAMESET>');
+document.close();
+
+// -->
+</script>
+</html>

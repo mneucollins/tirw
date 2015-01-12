@@ -1,0 +1,70 @@
+BODY {background:#FFFFFF; margin:0px 0px 0px 0px; font-family:Arial;}
+TABLE {margin:0; padding:0; border:0;}
+DIV {margin:0; padding:0;}
+IMG {margin:0;padding:0;border:0;}
+
+A {text-decoration:none;color:#5378B0; font-size:11px; letter-spacing: 0px; line-height:120%; font-weight:normal;}               
+A:link {text-decoration:none;}
+A:hover {text-decoration:underline;}         
+A:active {text-decoration:none;}         
+A:visited {text-decoration:none;}      
+A:visited:hover {text-decoration:underline;}
+
+A.highlight {font-weight:bold; color:blue;}
+
+/* header */
+#tableHeader           {position:absolute; left:0px; top:0px; z-index:1; width:100%;}
+#tableHeader TR#header {height:107px;}
+#tableHeader TD#left   {height:107px; padding:0; vertical-align:top;}
+#tableHeader TD#right  {height:107px; padding:0;  vertical-align:middle; text-align:right;}
+#tableHeader IMG.logo  {margin-right:60px;}
+#tableHeader TR#bar    {height:3px;}
+#tableHeader TD#bar    {height:3px; background:#CDCECD; border-bottom: solid 1px #F1F1F2; font-size:1px; color:#CDCECD;}
+
+#divBrowseArchive      {
+  white-space:nowrap; display:none; height:400px; overflow:auto; position:absolute; top:93px; left:337px; 
+  border:solid 1px #AAAAAA; background:#FFFFFF; z-index:3; padding: 5px 5px 5px 5px; font-size:12px;
+}
+
+#divBrowseArchive A    {font-size:13px;}
+#linkBrowseArchiveDiv  {white-space:nowrap;}
+
+/* content table */
+#tableFront {position:absolute; top:120px; left:0px;}
+#tableFront TD.columnTitleLeft  {padding: 10px 60px 10px 35px; vertical-align:top;}
+#tableFront TD.columnTitleRight {padding: 10px 0px 10px 0px; vertical-align:top;}
+#tableFront TD.columnLeft       {width:400px; padding:0px 60px 40px 35px;  text-align:left;   vertical-align:top;}
+#tableFront TD.columnRight      {width:350px; padding:0px 0px 40px 0px;    text-align:left; vertical-align:top;}
+#tableFront DIV.input       {text-align:center; margin: 20px 0px 0px 0px;}
+#tableFront DIV.input INPUT {background:#DDDDDD; width:180px;}
+
+#tableContent {width:100%; position:absolute; top:120px; left:0px;}
+#tableContent A IMG {margin: 2px 0px 2px 0px;}
+#tableContent TD.columnTitleLeft  {padding: 10px 0px 10px 35px;}
+#tableContent TD.columnTitleRight {padding: 10px 0px 10px 20px;}
+#tableContent TD.columnLeft       {width:40%; padding:0px 20px 0px 35px;  text-align:left;   vertical-align:top;}
+#tableContent TD.columnMiddle     {width:200px; padding:0px 0px 0px 0px;    text-align:center; vertical-align:top;}
+#tableContent TD.columnRight      {width:40%; padding: 0px 35px 0px 20px; text-align:left;   vertical-align:top;}
+#tableContent TD#copyright        {padding: 20px 0px 20px 35px; color:#808284; font-size:11px; letter-spacing: 0px; line-height:120%; font-weight:bold; text-align:left; }
+
+/* title */
+h1 {margin:0; padding:0; font-size:13px; color:#444444; font-family:Arial; font-weight:bold;}
+/* question paragraph */
+h2 {margin: 0px 0px 10px 0px; padding:0; font-size:11px; color:#777777; font-family:Arial; line-height:150%; font-weight:bold;}
+/* answer paragraph */
+P  {margin: 0px 0px 10px 0px; padding:0; font-size:11px; color:#777777; font-family:Arial; line-height:150%; font-weight:normal;}
+/* options */
+h3 {margin: 0px 0px 3px 0px; padding:0;}
+h3.in1
+{
+	margin-left: 25px;
+	margin-bottom: 3px;
+}
+/* search results link */
+h4 {margin: 0px 0px 0px 0px; padding:0; font-weight:normal;}
+h4 A {color:blue; font-size:16px; }
+
+/* highlight search results */
+.sr {background:#F7F539;}
+
+p.in1 { margin-left: 20px; }
