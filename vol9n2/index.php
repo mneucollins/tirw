@@ -1,8 +1,8 @@
 <?PHP
+echo "here";
 error_reporting(E_ALL);
 require_once('../baseurl.php');
 include('inc/html_header.php');
-
 ?>
 <table id="tableFront" cellspacing="0" cellpadding="0">
 	<tr>
