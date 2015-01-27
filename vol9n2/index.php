@@ -1,5 +1,5 @@
 <?PHP
-
+require_once('../baseurl.php');
 include('inc/html_header.php');
 
 ?>

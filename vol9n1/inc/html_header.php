@@ -42,7 +42,7 @@ function findPos(obj) {
 
 
 <div id="divBrowseArchive">
-<a href="http://iowareview.uiowa.edu/TIRW/vol9n2/">-- TIR-W Volume 9 no. 2
+<a href= <?php echo "$baseurl/vol9n2/";?> >-- TIR-W Volume 9 no. 2
 July 2008</a> Instruments and Playable Text: Stuart Moulthrop<br />
 &nbsp;&nbsp;&nbsp;&nbsp;Under Language: Stuart Moulthrop<br />
 &nbsp;&nbsp;&nbsp;&nbsp;Concerto for Narrative Data: Judy Malloy<br />
@@ -52,7 +52,7 @@ July 2008</a> Instruments and Playable Text: Stuart Moulthrop<br />
 &nbsp;&nbsp;&nbsp;&nbsp;The Purpling: Nick Montfort<br />
 <br />
 
-<a href="http://iowareview.uiowa.edu/TIRW/vol9n1/">-- TIR-W Volume 9 no. 1
+<a href=<?php echo "$baseurl/vol9n1/";?> >-- TIR-W Volume 9 no. 1
 August 2007</a><br />
 &nbsp;&nbsp;&nbsp;&nbsp;Multi-Modal Coding: Jason Nelson, Donna Leishman, and Electronic Writing<br />
 &nbsp;&nbsp;&nbsp;&nbsp;Interviews: Jason Nelson, Donna Leishman<br />
@@ -75,7 +75,7 @@ August 2007</a><br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pandemic Rooms<br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Nelson Index<br />
 <br />
-<a href="http://iowareview.uiowa.edu/TIRW/TIRW_Archive/september06/sept06_txt.html">-- TIR-W, Volume 8 no. 3, September 2006</a><br />
+<a href=<?php echo "$baseurl/TIRW_Archive/september06/sept06_txt.html"; ?> >-- TIR-W, Volume 8 no. 3, September 2006</a><br />
 &nbsp;&nbsp;&nbsp;&nbsp;Interview with Dan Waber; Rita Raley<br />
 &nbsp;&nbsp;&nbsp;&nbsp;five by five; Dan Waber bio and Jason Pimble<br />
 &nbsp;&nbsp;&nbsp;&nbsp;TLT vs. LL; Ted Warnell<br />
@@ -89,7 +89,7 @@ August 2007</a><br />
 &nbsp;&nbsp;&nbsp;&nbsp;Interview with John Cayley; Sandy Rita Raley<br />
 &nbsp;&nbsp;&nbsp;&nbsp;Torus (Video); John Cayley<br />
 <br />
-<a href="http://iowareview.uiowa.edu/TIRW/TIRW_Archive/july06/july06_txt.html">-- TIR-W, Volume 8, no. 2, June/July 2006</a><br />
+<a href=<?php echo "$baseurl/TIRW_Archive/july06/july06_txt.html"; ?> >-- TIR-W, Volume 8, no. 2, June/July 2006</a><br />
 &nbsp;&nbsp;&nbsp;&nbsp;Editor's Introduction: Reconfiguring Place and Space in New Media Writing;
 &nbsp;&nbsp;&nbsp;&nbsp;Scott Rettberg<br />
 &nbsp;&nbsp;&nbsp;&nbsp;Workspace is Mediaspace is Cityscape: An Interview with Nick Montfort on Book and Volume; Jeremy Douglass<br />
@@ -99,7 +99,7 @@ August 2007</a><br />
 &nbsp;&nbsp;&nbsp;&nbsp;Book and Volume; Nick Montfort<br />
 &nbsp;&nbsp;&nbsp;&nbsp;Fa ade; Michael Mateas and Andrew Stern<br />
 <br />
-<a href="http://iowareview.uiowa.edu/TIRW/TIRW_Archive/feb06/feb06_txt.html">-- TIR-W, Volume 8, no. 1, February/March 2006</a><br />
+<a href=<?php echo "$baseurl/TIRW_Archive/feb06/feb06_txt.html"; ?> >-- TIR-W, Volume 8, no. 1, February/March 2006</a><br />
 &nbsp;&nbsp;&nbsp;&nbsp;Editor's Introduction; Ben Basan<br />
 &nbsp;&nbsp;&nbsp;&nbsp;Sound Art, Art, Music; Douglas Kahn<br />
 &nbsp;&nbsp;&nbsp;&nbsp;Speaking Volumes; Brandon Labelle<br />
@@ -108,26 +108,27 @@ August 2007</a><br />
 &nbsp;&nbsp;&nbsp;&nbsp;Harvester; Ed Osborn<br />
 &nbsp;&nbsp;&nbsp;&nbsp;Honi | Tacotsubo; ADACHI Tomomi<br />
 <br />
-<a href="http://iowareview.uiowa.edu/TIRW/TIRW_Archive/oct05/oct05_txt.html">-- TIR-W, Volume 7, no. 2, November 2005</a><br />
+<a href=<?php echo "$baseurl/TIRW_Archive/oct05/oct05_txt.html"; ?> >-- TIR-W, Volume 7, no. 2, November 2005</a><br />
 &nbsp;&nbsp;&nbsp;&nbsp;10:01; Lance Olsen & Tim Guthrie<br />
 &nbsp;&nbsp;&nbsp;&nbsp;Pieces of Herself; Juliet Davis<br />
 &nbsp;&nbsp;&nbsp;&nbsp;The Bomar Gene; Jason Nelson<br />
 &nbsp;&nbsp;&nbsp;&nbsp;News from Erewhon; Millie Niss & Martha Deed<br />
 <br />
-<a href="http://iowareview.uiowa.edu/TIRW/TIRW_Archive/aug05/aug05_txt.html">-- TIR-W, Volume 7, no. 1, August 2005</a><br />
+<a href=<?php echo "$baseurl/TIRW_Archive/aug05/aug05_txt.html"; ?> >-- TIR-W, Volume 7, no. 1, August 2005</a><br />
 &nbsp;&nbsp;&nbsp;&nbsp;Ask me for the moon; John Zuern<br />
 &nbsp;&nbsp;&nbsp;&nbsp;CONSCIOUSNESS, LITERATURE, AND SCIENCE FICTION; Kathleen Ann Goonan<br />
 &nbsp;&nbsp;&nbsp;&nbsp;Buyways: Billboards, Automobiles, and the American Landscape; Mike Chasar<br />
 &nbsp;&nbsp;&nbsp;&nbsp;An interview with Diana Slattery; Dene Grigar<br />
 <br />
-<a href="http://iowareview.uiowa.edu/TIRW/TIRW_Archive/tirweb/archives/04.htm">-- TIR-W, Volume 6, 2004</a><br />
+
+<a href=<?php echo "$baseurl/TIRW_Archive/tirweb/archives/04.htm"; ?> >-- TIR-W, Volume 6, 2004</a><br />
 &nbsp;&nbsp;&nbsp;&nbsp;New Work; Niss, Deed & Daniels<br />
 &nbsp;&nbsp;&nbsp;&nbsp;Two Reviews; Tevis Thompson and Mike Chasar<br />
 &nbsp;&nbsp;&nbsp;&nbsp;Remembering Donald Justice; Steven Cramer<br />
 &nbsp;&nbsp;&nbsp;&nbsp;An interview & new work; David Silver, Jay David Bolter and Diane Gromala<br />
 &nbsp;&nbsp;&nbsp;&nbsp;An interview with Amy Sara Carroll; Heidi Bean<br />
 <br />
-<a href="http://iowareview.uiowa.edu/TIRW/TIRW_Archive/tirweb/archives/03.htm">-- TIR-W, Volume 5, 2003</a><br />
+<a href=<?php echo "$baseurl/TIRW_Archive/tirweb/archives/03.htm"; ?> >-- TIR-W, Volume 5, 2003</a><br />
 &nbsp;&nbsp;&nbsp;&nbsp;Afterwards; Judy Malloy<br />
 &nbsp;&nbsp;&nbsp;&nbsp;Digital Nature: the Case Collection version 2.0; Tal Halpern, Patrick F. Walter<br />
 &nbsp;&nbsp;&nbsp;&nbsp;Hacktivism? I didn't know the term existed before I did it; An Interview with Brian Kim Stefans;  Giselle Beiguelman<br />
@@ -140,7 +141,7 @@ August 2007</a><br />
 &nbsp;&nbsp;&nbsp;&nbsp;New work and an interview; Joseph Tabbi and Anthony Enns<br />
 &nbsp;&nbsp;&nbsp;&nbsp;Judd Morrissey & Lori Talley: An Interview & Essay; Jessica Pressman<br />
 <br />
-<a href="http://iowareview.uiowa.edu/TIRW/TIRW_Archive/tirweb/archives/02.html">-- TIR-W, Volume 4, 2002</a><br />
+<a href=<?php echo "$baseurl/TIRW_Archive/tirweb/archives/02.html"; ?> >-- TIR-W, Volume 4, 2002</a><br />
 &nbsp;&nbsp;&nbsp;&nbsp;Selected new poems; Ana Marie Uribe<br />
 &nbsp;&nbsp;&nbsp;&nbsp;ORIENT; YOUNG HAE CHANG HEAVY INDUSTRIES<br />
 &nbsp;&nbsp;&nbsp;&nbsp;Dervish Flowers; Nicolas Clausse and Brian Kim Stefans<br />
@@ -159,7 +160,7 @@ August 2007</a><br />
 &nbsp;&nbsp;&nbsp;&nbsp;"Red, Black, White and Gray:" An Interview with Motomichi Nakamura;<br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;YOUNG HAE CHANG HEaVY INDUSTRIES Bcc, Motomichi Makamura<br />
 <br />
-<a href="http://iowareview.uiowa.edu/TIRW/TIRW_Archive/archives/archives01.html">-- TIR-W, Volume 3, 2001</a><br />
+<a href=<?php echo "$baseurl/TIRW_Archive/archives/archives01.html"; ?> >-- TIR-W, Volume 3, 2001</a><br />
 &nbsp;&nbsp;&nbsp;&nbsp;Reach; Michael Joyce<br />
 &nbsp;&nbsp;&nbsp;&nbsp;Training Missions; Joe Amato<br />
 &nbsp;&nbsp;&nbsp;&nbsp;Everything after That; Martha Conway<br />
@@ -168,7 +169,7 @@ August 2007</a><br />
 &nbsp;&nbsp;&nbsp;&nbsp;The Impermanence Agent; Noah Wardrip-Fruin, a.c.chapman, Brion Moss, Duane Whitehurst<br />
 &nbsp;&nbsp;&nbsp;&nbsp;A Long Wild Smile; Jeff Parker<br />
 <br />
-<a href="http://iowareview.uiowa.edu/TIRW/TIRW_Archive/archives/archives99-00.html">-- TIR-W, Volume 1, 1999 & Volume 2, 2000</a><br />
+<a href=<?php echo "$baseurl/TIRW_Archive/archives/archives99-00.html"; ?> >-- TIR-W, Volume 1, 1999 & Volume 2, 2000</a><br />
 &nbsp;&nbsp;&nbsp;&nbsp;Book of Job; Ted Warnell<br />
 &nbsp;&nbsp;&nbsp;&nbsp;The Universal Resource Locator; M.D. Coverly<br />
 &nbsp;&nbsp;&nbsp;&nbsp;Lexia to Perplexia; Talan Memmott<br />
@@ -184,13 +185,15 @@ August 2007</a><br />
 &nbsp;&nbsp;&nbsp;&nbsp;The dear mr thomas letters; Kevin Fanning<br />
 &nbsp;&nbsp;&nbsp;&nbsp;A Fable of Words; Jeffery M. Bochman<br />
 <br />
-<? /*
-<a href="http://www.uiowa.edu/%7Eiareview/mainpages/new/archives/archives99-00.html">-- TIR-W, Volume 1, 1999</a><br />
+
+<!--
+<a href=<?php echo "$baseurl/TIRW_Archive/archives/archives99-00.html"; ?> >-- TIR-W, 1999 - 2000 archives </a><br />
 &nbsp;&nbsp;&nbsp;&nbsp;Endless Suburbs; M.D. Coverley<br />
 &nbsp;&nbsp;&nbsp;&nbsp;Frame Work; Robert Kendall<br />
 &nbsp;&nbsp;&nbsp;&nbsp;Self-Portrait as Child with Father; Edward Falco<br />
 &nbsp;&nbsp;&nbsp;&nbsp;Ferris Wheels; Deena Larsen
-*/ ?>
+-->
+
 </div>
 
 <!-- top -->
