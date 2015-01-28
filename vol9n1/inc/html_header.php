@@ -203,7 +203,7 @@ August 2007</a><br />
 <form name="formSearch" action="search.php" method="GET" onSubmit="return checkValue($('search'), 'Search The Archive');">
 <table cellspacing="0" cellpadding="0" style="position:absolute; top: 70px; left:130px; z-index:2; white-space:nowrap; vertical-align:top;">
 <tr>
- <td style="padding:0px 3px 0px 0px;"><input style="width:150px;" type="text" id="search" name="search" value="<?if (!empty($search)) {echo $search;} else {echo 'Search The Archive';}?>" onFocus="clearValue(this, 'Search The Archive');" /></td>
+ <td style="padding:0px 3px 0px 0px;"><input style="width:150px;" type="text" id="search" name="search" value="<?php if (!empty($search)) {echo $search;} else {echo 'Search The Archive';}?>" onFocus="clearValue(this, 'Search The Archive');" /></td>
  <td><input style="border:solid 1px #AAAAAA;" type="submit" value="Go" /></td>
  <td style="padding:0px 0px 0px 12px;"><div id="linkBrowseArchiveDiv"><a id="linkBrowseArchive" style="font-size:13px;" href="javascript:showArchive();">Browse The Archive</a></div></td>
 </tr>
