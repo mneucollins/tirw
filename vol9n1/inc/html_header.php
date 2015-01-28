@@ -199,7 +199,7 @@ August 2007</a><br />
 <!-- top -->
 <table id="tableHeader" cellspacing="0" cellpadding="0">
 <tr id="header"><td id="left"><div style="position:relative; top:0px; left:0px;">
-<a href="<?=dirname($_SERVER['PHP_SELF'])?>"><img style="position:absolute; top:0px; left:0px; z-index:1;" src="images/tirwlogo.jpg" alt="" /></a>
+<a href="<?php =dirname($_SERVER['PHP_SELF'])?>"><img style="position:absolute; top:0px; left:0px; z-index:1;" src="images/tirwlogo.jpg" alt="" /></a>
 <form name="formSearch" action="search.php" method="GET" onSubmit="return checkValue($('search'), 'Search The Archive');">
 <table cellspacing="0" cellpadding="0" style="position:absolute; top: 70px; left:130px; z-index:2; white-space:nowrap; vertical-align:top;">
 <tr>

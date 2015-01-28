@@ -1,7 +1,6 @@
-<?PHP
-require_once('../baseurl.php');
+<?php
+include('../baseurl.php');
 include('inc/html_header.php');
-
 ?>
 <table id="tableFront" cellspacing="0" cellpadding="0">
 
@@ -15,8 +14,8 @@ include('inc/html_header.php');
 
 <td class="columnLeft">
 
-  <p>Literary hypertext and hypermedia have been made for 15 years with a wide variety of development systems. When the ELO curated its first <a href="http://collection.eliterature.org/1/">Electronic Literature Collection</a> in 2006, in an open call for works, the 60 selected were made in some 10 different development systems, from HTML to VRML.</p> 
-  <p>Who is in this game, and how do we draw in new readers and players? Our featured artists answer this question in our interviews.</p> 
+  <p>Literary hypertext and hypermedia have been made for 15 years with a wide variety of development systems. When the ELO curated its first <a href="http://collection.eliterature.org/1/">Electronic Literature Collection</a> in 2006, in an open call for works, the 60 selected were made in some 10 different development systems, from HTML to VRML.</p>
+  <p>Who is in this game, and how do we draw in new readers and players? Our featured artists answer this question in our interviews.</p>
   <p>In a world that challenges (and sometimes defeats) writers with its constantly multiplying means, we chose to focus this issue of TIRWeb on two committed long-time practitioners. Donna Leishman, coming from both a fine arts and commercial background, creates finely wrought narrative based on folkloric or historic myth, using very few words. Jason Nelson, coming from a print MFA program and self-taught in software, creates poetical/fictionary "creatures" in great numbers, many of whom use text he has written or appropriated, while others focus on screen morphology or interface, as if "interface" were itself the real "critter" at issue.</p>
   <p>For all their differences, much unites them:</p>
   <p>Both have a mature body of work, and both are known for work that is challenging in structure and technique.<p>
@@ -29,7 +28,7 @@ include('inc/html_header.php');
   <p>We want to refer you as well to <a href="http://www.6amhoover.com/index_flash.html">Donna's site</a>  where a wealth of analysis and commentary exists together with her recountings of Red Riding Hood and Bluebeard, as well as newer works. And we are happy to have persuaded Jason to make a <a href="http://www.secrettechnology.com/works/everything.htm">visual index</a> to his oeuvre-to-date. Bookmark this link!</p>
   <p>We know you will enjoy work of such fertility and commitment. We think that the issues Donna and Jason raise, of how to name and how to make; how to acquire a digital grammar and work natively within digital media; and how to think about multi-state environments and multi-modes, are those that the e-lit field will be engaged with for years to come.</p>
   <p>--Stephanie Strickland<br />--Marjorie Coverley Luesebrink</p>
-	
+
 </td>
 
 <td class="columnRight">
@@ -48,7 +47,6 @@ include('inc/html_header.php');
 </tr>
 
 </table>
-<?
+<?php
 
 include('inc/html_footer.php');
-

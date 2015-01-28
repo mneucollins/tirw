@@ -6,15 +6,15 @@
 	<meta name="generator" content="BBEdit 9.5" />
 </head>
 <body>
-<?PHP
+<?php
 include("phpHeader.php");
 
 $result = mysql_query("SELECT url FROM tirwArticles");
 
-  while ($row = mysql_fetch_assoc($result)) 
-  {
-  echo "<a href = '".$row['url']."'>".$row['url']."</a><br />";
-  }
+while ($row = mysql_fetch_assoc($result))
+{
+	echo "<a href = '".$row['url']."'>".$row['url']."</a><br />";
+}
 ?>
 
 </body>

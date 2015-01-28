@@ -24,7 +24,7 @@ include('inc/html_header.php');
 
 </td>
 
-<? include ('inc/html_options.php'); ?>
+<?php include ('inc/html_options.php'); ?>
 
 <td class="columnRight">
 
@@ -44,9 +44,9 @@ src="images/content/thumbs/nelsongames.jpg" /></a></div>
 </td>
 
 </tr>
-<? include('inc/html_copyright.php') ?>
+<?php include('inc/html_copyright.php') ?>
 </table>
-<?
+<?php
 
 include('inc/html_footer.php');
 

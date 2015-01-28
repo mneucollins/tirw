@@ -1,4 +1,4 @@
-<?PHP
+<?php
 
 include('inc/html_header.php');
 
@@ -6,20 +6,20 @@ include('inc/html_header.php');
 <table id="tableContent" cellspacing="0" cellpadding="0">
 	<tr>
 		<td class="columnTitleLeft">
-			<h1> Judy Malloy </h1> 
+			<h1> Judy Malloy </h1>
 		</td>
 		<td class="columnTitleRight">
-			<h1> Contents: </h1> 
+			<h1> Contents: </h1>
 		</td>
 	</tr>
 	<tr>
 		<td class="columnLeft">
 <!-- left column content -->
-			<h2> <a href="artworks/concerto/begin.html" target="_blank"> Concerto for Narrative Data </a> </h2> 
-			<p align="left">			
+			<h2> <a href="artworks/concerto/begin.html" target="_blank"> Concerto for Narrative Data </a> </h2>
+			<p align="left">
 						<strong>Bio</strong>
 			</p>
-			<p align="left">			
+			<p align="left">
 				A magic realist whose work looks at the lives of artists, Judy Malloy works at the conjunction of poetry, hypernarrative, and information art.
 			</p>
 			<p align="left">
@@ -40,18 +40,18 @@ include('inc/html_header.php');
 			<p align="left">
 				"My work looks at society in multiple ways -- ranging from the bawdy feminist take on office politics in 500 3X5 Cards and Other Stories to the poetic sorrow expressed in Ask for Sanctuary," she states. "For all societies -- from ancient Greek to contemporary times -- the freedom to make art in such diverse ways is of primary importance in the creation of vibrant and lasting cultures."
 			</p>
-			
+
 			<p align="left">
-				<a href="http://www.well.com/user/jmalloy/" target="_blank"> http://www.well.com/user/jmalloy/ </a> 
+				<a href="http://www.well.com/user/jmalloy/" target="_blank"> http://www.well.com/user/jmalloy/ </a>
 			</p>
 			<div>
 			</div>
 		</td>
-<? include ('inc/html_options.php'); ?>
+<?php include ('inc/html_options.php'); ?>
 	</tr>
-<? include('inc/html_copyright.php') ?>
+<?php include('inc/html_copyright.php') ?>
 </table>
-<?
+<?php
 
 include('inc/html_footer.php');
 ?>

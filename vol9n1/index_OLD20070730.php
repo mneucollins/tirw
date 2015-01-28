@@ -49,7 +49,7 @@ include('inc/html_header.php');
 </tr>
 
 </table>
-<?
+<?php
 
 include('inc/html_footer.php');
 

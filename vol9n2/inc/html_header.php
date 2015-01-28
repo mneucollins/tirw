@@ -40,7 +40,6 @@ function findPos(obj) {
 </head>
 <body>
 
-
 <div id="divBrowseArchive">
 <a href= <?php echo "$baseurl/vol9n2/";?> >-- TIR-W Volume 9 no. 2
 July 2008</a> Instruments and Playable Text: Stuart Moulthrop<br />
@@ -52,7 +51,7 @@ July 2008</a> Instruments and Playable Text: Stuart Moulthrop<br />
 &nbsp;&nbsp;&nbsp;&nbsp;The Purpling: Nick Montfort<br />
 <br />
 
-<a href=<?php echo "$baseurl/vol9n1/";?> >-- TIR-W Volume 9 no. 1
+<a href=<?php echo $baseurl."/vol9n1/";?> >-- TIR-W Volume 9 no. 1
 August 2007</a><br />
 &nbsp;&nbsp;&nbsp;&nbsp;Multi-Modal Coding: Jason Nelson, Donna Leishman, and Electronic Writing<br />
 &nbsp;&nbsp;&nbsp;&nbsp;Interviews: Jason Nelson, Donna Leishman<br />
@@ -104,7 +103,7 @@ August 2007</a><br />
 &nbsp;&nbsp;&nbsp;&nbsp;Sound Art, Art, Music; Douglas Kahn<br />
 &nbsp;&nbsp;&nbsp;&nbsp;Speaking Volumes; Brandon Labelle<br />
 &nbsp;&nbsp;&nbsp;&nbsp;Firebirds | Firebirds Berlin | Tongues of Fire; Paul DeMarinis<br />
-&nbsp;&nbsp;&nbsp;&nbsp;A Brief Lecture on Author/ity; Alexis Bhagat<br /> 
+&nbsp;&nbsp;&nbsp;&nbsp;A Brief Lecture on Author/ity; Alexis Bhagat<br />
 &nbsp;&nbsp;&nbsp;&nbsp;Harvester; Ed Osborn<br />
 &nbsp;&nbsp;&nbsp;&nbsp;Honi | Tacotsubo; ADACHI Tomomi<br />
 <br />
@@ -199,7 +198,7 @@ August 2007</a><br />
 <!-- top -->
 <table id="tableHeader" cellspacing="0" cellpadding="0">
 <tr id="header"><td id="left"><div style="position:relative; top:0px; left:0px;">
-<a href="<?=dirname($_SERVER['PHP_SELF'])?>"><img style="position:absolute; top:0px; left:0px; z-index:1;" src="images/tirwlogo.jpg" alt="" /></a>
+<a href="<?php echo dirname($_SERVER['PHP_SELF'])?>"><img style="position:absolute; top:0px; left:0px; z-index:1;" src="images/tirwlogo.jpg" alt="" /></a>
 <form name="formSearch" action="search.php" method="GET" onSubmit="return checkValue($('search'), 'Search The Archive');">
 <table cellspacing="0" cellpadding="0" style="position:absolute; top: 70px; left:130px; z-index:2; white-space:nowrap; vertical-align:top;">
 <tr>
@@ -214,4 +213,3 @@ August 2007</a><br />
 </tr>
 <tr id="bar"><td id="bar" colspan="2"><!--gray bar--></td></tr>
 </table>
-

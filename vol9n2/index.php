@@ -1,5 +1,5 @@
-<?PHP
-require_once('../baseurl.php');
+<?php
+include('../baseurl.php');
 include('inc/html_header.php');
 ?>
 <table id="tableFront" cellspacing="0" cellpadding="0">
@@ -27,7 +27,7 @@ include('inc/html_header.php');
 
 			<h3>
 				Some Joyces, Not an Eco
-				
+
 			</h3>
 			<h2>
 				Stuart Moulthrop
@@ -76,7 +76,7 @@ include('inc/html_header.php');
 				Things are different in the young millennium, where our <i>wiki-wiki</i> world changes fear to hope.  Behold, a few thousand code monkeys banging away at their keyboards produce a passable facsimile of <i>World Book</i>, if not <i>Britannica</i>.  Open-source programming offers up legitimate, robust alternatives to corporate bloatware.  Massively multiplayer online games and social networking sites create new channels for contact and community.  No doubt these are all brave new worlds -- as Prospero snaps, <i>brave to thee</i> -- and thus about as perfect as no utopia can ever be.  Yet for old men like me, who stand skeptically on the margins, secretly mourning our drown&eacute;d book, it is impossible to deny, if we owe anything to truth, that these unlikely systems work far better than we guessed
 			</p>
 			<p align="left">
-				So the times change, and text becomes playable, or is placed in play, just as our Oulipist masters intended; or even as not.  Sometimes, perhaps, play evolves in directions we do not anticipate.  Foreknowledge is necessarily imperfect: if we could predict the future, who would ever go there? 
+				So the times change, and text becomes playable, or is placed in play, just as our Oulipist masters intended; or even as not.  Sometimes, perhaps, play evolves in directions we do not anticipate.  Foreknowledge is necessarily imperfect: if we could predict the future, who would ever go there?
 			</p>
 			<p align="left">
 				<strong>Transit 3: Playlist</strong>
@@ -85,7 +85,7 @@ include('inc/html_header.php');
 				To perform this final transit, from then to now to hereafter, we must comb the unfamiliar, bringing out demonstrations and inventions, high gimmickry and thought-experiments, unspeakable practices and arcane instruments.  Sometimes we understand these new organs in the musical or aesthetic sense, as the apparatus for melody, harmony, and joyful noise.  Then again, we may see them in a more scientific vein, as instruments of discovery -- in this sense indeed like the pendulum of Eco and Foucault, though less beholden, perhaps, to any sort of Gravity.  In the end, our play upon these instruments, in the echo chamber of reverberating culture, may incline more to one Foucault than the other, though it must always include multiple Joyces.  We want as much genius as we can find, so let us invite one more of that sort from the wings, along with his balladeer.  Consider Jonathan Coulton on the great geometer, Benoit Mandelbrot:
 			</p>
 			<p align="left" class = "in1">
-				He saw that infinite complexity could be described by simple rules <br /> 
+				He saw that infinite complexity could be described by simple rules <br />
 				He used his giant brain to turn the game around
 			</p>
 			<p align="left">
@@ -130,7 +130,7 @@ include('inc/html_header.php');
 			</p>
 			<p align="left">
 			</p>
-			
+
 		</td>
 		<td class="columnRight">
 			<p><strong>A note from the editor</strong></p>
@@ -165,7 +165,7 @@ Writers and artists interested in having your work considered are encouraged to 
 			<p>
 				Jon Winet, Editor
 				<br />
-<!-- 
+<!--
 				Charisse Madlock-Brown, Production Coordinator
 				<br />
  -->
@@ -187,7 +187,7 @@ mark-neucollins@uiowa.edu
 		</td>
 	</tr>
 </table>
-<?
+<?php
 
 include('inc/html_footer.php');
 

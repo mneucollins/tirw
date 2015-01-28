@@ -32,7 +32,7 @@ include('inc/html_header.php');
 <p>I would urge any user/participant to explore the piece: invent and enjoy before doing any research into the story of Christian Shaw. If you happen to come to the epilogue during your first exploration of the piece, ignore it and go through the piece one more time. Certainly, at some point, it is a good idea to read the epilogue to come to some understanding of the base narrative, but part of the joy of Leishman's <i>Deviant</i>  is in the potential deviations from the original story.</p>
 </td>
 
-<? include ('inc/html_options.php'); ?>
+<?php include ('inc/html_options.php'); ?>
 
 <td class="columnRight">
 
@@ -61,9 +61,9 @@ include('inc/html_header.php');
 </td>
 
 </tr>
-<? include('inc/html_copyright.php') ?>
+<?php include('inc/html_copyright.php') ?>
 </table>
-<?
+<?php
 
 include('inc/html_footer.php');
 

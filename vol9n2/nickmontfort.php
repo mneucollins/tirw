@@ -1,4 +1,4 @@
-<?PHP
+<?php
 
 include('inc/html_header.php');
 
@@ -7,7 +7,7 @@ include('inc/html_header.php');
 	<tr>
 		<td class="columnTitleLeft">
 			<h1>
-				Nick Montfort 
+				Nick Montfort
 			</h1>
 		</td>
 		<td class="columnTitleRight">
@@ -33,12 +33,12 @@ include('inc/html_header.php');
 			<div>
 			</div>
 		</td>
-<? include ('inc/html_options.php'); ?>
+<?php include ('inc/html_options.php'); ?>
 
 	</tr>
-<? include('inc/html_copyright.php') ?>
+<?php include('inc/html_copyright.php') ?>
 </table>
-<?
+<?php
 
 include('inc/html_footer.php');
 ?>

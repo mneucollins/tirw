@@ -1,4 +1,4 @@
-<?PHP
+<?php
 
 include('inc/html_header.php');
 
@@ -56,7 +56,7 @@ include('inc/html_header.php');
 			<strong>NOTES</strong>
 			</p>
 			<p align="left">
-			<a id="N1" href="#FN1">1.</a> Gilles Deleuze, <u>Foucault</u> (Paris: &Eacute;ditions de Minuit, 1986) 11. &ldquo;Un nouvel archiviste est nomm&eacute; dans la ville.&rdquo; In all seriousness and pragmatism I believe that Foucault&rsquo;s elaboration of the &lsquo;statement&rsquo; will be necessary for our better understanding and archiving of work in programmable media such that we can deal with the (provisional) identification of work-as-statement in conditions of medial flux, uncertainty, and also, to be more specific, platform obsolesence. &lsquo;New archivists&rsquo; will have to be proactive in their determinations of what the statement of a work is (and, of course, all of its subordinate statements and (cross)references to other statements, etc., etc.) 
+			<a id="N1" href="#FN1">1.</a> Gilles Deleuze, <u>Foucault</u> (Paris: &Eacute;ditions de Minuit, 1986) 11. &ldquo;Un nouvel archiviste est nomm&eacute; dans la ville.&rdquo; In all seriousness and pragmatism I believe that Foucault&rsquo;s elaboration of the &lsquo;statement&rsquo; will be necessary for our better understanding and archiving of work in programmable media such that we can deal with the (provisional) identification of work-as-statement in conditions of medial flux, uncertainty, and also, to be more specific, platform obsolesence. &lsquo;New archivists&rsquo; will have to be proactive in their determinations of what the statement of a work is (and, of course, all of its subordinate statements and (cross)references to other statements, etc., etc.)
 			</p>
 			<p align="left">
 			<a href="#FN2" id="N2">2.</a> In thinking, separately, about how such works relate to games, one might compare these remarks on configuration with Markku Eskelinen&rsquo;s suggestive notion that games &lsquo;interpret for the sake of configuration&rsquo; while (digital) works that are presented as art or literature &lsquo;configure for the sake of interpretation.&rsquo; See: Markku Eskelinen, "The Gaming Situation," <u>Game Studies</u> 1.1 (2001). And also my related remarks in: John Cayley, "Response to Stuart Moulthrop's 'from Work to Play'," <u>Electronic Book Review</u> electropoetics (2004
@@ -81,16 +81,16 @@ include('inc/html_header.php');
 				John Cayley writes digital media, particularly in the domain of poetry and poetics. Three recent and ongoing projects are <i>imposition</i>, <i>riverIsland</i>, <i>and what we will ...</i> Information on these and other works may be consulted at <a href="http://programmatology.shadoof.net" target="_blank">http://programmatology.shadoof.net</a>. Cayley is a Visiting Professor at Brown University, Literary Arts Program.
 			</p>
 			<p align="left">
-			</p>			
+			</p>
 			<div>
 			</div>
 		</td>
-<? include ('inc/html_options.php'); ?>
+<?php include ('inc/html_options.php'); ?>
 
 	</tr>
-<? include('inc/html_copyright.php') ?>
+<?php include('inc/html_copyright.php') ?>
 </table>
-<?
+<?php
 
 include('inc/html_footer.php');
 ?>

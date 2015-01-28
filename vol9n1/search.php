@@ -46,7 +46,8 @@ include('inc/html_header.php');
 <table id="tableContent" style="width:600px;" cellspacing="0" cellpadding="0">
 
 <tr>
- <td class="columnLeft" colspan="2" style="padding-top:10px; padding-bottom:15px;"><h1><?
+ <td class="columnLeft" colspan="2" style="padding-top:10px; padding-bottom:15px;"><h1>
+ <?php
    if (mysql_num_rows($result)>0) {
 	   echo 'Found '.mysql_num_rows($result).' result';
 		 if (mysql_num_rows($result)>1) echo 's';
@@ -58,7 +59,7 @@ include('inc/html_header.php');
 </tr>
 <tr>
  <td class="columnLeft">
-<?
+<?php
   while ($result && $row = mysql_fetch_assoc($result)) {
 	  $contribArray = array();
 	  $result2 = mysql_query("SELECT tirwContributors.firstname, tirwContributors.lastname, tirwContributors.biography 
@@ -88,9 +89,9 @@ include('inc/html_header.php');
 ?>
  </td>
 </tr>
-<? include('inc/html_copyright.php') ?>
+<?php include('inc/html_copyright.php') ?>
 </table>
-<?
+<?php
 
 include('inc/html_footer.php');
 

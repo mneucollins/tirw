@@ -1,4 +1,4 @@
-<?PHP
+<?php
 
 include('inc/html_header.php');
 
@@ -37,12 +37,12 @@ Moulthrop teaches in the School of Information Arts and Technologies at the Univ
 			<div>
 			</div>
 		</td>
-<? include ('inc/html_options.php'); ?>
+<?php include ('inc/html_options.php'); ?>
 
 	</tr>
-<? include('inc/html_copyright.php') ?>
+<?php include('inc/html_copyright.php') ?>
 </table>
-<?
+<?php
 
 include('inc/html_footer.php');
 ?>
