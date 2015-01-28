@@ -1,6 +1,4 @@
 <?PHP
-echo "here";
-error_reporting(E_ALL);
 require_once('../baseurl.php');
 include('inc/html_header.php');
 ?>
