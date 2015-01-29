@@ -51,7 +51,7 @@ July 2008</a> Instruments and Playable Text: Stuart Moulthrop<br />
 &nbsp;&nbsp;&nbsp;&nbsp;The Purpling: Nick Montfort<br />
 <br />
 
-<a href=<?php echo $baseurl."/vol9n1/";?> >-- TIR-W Volume 9 no. 1
+<a href=<?php echo "$baseurl/vol9n1/";?> >-- TIR-W Volume 9 no. 1
 August 2007</a><br />
 &nbsp;&nbsp;&nbsp;&nbsp;Multi-Modal Coding: Jason Nelson, Donna Leishman, and Electronic Writing<br />
 &nbsp;&nbsp;&nbsp;&nbsp;Interviews: Jason Nelson, Donna Leishman<br />
