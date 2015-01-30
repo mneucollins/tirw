@@ -1,7 +1,6 @@
 <?php
-
+include('../baseurl.php');
 include('inc/html_header.php');
-
 ?>
 <table id="tableContent" cellspacing="0" cellpadding="0">
 	<tr>

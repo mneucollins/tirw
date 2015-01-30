@@ -1,7 +1,6 @@
-<?PHP
-
+<?php
+include('../baseurl.php');
 include('inc/html_header.php');
-
 ?>
 <style type="text/css">
 .red {color:#C64040;}
