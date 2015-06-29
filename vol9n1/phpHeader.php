@@ -3,8 +3,9 @@
 session_start();
 
 function db_connect() {
-	$db = mysql_pconnect("lamp-db2.its.uiowa.edu", "intermedia", "craigd");
-	if (!mysql_select_db("intermedia",$db)) {
+	$db = mysql_pconnect("localhost", "iowareview_u", "cKq9cL2TeYyMaRyy");
+
+	if (!mysql_select_db("tirw",$db)) {
 		echo '<p><b>Could Not Select The Database.  Please try again later</b></p>';
 		exit;
 	}

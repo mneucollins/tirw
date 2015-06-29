@@ -1,7 +1,6 @@
-<?PHP
-
+<?php
+include('../baseurl.php');
 include('inc/html_header.php');
-
 ?>
 <table id="tableContent" cellspacing="0" cellpadding="0">
 
@@ -28,7 +27,7 @@ src="images/content/thumbs/leishmanfuture2.jpg" /></a></div>
 <p>I have also storyboarded a narrative based on the Benandanti agrarian Italian cult. Benandanti, a term roughly translated as "good walkers," "those who go well," or "good-doers," were participants in the lingering remnants of an ancient agrarian cult in northern Italy. It came to the attention of Inquisitors in the late 16th  century because of the cult's nocturnal battles with witches over the fertility of the crops and livestock. As always, I'm also looking for a new narrative for projects.</p>
 </td>
 
-<? include ('inc/html_options.php'); ?>
+<?php include ('inc/html_options.php'); ?>
 
 <td class="columnRight">
 
@@ -50,9 +49,9 @@ src="images/content/thumbs/nelsonfuture.jpg" /></a></div>
 </td>
 
 </tr>
-<? include('inc/html_copyright.php') ?>
+<?php include('inc/html_copyright.php') ?>
 </table>
-<?
+<?php
 
 include('inc/html_footer.php');
 

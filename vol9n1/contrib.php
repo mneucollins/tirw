@@ -1,4 +1,4 @@
-<?
+<?php
 session_start();
 
 function db_connect() {
@@ -60,19 +60,19 @@ and send an error accordingly.  You may see the results,<br />
 live, on the DBG by refreshing the DBG page if you have<br />
 it open.  Thanks!</p>
 <br />
-<form name="formContributors" action="<?=$_SERVER['PHP_SELF']?>" method="post">
+<form name="formContributors" action="<?php =$_SERVER['PHP_SELF']?>" method="post">
 <input type="hidden" name="action" value="doSubmit" />
 <table cellspacing="0" cellpadding="0">
 <tr>
 <td class="tdMain">firstname</td>
-<td class="tdMain"><input type="text" name="firstname" value="<?=stripslashes($firstname)?>" /></td>
+<td class="tdMain"><input type="text" name="firstname" value="<?php =stripslashes($firstname)?>" /></td>
 <td class="tdMain">lastname</td>
-<td class="tdMain"><input type="text" name="lastname" value="<?=stripslashes($lastname)?>" /></td>
+<td class="tdMain"><input type="text" name="lastname" value="<?php =stripslashes($lastname)?>" /></td>
 <td class="tdMain" colspan="2" align="right"><input type="submit" value="Add Contributor!" /></td>
 </tr>
 </table>
 <br /><br />
-<strong><?=$error?></strong>
+<strong><?php =$error?></strong>
 </form>
 </body>
 </html>

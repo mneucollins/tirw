@@ -1,7 +1,6 @@
-<?PHP
-
+<?php
+include('../baseurl.php');
 include('inc/html_header.php');
-
 ?>
 <table id="tableContent" cellspacing="0" cellpadding="0">
 
@@ -34,7 +33,7 @@ include('inc/html_header.php');
 
 </td>
 
-<? include ('inc/html_options.php'); ?>
+<?php include ('inc/html_options.php'); ?>
 
 <td class="columnRight">
 
@@ -59,8 +58,8 @@ include('inc/html_header.php');
 </td>
 
 </tr>
-<? include('inc/html_copyright.php') ?>
+<?php include('inc/html_copyright.php') ?>
 </table>
-<?
+<?php
 
 include('inc/html_footer.php');
