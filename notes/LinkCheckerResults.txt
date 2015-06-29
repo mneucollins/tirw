@@ -1,0 +1,95 @@
+Link Checker results
+
+http://thestudio.uiowa.edu/tirw/vol9n2/
+
+Line: 328 http://www.uiowa.edu/~iareview/tirweb/feature/cayley/index.html
+    Status: 404 Not Found
+
+    The link is broken. Double-check that you have not made any typo, or mistake in copy-pasting. If the link points to a resource that no longer exists, you may want to remove or fix the link. 
+info Line: 207 javascript:showArchive();
+    Status: (N/A) Access to 'javascript' URIs has been disabled
+====
+
+    You must change this link: people using a browser without JavaScript support will not be able to follow this link. See the Web Content Accessibility Guidelines on the use of scripting on the Web and the techniques on how to solve this. 
+warning Line: 280 http://en.wikipedia.org/wiki/Esoteric redirected to https://en.wikipedia.org/wiki/Esoteric
+    Status: 301 -> 200 OK
+
+    This is a permanent redirect. The link should be updated. 
+warning Line: 280 http://en.wikipedia.org/wiki/Foucault_pendulum redirected to https://en.wikipedia.org/wiki/Foucault_pendulum
+    Status: 301 -> 200 OK
+
+    This is a permanent redirect. The link should be updated. 
+warning Line: 280 http://en.wikipedia.org/wiki/Kabbalah redirected to https://en.wikipedia.org/wiki/Kabbalah
+    Status: 301 -> 200 OK
+
+    This is a permanent redirect. The link should be updated. 
+warning Line: 277 http://en.wikipedia.org/wiki/Philosopher redirected to https://en.wikipedia.org/wiki/Philosopher
+    Status: 301 -> 200 OK
+
+    This is a permanent redirect. The link should be updated. 
+warning Line: 201 http://thestudio.uiowa.edu/tirw/vol9n2 redirected to http://thestudio.uiowa.edu/tirw/vol9n2/
+    Status: 301 -> 200 OK
+
+    The link is missing a trailing slash, and caused a redirect. Adding the trailing slash would speed up browsing. 
+warning Line: 277 http://en.wikipedia.org/wiki/Novel redirected to https://en.wikipedia.org/wiki/Novel
+    Status: 301 -> 200 OK
+
+    This is a permanent redirect. The link should be updated. 
+warning Line: 277 http://en.wikipedia.org/wiki/Italy redirected to https://en.wikipedia.org/wiki/Italy
+    Status: 301 -> 200 OK
+
+    This is a permanent redirect. The link should be updated. 
+warning Line: 340 http://en.wikipedia.org/wiki/Foucault's_Pendulum redirected to https://en.wikipedia.org/wiki/Foucault's_Pendulum
+    Status: 301 -> 200 OK
+
+    This is a permanent redirect. The link should be updated. 
+warning Line: 277 http://en.wikipedia.org/wiki/Umberto_Eco redirected to https://en.wikipedia.org/wiki/Umberto_Eco
+    Status: 301 -> 200 OK
+
+    This is a permanent redirect. The link should be updated. 
+warning Line: 280 http://en.wikipedia.org/wiki/Sephirot_(Kabbalah) redirected to https://en.wikipedia.org/wiki/Sephirot_(Kabbalah)
+    Status: 301 -> 200 OK
+
+    This is a permanent redirect. The link should be updated. 
+warning Line: 277 http://en.wikipedia.org/wiki/1988 redirected to https://en.wikipedia.org/wiki/1988
+    Status: 301 -> 200 OK
+
+    This is a permanent redirect. The link should be updated. 
+warning Line: 280 http://en.wikipedia.org/wiki/Alchemy redirected to https://en.wikipedia.org/wiki/Alchemy
+    Status: 301 -> 200 OK
+
+    This is a permanent redirect. The link should be updated. 
+warning Line: 280 http://en.wikipedia.org/wiki/Le%CC%81on_Foucault redirected to https://en.wikipedia.org/wiki/Le%CC%81on_Foucault
+    Status: 301 -> 200 OK
+
+    This is a permanent redirect. The link should be updated. 
+warning Line: 280 http://en.wikipedia.org/wiki/Anthony_Burgess redirected to https://en.wikipedia.org/wiki/Anthony_Burgess
+    Status: 301 -> 200 OK
+
+    This is a permanent redirect. The link should be updated. 
+warning Line: 277 http://en.wikipedia.org/wiki/Novelist redirected to https://en.wikipedia.org/wiki/Novelist
+    Status: 301 -> 200 OK
+
+    This is a permanent redirect. The link should be updated. 
+warning Line: 277 http://en.wikipedia.org/wiki/William_Weaver redirected to https://en.wikipedia.org/wiki/William_Weaver
+    Status: 301 -> 200 OK
+
+    This is a permanent redirect. The link should be updated. 
+warning Line: 280 http://en.wikipedia.org/wiki/Conspiracy_theory redirected to https://en.wikipedia.org/wiki/Conspiracy_theory
+    Status: 301 -> 200 OK
+
+    This is a permanent redirect. The link should be updated. 
+
+-----------------
+http://thestudio.uiowa.edu/tirw/TIRW_Archive/september06/sept06_txt.html
+
+Line: 158 http://iowareview.uiowa.edu/TIRW/ redirected to http://www.iowareview.org/TIRW/
+    Status: 301 -> 404 Not Found
+
+    The link is broken. Double-check that you have not made any typo, or mistake in copy-pasting. If the link points to a resource that no longer exists, you may want to remove or fix the link. 
+
+
+warning Line: 159 http://iowareview.uiowa.edu/ redirected to http://www.iowareview.org/
+    Status: 301 -> 200 OK
+
+    This is a permanent redirect. The link should be updated. 
