@@ -93,3 +93,278 @@ warning Line: 159 http://iowareview.uiowa.edu/ redirected to http://www.iowarevi
     Status: 301 -> 200 OK
 
     This is a permanent redirect. The link should be updated. 
+
+
+
+
+-----------------
+http://thestudio.uiowa.edu/tirw/TIRW_Archive/july06/montfort.html
+
+Line: 129 http://www.poemsthatgo.com/gallery/fall2003/bmch/ redirected to http://poemsthatgo.com/gallery/fall2003/bmch/
+    Status: 301 -> 200 OK
+
+    This is a permanent redirect. The link should be updated. 
+    
+    
+-----------------
+http://thestudio.uiowa.edu/tirw/TIRW_Archive/july06/mcgonigal.html
+
+error Line: 139 http://ilovebees.com/MIA.html
+    Status: 302 -> 404 Not Found
+
+    The link is broken. Double-check that you have not made any typo, or mistake in copy-pasting. If the link points to a resource that no longer exists, you may want to remove or fix the link. 
+
+
+-----------------
+http://thestudio.uiowa.edu/tirw/TIRW_Archive/july06/intro.html
+
+Lines: 75, 143 http://www.uiowa.edu/~iareview/tirweb/feature/cave/
+    Status: 404 Not Found
+
+    The link is broken. Double-check that you have not made any typo, or mistake in copy-pasting. If the link points to a resource that no longer exists, you may want to remove or fix the link. 
+error Lines: 75, 136 http://www.jeffrey-shaw.net/html_main/show_work.php3?record_id=83
+    Status: 404 Not Found
+
+    The link is broken. Double-check that you have not made any typo, or mistake in copy-pasting. If the link points to a resource that no longer exists, you may want to remove or fix the link. 
+error Lines: 77, 103 http://www.forcedentertainment.com/archive/surrender.html
+    Status: 404 Not Found
+
+    The link is broken. Double-check that you have not made any typo, or mistake in copy-pasting. If the link points to a resource that no longer exists, you may want to remove or fix the link. 
+error Lines: 73, 129 http://www.uiowa.edu/~iareview/tirweb/feature/moulthrop/moulthrop/index.htm
+    Status: 404 Not Found
+
+    The link is broken. Double-check that you have not made any typo, or mistake in copy-pasting. If the link points to a resource that no longer exists, you may want to remove or fix the link. 
+error Lines: 73, 94 http://www.mrbellersneighborhood.com/
+    Status: 403 Forbidden
+
+    The link is forbidden! This needs fixing. Usual suspects: a missing index.html or Overview.html, or a missing ACL. 
+error Lines: 75, 139 http://www.camilleutterback.com/textrain.html
+    Status: 406 Not Acceptable
+
+    The server isn't capable of responding according to the Accept* headers sent. This is likely to be a server-side issue with negotiation. 
+    
+    
+Lines: 83, 113 http://ineradicablestain.com/dollgames redirected to http://ineradicablestain.com/dollgames/
+    Status: 301 -> 200 OK
+
+    The link is missing a trailing slash, and caused a redirect. Adding the trailing slash would speed up browsing. 
+warning Lines: 75, 141 http://hyperfiction.org/talkingcure/ redirected to http://www.hyperfiction.org/talkingcure/
+    Status: 301 -> 200 OK
+
+    This is a permanent redirect. The link should be updated. 
+warning Lines: 70, 97 http://www.lcc.gatech.edu/~bolter/fourangrymen.htm redirected to http://lmc.gatech.edu/~bolter/fourangrymen.htm
+    Status: 301 -> 200 OK
+
+    This is a permanent redirect. The link should be updated. 
+warning Lines: 73, 106 http://www.unknownhypertext.com/ redirected to http://unknownhypertext.com/
+    Status: 301 -> 200 OK
+
+    This is a permanent redirect. The link should be updated. 
+    
+    
+-----------------
+http://thestudio.uiowa.edu/tirw/TIRW_Archive/feb06/feb06_txt.html
+
+Lines: 139, 140 http://iowareview.uiowa.edu/TIRW/ redirected to http://www.iowareview.org/TIRW/
+    Status: 301 -> 404 Not Found
+
+    The link is broken. Double-check that you have not made any typo, or mistake in copy-pasting. If the link points to a resource that no longer exists, you may want to remove or fix the link. 
+    
+
+
+-----------------
+http://thestudio.uiowa.edu/tirw/TIRW_Archive/feb06/demarinis.html    
+ Lines: 83, 88, 95, 97, 98 javascript:popPlayVideo('tirw_demarinis_tongues','tirw')
+    Status: (N/A) Access to 'javascript' URIs has been disabled
+
+    You must change this link: people using a browser without JavaScript support will not be able to follow this link. See the Web Content Accessibility Guidelines on the use of scripting on the Web and the techniques on how to solve this. 
+    
+     Lines: 83, 88, 90, 94, 97, 98 javascript:popPlayVideo('tirw_demarinis_firebirds','tirw')
+    Status: (N/A) Access to 'javascript' URIs has been disabled
+
+    You must change this link: people using a browser without JavaScript support will not be able to follow this link. See the Web Content Accessibility Guidelines on the use of scripting on the Web and the techniques on how to solve this. 
+
+
+info Lines: 83, 97, 98 javascript:popPlayVideo('tirw_demarinis_fire_berlin','tirw');
+    Status: (N/A) Access to 'javascript' URIs has been disabled
+
+    You must change this link: people using a browser without JavaScript support will not be able to follow this link. See the Web Content Accessibility Guidelines on the use of scripting on the Web and the techniques on how to solve this. 
+    
+    
+-----------------
+http://thestudio.uiowa.edu/tirw/TIRW_Archive/feb06/bios.html
+ 
+ Line: 68 http://radio.socialtechnology.net/
+    Status: 500 Can't connect to radio.socialtechnology.net:80 (Bad hostname)
+
+   This is a server side problem. Check the URI. 
+
+
+-----------------
+http://thestudio.uiowa.edu/tirw/TIRW_Archive/feb06/tomomi.html
+    
+ Lines: 66, 69, 71 javascript:popPlayVideo('tirw_tacotsubo','tirw')
+    Status: (N/A) Access to 'javascript' URIs has been disabled
+
+    You must change this link: people using a browser without JavaScript support will not be able to follow this link. See the Web Content Accessibility Guidelines on the use of scripting on the Web and the techniques on how to solve this. 
+info Lines: 66, 69, 71 javascript:popPlayVideo('tirw_honi','tirw')
+    Status: (N/A) Access to 'javascript' URIs has been disabled
+
+    You must change this link: people using a browser without JavaScript support will not be able to follow this link. See the Web Content Accessibility Guidelines on the use of scripting on the Web and the techniques on how to solve this. 
+    
+-----------------    
+http://thestudio.uiowa.edu/tirw/TIRW_Archive/feb06/osborn.html
+
+info Lines: 79, 81, 82, 83, 84, 85 javascript:popPlayVideo('tirw_osborn_harvester','tirw')
+    Status: (N/A) Access to 'javascript' URIs has been disabled
+
+    You must change this link: people using a browser without JavaScript support will not be able to follow this link. See the Web Content Accessibility Guidelines on the use of scripting on the Web and the techniques on how to solve this. 
+
+
+-----------------    
+http://thestudio.uiowa.edu/tirw/TIRW_Archive/feb06/bhagat.html
+
+ Lines: 60, 75 javascript:popPlayVideo('tirw_bgahat','tirw')
+    Status: (N/A) Access to 'javascript' URIs has been disabled
+
+    You must change this link: people using a browser without JavaScript support will not be able to follow this link. See the Web Content Accessibility Guidelines on the use of scripting on the Web and the techniques on how to solve this. 
+    
+
+
+
+-----------------    
+http://thestudio.uiowa.edu/tirw/TIRW_Archive/oct05/oct05_txt.html
+
+
+warning Lines: 121, 122 http://iowareview.uiowa.edu/ redirected to http://www.iowareview.org/
+    Status: 301 -> 200 OK
+
+    This is a permanent redirect. The link should be updated. 
+
+
+List of duplicate and empty anchors
+Anchor 	Lines
+Image5	87, 94, 121
+Image4	101, 112
+
+
+-----------------    
+http://thestudio.uiowa.edu/tirw/TIRW_Archive/oct05/nelson.html
+
+
+error Lines: 77, 78 http://iowareview.uiowa.edu/TIRW/TIRW_Archive/oct05/bomargene/bomargene.htm redirected to http://www.iowareview.org/TIRW/TIRW_Archive/oct05/bomargene/bomargene.htm
+    Status: 301 -> 404 Not Found
+
+    The link is broken. Double-check that you have not made any typo, or mistake in copy-pasting. If the link points to a resource that no longer exists, you may want to remove or fix the link. 
+error Line: 69 http://www.uiowa.edu/~iareview/mainpages/new/oct05/bomargene/bomargene.htm
+    Status: 404 Not Found
+
+    The link is broken. Double-check that you have not made any typo, or mistake in copy-pasting. If the link points to a resource that no longer exists, you may want to remove or fix the link. 
+
+-----------------    
+http://thestudio.uiowa.edu/tirw/TIRW_Archive/oct05/olsen_guthrie.html
+
+error Line: 73 http://timguthrie.creighton.edu/
+    Status: 500 Can't connect to timguthrie.creighton.edu:80 (Bad hostname)
+
+    This is a server side problem. Check the URI. 
+
+
+-----------------    
+http://thestudio.uiowa.edu/tirw/TIRW_Archive/oct05/davis.html
+
+warning Lines: 69, 77, 80, 81 http://www.julietdavis.com/studio/piecesofherself redirected to http://www.julietdavis.com/studio/piecesofherself/
+    Status: 301 -> 200 OK
+
+    The link is missing a trailing slash, and caused a redirect. Adding the trailing slash would speed up browsing. 
+
+-----------------    
+http://thestudio.uiowa.edu/tirw/TIRW_Archive/aug05/aug05_txt.html
+
+error Lines: 110, 111 http://iowareview.uiowa.edu/TIRW/ redirected to http://www.iowareview.org/TIRW/
+    Status: 301 -> 404 Not Found
+
+    The link is broken. Double-check that you have not made any typo, or mistake in copy-pasting. If the link points to a resource that no longer exists, you may want to remove or fix the link. 
+    
+
+-----------------    
+http://thestudio.uiowa.edu/tirw/TIRW_Archive/aug05/zuern.html
+
+
+warning Line: 51 http://www2.hawaii.edu/~zuern/ask redirected to http://www2.hawaii.edu/~zuern/ask/
+    Status: 301 -> 200 OK
+
+    The link is missing a trailing slash, and caused a redirect. Adding the trailing slash would speed up browsing. 
+
+-----------------    
+http://thestudio.uiowa.edu/tirw/TIRW_Archive/aug05/chasar2.html
+
+
+error Line: 129 http://www.raintaxi.com/online/2004fall/addonizio.shtml
+    Status: 404 Not Found
+
+    The link is broken. Double-check that you have not made any typo, or mistake in copy-pasting. If the link points to a resource that no longer exists, you may want to remove or fix the link. 
+error Line: 128 http://iowareview.uiowa.edu/TIRW/TIRW_Archive/tirweb/feature/nickm/ redirected to http://www.iowareview.org/TIRW/TIRW_Archive/tirweb/feature/nickm/
+    Status: 301 -> 404 Not Found
+
+    The link is broken. Double-check that you have not made any typo, or mistake in copy-pasting. If the link points to a resource that no longer exists, you may want to remove or fix the link. 
+
+
+
+-----------------    
+http://thestudio.uiowa.edu/tirw/TIRW_Archive/tirweb/archives/04.htm
+
+
+error Line: 147 http://www.uiowa.edu/~xchanges/index.htm
+    Status: 404 Not Found
+
+    The link is broken. Double-check that you have not made any typo, or mistake in copy-pasting. If the link points to a resource that no longer exists, you may want to remove or fix the link. 
+error Line: 149 http://www.uiowa.edu/~iwp/91st/91Menu.html
+    Status: 404 Not Found
+
+    The link is broken. Double-check that you have not made any typo, or mistake in copy-pasting. If the link points to a resource that no longer exists, you may want to remove or fix the link. 
+error Lines: 139, 146 http://iowareview.uiowa.edu/TIRW/ redirected to http://www.iowareview.org/TIRW/
+    Status: 301 -> 404 Not Found
+
+    The link is broken. Double-check that you have not made any typo, or mistake in copy-pasting. If the link points to a resource that no longer exists, you may want to remove or fix the link. 
+
+
+-----------------    
+http://thestudio.uiowa.edu/tirw/TIRW_Archive/tirweb/archives/03.htm
+
+
+error Line: 192 http://www.uiowa.edu/~xchanges/index.htm
+    Status: 404 Not Found
+
+    The link is broken. Double-check that you have not made any typo, or mistake in copy-pasting. If the link points to a resource that no longer exists, you may want to remove or fix the link. 
+error Line: 194 http://www.uiowa.edu/~iwp/91st/91Menu.html
+    Status: 404 Not Found
+
+    The link is broken. Double-check that you have not made any typo, or mistake in copy-pasting. If the link points to a resource that no longer exists, you may want to remove or fix the link. 
+error Lines: 184, 191 http://iowareview.uiowa.edu/TIRW/ redirected to http://www.iowareview.org/TIRW/
+    Status: 301 -> 404 Not Found
+
+    The link is broken. Double-check that you have not made any typo, or mistake in copy-pasting. If the link points to a resource that no longer exists, you may want to remove or fix the link. 
+
+
+-----------------    
+http://thestudio.uiowa.edu/tirw/TIRW_Archive/tirweb/archives/02.html
+
+
+error Line: 260 http://www.uiowa.edu/~xchanges/index.htm
+    Status: 404 Not Found
+
+    The link is broken. Double-check that you have not made any typo, or mistake in copy-pasting. If the link points to a resource that no longer exists, you may want to remove or fix the link. 
+error Line: 262 http://www.uiowa.edu/~iwp/91st/91Menu.html
+    Status: 404 Not Found
+
+    The link is broken. Double-check that you have not made any typo, or mistake in copy-pasting. If the link points to a resource that no longer exists, you may want to remove or fix the link. 
+error Lines: 252, 259 http://iowareview.uiowa.edu/TIRW/ redirected to http://www.iowareview.org/TIRW/
+    Status: 301 -> 404 Not Found
+
+    The link is broken. Double-check that you have not made any typo, or mistake in copy-pasting. If the link points to a resource that no longer exists, you may want to remove or fix the link. 
+
+
+
+-----------------    
+http://thestudio.uiowa.edu/tirw/TIRW_Archive/archives/archives01.html
