@@ -40,6 +40,7 @@ $result = mysql_query("SELECT *
 											 $articleStr
                        ORDER BY year DESC, title ASC");
 
+include('../baseurl.php');
 include('inc/html_header.php');
 
 ?>
