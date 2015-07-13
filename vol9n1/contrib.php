@@ -1,14 +1,7 @@
 <?php
 session_start();
+require_once("../db_connect.php");
 
-function db_connect() {
-	$db = mysql_pconnect("lamp-db2.its.uiowa.edu", "intermedia", "craigd");
-	if (!mysql_select_db("intermedia",$db)) {
-		echo '<p><b>Could Not Select The Database.  Please try again later</b></p>';
-		exit;
-	}
-	return $db;
-}
 $db = db_connect();
 if (!$db) {
 	echo '<p><b>The database is down.  Please try again later</b></p>';

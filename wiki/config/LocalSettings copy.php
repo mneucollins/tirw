@@ -61,7 +61,7 @@ $wgDBtype           = "mysql";
 $wgDBserver         = "lamp-db1.its.uiowa.edu";
 $wgDBname           = "intermedia";
 $wgDBuser           = "intermedia";
-$wgDBpassword       = "craigd";
+$wgDBpassword       = "******";
 
 # MySQL specific settings
 $wgDBprefix         = "IRW_";
